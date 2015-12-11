@@ -1,0 +1,43 @@
+/*
+Style tambahan disini*/
+
+/*Warna keseluruhan halaman*/
+body {
+    background-color: #EBEBEB;
+}
+div.navbar-default {
+    background-color: #E4E4E4;
+}
+hr {
+    border-color: #CBCBCB;
+}
+h3.media-heading {
+    font-family: Georgia, Times New Roman, sans-serif;
+    line-height:1.25;
+    padding-bottom: 16px;
+}
+span.news_pub_date {
+	float: right;
+	color: #999;
+
+}
+p.news_summary {
+    font-family: Georgia, Times New Roman, sans-serif;
+    color: rgba(59, 62, 64, 1);
+    margin-top: 10px;
+    font-size: 1.15em;
+    line-height:1.58;
+
+}
+
+p.news_content {
+    font-family: Georgia, Times New Roman, sans-serif;
+    font-size: 1.15em;
+    line-height:1.58;
+}
+span.un-read {
+    color:red;
+    font-size: 12px;
+    border: 1px solid #FFFFFF;
+}
+

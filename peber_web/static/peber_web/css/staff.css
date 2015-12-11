@@ -1,0 +1,36 @@
+div.item_reserver {
+	margin-top: 5px;
+	padding: 10px;
+	border-bottom: 1px solid #ccc;
+}
+div.item_reserver:last-child {
+	margin-bottom: 50px;
+}
+div.item_reserver div a.btn {
+	margin: 5px;
+}
+div.item_checkout {
+	margin-top: 5px;
+	padding: 5px;
+	border: 1px solid #ccc;
+	clear:both;
+}
+p.item_checkout a {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+div#daftar_checkout {
+	margin-bottom: 55px;
+}
+footer#footerKu {
+	margin: 0px;
+	bottom: 0px;
+}
+h1#tersedia {
+	text-align: left;
+	color: #56CD65;
+}
+h1#disewa {
+	text-align: left;
+	color: #71A9E6;
+}

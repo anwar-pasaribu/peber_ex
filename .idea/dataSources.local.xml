@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="Django default" uuid="7ae52f8c-b4bd-46df-b10c-0dcea4de64b6">
+      <user-name>root</user-name>
+      <user-password>dfd8dfc5dfc5dfde</user-password>
+      <schema-pattern>peber.*</schema-pattern>
+      <default-schemas>peber.*</default-schemas>
+    </data-source>
+  </component>
+</project>

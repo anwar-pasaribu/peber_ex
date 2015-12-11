@@ -1,0 +1,1072 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"f",
+				"extracted_feed〔variable〕"
+			],
+			[
+				"fee",
+				"feed_data"
+			],
+			[
+				"r",
+				"release_lock"
+			],
+			[
+				"ti",
+				"title〔variable〕"
+			],
+			[
+				"news",
+				"news_corp"
+			],
+			[
+				"peber",
+				"peber_web〔module〕"
+			],
+			[
+				"News",
+				"News_Source〔module〕"
+			],
+			[
+				"sour",
+				"source_category"
+			],
+			[
+				"source",
+				"source_category"
+			],
+			[
+				"quer",
+				"queryset"
+			],
+			[
+				"news_corp",
+				"news_corp__source_category"
+			],
+			[
+				"ca",
+				"categories〔variable〕"
+			],
+			[
+				"query",
+				"queryset〔variable〕"
+			],
+			[
+				"qu",
+				"queryset〔variable〕"
+			],
+			[
+				"and",
+				"and_params"
+			],
+			[
+				"fil",
+				"filter"
+			],
+			[
+				"User",
+				"UserDescViewSet"
+			],
+			[
+				"Model",
+				"ModelSerializer"
+			],
+			[
+				"data",
+				"database"
+			],
+			[
+				"sa",
+				"saved_count"
+			],
+			[
+				"add",
+				"added_news"
+			],
+			[
+				"ns_",
+				"ns_source_category"
+			],
+			[
+				"feed",
+				"feedparser"
+			],
+			[
+				"news_",
+				"news_content"
+			],
+			[
+				"text_det",
+				"text_detail_tag〔variable〕"
+			],
+			[
+				"text",
+				"text_detail_tag〔variable〕"
+			],
+			[
+				"uni",
+				"unicode〔class〕"
+			],
+			[
+				"te",
+				"texts〔argument〕"
+			],
+			[
+				"detik",
+				"detik_soup_texts〔variable〕"
+			],
+			[
+				"deti",
+				"detik_soup〔variable〕"
+			],
+			[
+				"de",
+				"detik_tekno_id"
+			],
+			[
+				"new",
+				"news_corp_id"
+			],
+			[
+				"texts",
+				"texts_cut_1〔variable〕"
+			],
+			[
+				"tr",
+				"tribun_ids〔variable〕"
+			],
+			[
+				"fon",
+				"font-style: 〔property〕"
+			],
+			[
+				"ob",
+				"objects"
+			],
+			[
+				"None",
+				"None〔keyword〕"
+			],
+			[
+				"news_so",
+				"news_source_id〔argument〕"
+			],
+			[
+				"all",
+				"all_news_source〔variable〕"
+			],
+			[
+				"margi",
+				"margin-top"
+			],
+			[
+				"n",
+				"news"
+			],
+			[
+				"con",
+				"console"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"peb",
+				"peber_web"
+			],
+			[
+				"v1",
+				"v1_api"
+			],
+			[
+				"Use",
+				"UserAdmin"
+			],
+			[
+				"ne",
+				"news_pub_date"
+			],
+			[
+				"fo",
+				"format"
+			],
+			[
+				"s",
+				"source_url"
+			],
+			[
+				"se",
+				"source_category"
+			],
+			[
+				"so",
+				"source_publisher"
+			],
+			[
+				"mode",
+				"models"
+			],
+			[
+				"use",
+				"username"
+			],
+			[
+				"user",
+				"username"
+			],
+			[
+				"from",
+				"forms"
+			],
+			[
+				"post",
+				"post_from_upload"
+			],
+			[
+				"pos",
+				"post_id"
+			],
+			[
+				"Htt",
+				"HttpResponse"
+			],
+			[
+				"ceate",
+				"created_at"
+			],
+			[
+				"cret",
+				"created_at"
+			],
+			[
+				"create",
+				"created_at"
+			],
+			[
+				"name",
+				"collected_name"
+			],
+			[
+				"in",
+				"input"
+			],
+			[
+				"ac",
+				"action	Attr"
+			],
+			[
+				"prin",
+				"print_list"
+			],
+			[
+				"pri",
+				"print_list"
+			],
+			[
+				"logg",
+				"logger"
+			],
+			[
+				"em",
+				"email"
+			],
+			[
+				"ht",
+				"html_string"
+			],
+			[
+				"c",
+				"Compute"
+			],
+			[
+				"exe",
+				"executor"
+			],
+			[
+				"execut",
+				"executor"
+			],
+			[
+				"fut",
+				"futures"
+			],
+			[
+				"start",
+				"start_time_1"
+			],
+			[
+				"fu",
+				"futures"
+			],
+			[
+				"cl",
+				"clock"
+			],
+			[
+				"num",
+				"number_list"
+			],
+			[
+				"res",
+				"result_item"
+			],
+			[
+				"future",
+				"Futures"
+			],
+			[
+				"m",
+				"multiprocessing"
+			],
+			[
+				"test",
+				"test_without_barrier"
+			],
+			[
+				"test_",
+				"test_with_barrier"
+			],
+			[
+				"pros",
+				"process_consumer"
+			],
+			[
+				"pro",
+				"process_producer"
+			],
+			[
+				"prose",
+				"process_producer"
+			],
+			[
+				"back",
+				"background_process"
+			],
+			[
+				"P",
+				"Process"
+			],
+			[
+				"proce",
+				"process_with_name"
+			],
+			[
+				"ur",
+				"url_sources"
+			],
+			[
+				"get",
+				"get_feed1"
+			],
+			[
+				"re",
+				"request_data"
+			],
+			[
+				"url",
+				"url_source"
+			],
+			[
+				"pat",
+				"path"
+			],
+			[
+				"path",
+				"pathinfo"
+			],
+			[
+				"parse",
+				"parse_url"
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"va",
+				"value"
+			],
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"al",
+				"alt	Attr"
+			],
+			[
+				"ng-cl",
+				"ng-click	AngularJS"
+			],
+			[
+				"p",
+				"put	AngularJS"
+			],
+			[
+				"g",
+				"get	AngularJS"
+			],
+			[
+				"tota",
+				"totalCart"
+			],
+			[
+				"le",
+				"length"
+			],
+			[
+				"for",
+				"for	for (…) {…}"
+			],
+			[
+				"li",
+				"li	Tag"
+			],
+			[
+				"u",
+				"ul	Tag"
+			],
+			[
+				"song",
+				"Song"
+			],
+			[
+				"pr",
+				"price"
+			],
+			[
+				"item",
+				"items"
+			],
+			[
+				"bac",
+				"background-image"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "peber_web/algorithms/textteaser/summarizer.py",
+			"settings":
+			{
+				"buffer_size": 4491,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "peber_web/algorithms/textteaser/parser.py",
+			"settings":
+			{
+				"buffer_size": 3628,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "Package Control Messages\n========================\n\nAnaconda\n--------\n\n  # Anaconda\n  Anaconda turns your Sublime Text 3 into a full featured Python IDE. Read the plugin documentation on [http://damnwidget.github.io/anaconda](http://damnwidget.github.io/anaconda).\n  \n  [![Book Status](https://www.gitbook.io/button/status/book/damnwidget/anacondast3-developers-documentation)](https://www.gitbook.io/book/damnwidget/anacondast3-developers-documentation/activity)\n  \n  ## Getting Started\n  Anaconda works out of the box but there are multitude of options and features that you can tune and adapt to your own style or needs.\n  \n  * [Autocompletion on dot](http://damnwidget.github.io/anaconda/IDE/#toc_3)\n  * [Powerful IDE](http://damnwidget.github.io/anaconda/IDE/)\n  * [Advanced Configuration](http://damnwidget.github.io/anaconda/anaconda_settings/)\n  * [Run Tests using Anaconda](http://damnwidget.github.io/anaconda/tests_runner/)\n  * [Linting theme customization](http://damnwidget.github.io/anaconda/IDE/#toc_50)\n  * [Using Vagrant Environments](http://damnwidget.github.io/anaconda/vagrant/)\n  \n  ## License\n  This program is distributed under the terms of the GNU GPL v3. See the [LICENSE][license] file for more details.\n  \n  ## Tooltips\n  anaconda officially supports user themeable tooltips and displaying advanced signatures. This is how it looks in a dark theme:\n  \n  ![Tooltips Image][tooltips-dark-image]\n  \n  **Note**: This feature is enabled for users of Sublime Text 3 build 3070 or superior only.\n  \n  ## Troubleshooting\n  This section lists some common issues faced by users, along with workarounds.\n  \n  #### Anaconda does not appear in the Available Packages list on Package Control.\n  \n  **Work-around**: You have to update your Package Control version to the version 2.0 or better.\n  \n  #### Errors in the console about \"the file can't be open\" in worker.py file.\n  Your Sublime Text can't find the interpreter that you set in your configuration, by default, anaconda sets this as `python` so it will get your configured Python interpreter in your PATH (if any).\n  \n  **Work-around**: Add a Python interpreter (named `python`) to your PATH or set a right full path to your python interpreter as parameter of `python_interpreter` settings option, for example `/usr/local/bin/python3.4`.\n  \n  #### Auto-complete for import behaves badly.\n  Sublime Text 3's default Python package cancels the auto-completion when some words are detected (for example `def` or `class`). This list of words includes `import`.\n  \n  **Work-around**: Create a new Python directory in your Packages directory and copy the contents of the file [Completion Rules.tmPreferences][Completion-Rules] there with the same name.\n  Delete your Sublime Text Cache file `Cache/Python/Completion Rules.tmPreferences.cache`.\n  \n  **NOTE**: The cache path can be optained from the Sublime TExt 3 console using the code `sublime.cache_path()`\n  \n  #### Auto-complete drop-down shows up incorrectly.\n  SublimeCodeIntel interferes with anaconda's auto-completion.\n  \n  **Work-around**: Consider disabling SublimeCodeIntel for Python views or disabling/removing it completely when using anaconda.\n  \n  ## Contributing to Anaconda\n  There are several ways to contribute with anaconda.\n  \n  > Note: A [Developers Documentation book][dev-docs] is maintained up to date with the latest information about anaconda's internals and useful information about how to contribute to the project.\n  \n  ### Feedback\n  Giving feedback about the plugin and how it works in your platform, helps make the plugin better.\n  \n  ### Bug Hunting\n  Did you found a bug and you know how to fix it? First of all, Thank you very much. You just have to report the bug as a new issue, fork the repository, make your changes and send a new pull request.\n  \n  ### Suggesting and Implementing Features\n  So you thought of a new killer feature to implement in Anaconda? Great! Open an issue for it and and we will discuss it with you.\n  \n  ### Donations\n  Please donate to help keep this project alive.\n  \n  [![PayPal][paypal-donate-image]][paypal-donate-link]\n  [![Flatter][flatter-image]][flatter-link]\n  \n  [license]: https://raw.githubusercontent.com/DamnWidget/anaconda/master/LICENSE\n  [Completion-Rules]: https://raw.githubusercontent.com/DamnWidget/anaconda/master/Completion%20Rules.tmPreferences\n  [dev-docs]: http://damnwidget.gitbooks.io/anacondast3-developers-documentation/\n  [paypal-donate-image]: https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif\n  [paypal-donate-link]: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=KP7PAHR962UGG&lc=US&currency_code=EUR&bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHosted\n  [flatter-image]: https://api.flattr.com/button/flattr-badge-large.png\n  [flatter-link]: http://flattr.com/thing/1765332/DamnWidgetanaconda-on-GitHub\n  [tooltips-dark-image]: http://damnwidget.github.io/anaconda/img/tooltips.png\n",
+			"settings":
+			{
+				"buffer_size": 4927,
+				"line_ending": "Windows",
+				"name": "Package Control Messages",
+				"read_only": true,
+				"scratch": true
+			}
+		},
+		{
+			"file": "peber_web/function/news_extractors.py",
+			"settings":
+			{
+				"buffer_size": 8101,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "Packages/Python/Python.sublime-build",
+	"command_palette":
+	{
+		"height": 288.0,
+		"selected_items":
+		[
+			[
+				"git",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: List Unmanaged Packages"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"nstall",
+				"Package Control: Install Package"
+			],
+			[
+				"Pack",
+				"Package Control: Remove Package"
+			],
+			[
+				"",
+				"About"
+			],
+			[
+				"Package Con",
+				"Package Control: Install Package"
+			],
+			[
+				"Packa",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 528.0
+	},
+	"console":
+	{
+		"height": 146.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/Anwar Pasaribu/AppData/Roaming/Sublime Text 3/Packages/Anaconda/Anaconda.sublime-settings",
+		"/C/Users/Anwar Pasaribu/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/Anwar Pasaribu/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/Anwar Pasaribu/AppData/Roaming/Sublime Text 3/Packages/User/Package Control.sublime-settings",
+		"/D/python-project/django/peber_ex/peber_web/models.py",
+		"/D/python-project/django/peber_ex/peber_web/serializers.py",
+		"/D/python-project/django/peber_ex/peber_web/views.py",
+		"/D/python-project/django/peber_ex/peber_ex/urls.py",
+		"/D/python-project/django/peber_ex/peber_web/function/news_extractors.py",
+		"/D/python-project/django/peber_ex/peber_web/function/database_access.py",
+		"/D/python-project/django/peber_ex/peber_web/function/test_text_teaser.py",
+		"/D/Data Center/Desktop/Test Text Teaser Sebelum Indentation di SBS.txt",
+		"/D/python-project/django/peber_ex/peber_web/tasks.py",
+		"/D/python-project/django/peber_ex/peber_ex/settings.py",
+		"/D/python-project/django/peber_ex/peber_web/urls.py",
+		"/D/Data Center/Desktop/Error KeyError Exception.txt",
+		"/D/python-project/django/peber_ex/peber_web/algorithms/textteaser/parser.py",
+		"/D/Learn/Python/latihan/lat_nltk/indonesia-nlp-dataset/indonesian-nlp-datasets/utils/tokenizer.py",
+		"/D/python-project/django/peber_ex/peber_web/templates/peber_web/index.html",
+		"/D/python-project/django/peber_ex/peber_web/static/peber_web/css/style.css",
+		"/D/python-project/django/peber_ex/peber_web/algorithms/peber_summarizer.py",
+		"/D/Data Center/Desktop/Django Pytest/conftest.py",
+		"/D/python-project/django/peber_ex/27Nop - Copy.json",
+		"/D/Learn/Python/Python Library/REST Framework/rest-framework-tutorial-master/tutorial/urls.py",
+		"/D/Learn/Python/Python Library/REST Framework/rest-framework-tutorial-master/snippets/models.py",
+		"/D/Learn/Python/Python Library/REST Framework/rest-framework-tutorial-master/snippets/serializers.py",
+		"/D/Learn/Python/Python Library/REST Framework/rest-framework-tutorial-master/snippets/views.py",
+		"/D/python-project/django/peber_ex/peber_web/admin.py",
+		"/D/python-project/django/peber_ex/peber_web/function/gooose_extractor.py",
+		"/D/python-project/django/peber_ex/peber_ex/celeryconfig.py",
+		"/D/python-project/django/peber_ex/peber_web/celery.py",
+		"/D/python-project/django/peber_ex/peber_ex/__init__.py",
+		"/D/python-project/django/peber_ex/peber_web/__init__.py",
+		"/D/python-project/django/peber_ex/peber_ex/celery.py",
+		"/D/python-project/django/test_celery/test_celery/settings.py",
+		"/D/python-project/django/test_celery/demoapp/urls.py",
+		"/D/python-project/django/test_celery/demoapp/forms.py",
+		"/D/python-project/django/test_celery/test_celery/celery.py",
+		"/D/python-project/django/test_celery/test_celery/celery_config.py",
+		"/D/python-project/django/test_celery/demoapp/templates/demoapp/index.html",
+		"/D/python-project/django/test_celery/test_celery/urls.py",
+		"/D/python-project/Picha-1/picha/celery.py",
+		"/D/python-project/Picha-1/picha/__init__.py",
+		"/D/xampp/htdocs/koperasi_karyawan_socfindo/index.php",
+		"/D/Data Center/Documents/Downloads/The Lady in the Van 2015/The Lady in the Van 2015.nfo",
+		"/D/Data Center/Desktop/test.html",
+		"/D/Data Center/Documents/Downloads/The Pianist (2002)/the-pianist-2002_HI_indonesian-424722.zip",
+		"/D/Books/The Hard Thing About Hard Things by Ben Horowitz (Ebook)/The Hard Thing About Hard Things by Ben Horowitz (Ebook).rar",
+		"/C/mongodb-win32-i386-3.0.6.zip",
+		"/C/django/mysite_2/mysite_2/forms.py",
+		"/C/django/mysite_2/mysite_2/settings.py",
+		"/C/django/mysite_2/app_saya/templates/app_saya/detail.html",
+		"/C/django/mysite_2/app_saya/templates/app_saya/show.html",
+		"/C/django/mysite_2/mysite_2/urls.py",
+		"/C/django/mysite_2/app_saya/templates/app_saya/index.html",
+		"/C/django/mysite_2/app_saya/models.py",
+		"/C/django/mysite_2/manage.py",
+		"/D/Learn/Python/latihan/multiprocessing/spawn_a_process.py",
+		"/D/Learn/Python/ta/skeleton/peber/main.py",
+		"/D/Learn/Python/ta/skeleton/peber/rss_feed_parser.py",
+		"/D/Learn/Python/ta/skeleton/peber/custom_corpora.py",
+		"/D/Learn/Python/ta/skeleton/peber/database_access.py",
+		"/D/Learn/Python/ta/skeleton/tests/peber_tests.py",
+		"/D/Learn/Python/ta/skeleton/peber/web_crawler_paralel.py",
+		"/D/eBooks/Developer/Python/Parallel Programming with Python/8397OS_Code/8397OS_04_Code/parallel_fibonacci.py",
+		"/D/Learn/Python/ta/skeleton/peber/rss_url_collection.py",
+		"/D/Learn/Python/latihan/ThreadPoolExecutor_ex.py",
+		"/D/Learn/Python/ta/tokenizers.py",
+		"/D/Learn/Python/Sumy/sumy-dev/sumy/models/__init__.py",
+		"/D/Learn/Python/ta/skeleton/BACA.txt",
+		"/D/Learn/Python/ta/skeleton/setup.py",
+		"/D/Learn/Python/ta/skeleton/peber/peber_tests.py",
+		"/D/Learn/Python/latihan/lat_nltk/replacers.py",
+		"/D/eBooks/Developer/Python/Jacob Perkins - Python 3 [source_code]/nltk3-cookbook-master/replacers.py",
+		"/D/eBooks/Developer/Python/Mark Summerfield [source_code]/py30eg/BinaryRecordFile.py",
+		"/D/eBooks/Developer/Python/Mark Summerfield [source_code]/py3book30.zip",
+		"/D/Learn/Python/project/lat_python1/main.py",
+		"/D/Learn/Python/project/lat_python1/lat_nltk/helper_class/replacers.py",
+		"/D/android-sdk/system-images/android-21/google_apis/x86/source.properties",
+		"/D/Searching/NLP/Persada_Stemmer_v1.1/DB.js",
+		"/D/Searching/NLP/Persada_Stemmer_v1.1/Persada_Stemmer v1.1.exe",
+		"/D/xampp/htdocs/universitas_quality/index.php",
+		"/D/xampp/htdocs/universitas_quality/fakultas.php",
+		"/D/xampp/htdocs/universitas_quality/ruang_belajar.php",
+		"/D/xampp/htdocs/universitas_quality/laboratorium.php",
+		"/D/xampp/htdocs/universitas_quality/sarana_prasarana.php",
+		"/D/xampp/htdocs/universitas_quality/biaya.php",
+		"/D/xampp/htdocs/universitas_quality/sejarah.php",
+		"/D/xampp/htdocs/universitas_quality/struktur_org.php",
+		"/D/xampp/htdocs/universitas_quality/tenaga_pengajar.php",
+		"/D/xampp/htdocs/universitas_quality/akreditas.php",
+		"/D/xampp/htdocs/universitas_quality/lokasi_kampus.php",
+		"/D/xampp/htdocs/universitas_quality/buku_tamu.php",
+		"/D/xampp/htdocs/universitas_quality/syarat_pendaftaran.php",
+		"/D/Learn/Python/Text Teaser/textteaser-master/README.md",
+		"/D/Data Center/OneDrive/Semester 8/TA/Dokumen Sempro.rar",
+		"/C/django/mysite/mysite/settings.py",
+		"/D/xampp/htdocs/universitas_quality/about.php",
+		"/D/xampp/htdocs/universitas_quality/view.php",
+		"/D/xampp/htdocs/elearning/admin/index.php",
+		"/D/xampp/htdocs/hotel_antares_web/cek_tersedia.php",
+		"/D/iSoftware/Windows Make Up/Cursor/OSX/OS X Working.ani",
+		"/D/xampp/htdocs/iklc/cek_user.php",
+		"/D/xampp/htdocs/universitas_quality/Connections/connection.php",
+		"/D/xampp/htdocs/universitas_quality/css/my_style.css",
+		"/D/Data Center/Documents/Downloads/Browsers D/BootstrapSnippets.vsix",
+		"/D/xampp/htdocs/elearning/index.php",
+		"/D/xampp/htdocs/elearning/about_us.php",
+		"/D/xampp/htdocs/elearning/articles.php",
+		"/D/xampp/htdocs/elearning/admin/function/getData.php",
+		"/D/xampp/htdocs/rental_mobil/index.php",
+		"/D/xampp/htdocs/rental_mobil/engine/proses_login_admin.php",
+		"/D/xampp/htdocs/angular/route_exercise/list.html",
+		"/D/xampp/htdocs/elearning/function/aksi_login.php",
+		"/C/Users/Anwar Pasaribu/AppData/Roaming/Sublime Text 3/Packages/User/AngularJS-sublime-package.sublime-settings",
+		"/D/Learn/Angular JS/Exercise/lat1.html",
+		"/D/Learn/Angular JS/Exercise/lat5_list-tables-repeat.html",
+		"/D/Learn/Angular JS/Exercise/lat6_show-hide.html",
+		"/D/Learn/Angular JS/Exercise/lat2_shopcart.html",
+		"/D/Learn/Angular JS/Exercise/lat7_watch-model-changes.html",
+		"/D/Learn/Angular JS/Exercise/lat4_ng-submit.html",
+		"/D/Learn/Angular JS/Exercise/lat4_list-tables-repeat.html",
+		"/D/Learn/Angular JS/Exercise/lat3_ng-appName.html",
+		"/D/Learn/Angular JS/Exercise/cotroller.js",
+		"/D/Learn/Ionic/exercises/lat_kombur_medan/www/index.html",
+		"/D/Learn/Ionic/exercises/lat_kombur_medan/scss/ionic.app.scss",
+		"/D/Learn/Ionic/exercises/lat_kombur_medan/www/css/style.css",
+		"/D/Learn/Ionic/exercises/lat_kombur_medan/www/js/controllers.js"
+	],
+	"find":
+	{
+		"height": 38.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"			:",
+			"from",
+			")\n",
+			"added_news",
+			"font",
+			"UserDescResourceApi",
+			"django",
+			"MyRegistrationForm",
+			"p",
+			"background_process",
+			"Database",
+			"cl",
+			"collection",
+			"db",
+			"get_feed1",
+			"data",
+			"h4",
+			"div",
+			"title",
+			"h2",
+			"update"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"MhsForm"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 3,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "peber_web/algorithms/textteaser/summarizer.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4491,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1718,
+								1718
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "peber_web/algorithms/textteaser/parser.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3628,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1901,
+								1901
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 337.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4927,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1489,
+								1489
+							]
+						],
+						"settings":
+						{
+							"auto_indent": false,
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_width": 2,
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 135.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "peber_web/function/news_extractors.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8101,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								212,
+								212
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"rulers":
+							[
+								70
+							],
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 30.0
+	},
+	"input":
+	{
+		"height": 34.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 450.0
+	},
+	"project": "Peber Sublime Project.sublime-project",
+	"replace":
+	{
+		"height": 56.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"news",
+				"peber_web\\function\\news_extractors.py"
+			],
+			[
+				"task",
+				"peber_web\\tasks.py"
+			],
+			[
+				"sett",
+				"peber_ex\\settings.py"
+			],
+			[
+				"test",
+				"peber_web\\function\\test_text_teaser.py"
+			],
+			[
+				"summa",
+				"D:\\python-project\\django\\peber_ex\\peber_web\\algorithms\\textteaser\\summarizer.py"
+			],
+			[
+				"test_",
+				"peber_web\\function\\test_text_teaser.py"
+			],
+			[
+				"parser",
+				"peber_web\\algorithms\\textteaser\\parser.py"
+			],
+			[
+				"view",
+				"peber_web\\views.py"
+			],
+			[
+				"urls",
+				"peber_web\\urls.py"
+			],
+			[
+				"tasks",
+				"peber_web\\tasks.py"
+			],
+			[
+				"news_ex",
+				"peber_web\\function\\news_extractors.py"
+			],
+			[
+				"sty",
+				"peber_web\\static\\peber_web\\css\\style.css"
+			],
+			[
+				"index",
+				"peber_web\\templates\\peber_web\\index.html"
+			],
+			[
+				"peber",
+				"peber_web\\algorithms\\peber_summarizer.py"
+			],
+			[
+				"peber_summ",
+				"peber_web\\algorithms\\peber_summarizer.py"
+			],
+			[
+				"data",
+				"peber_web\\function\\database_access.py"
+			],
+			[
+				"vie",
+				"peber_web\\views.py"
+			],
+			[
+				"model",
+				"peber_web\\models.py"
+			],
+			[
+				"views",
+				"peber_web\\views.py"
+			],
+			[
+				"seri",
+				"peber_web\\serializers.py"
+			],
+			[
+				"models",
+				"peber_web\\models.py"
+			],
+			[
+				"inde",
+				"peber_web\\templates\\peber_web\\index.html"
+			],
+			[
+				"celery",
+				"peber_ex\\celery.py"
+			],
+			[
+				"news_source_page",
+				"peber_web\\templates\\peber_web\\news_source_page.html"
+			],
+			[
+				"detail",
+				"peber_web\\templates\\peber_web\\detail.html"
+			],
+			[
+				"",
+				"peber_web\\templates\\peber_web\\news_source_page.html"
+			],
+			[
+				"admin",
+				"peber_web\\admin.py"
+			],
+			[
+				"vi",
+				"peber_web\\views.py"
+			],
+			[
+				"databa",
+				"peber_web\\function\\database_access.py"
+			],
+			[
+				"news_so",
+				"peber_web\\templates\\peber_web\\news_source_page.html"
+			],
+			[
+				"mod",
+				"peber_web\\models.py"
+			],
+			[
+				"tas",
+				"peber_web\\tasks.py"
+			],
+			[
+				"ur",
+				"mysite_2\\urls.py"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 208.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+		"max_columns": 1
+	}
+}

@@ -1,0 +1,29 @@
+{% extends "peber_web/base.html" %}
+{% block title %}{{ news_data.news_title }}{% endblock %}
+
+{% block content %}
+    {% if news_data %}
+
+        <div class="media">
+            <a class="pull-left" href="{{ news_data.news_url }}" target="_blank">
+                <img class="media-object" src="{% comment %}{{ news.news_image_hero }}{% endcomment %}"
+                     alt="{{ news_data.id }}" title="{{ news_data.news_title }}" width="150">
+            </a>
+            <div class="media-body">
+                <h3 class="media-heading">{{ news_data.news_title|truncatewords:200 }}</h3>
+                {{ news_data.news_corp }} <span class="news_pub_date">{{ news_data.news_pub_date }}</span>
+
+                <p class="news_summary">{% autoescape off %}{{ news_data.news_summary }}{% endautoescape %}</p>
+                <p class="news_content"><pre>{% autoescape off %}{{ news_data.news_content }}{% endautoescape %}</pre></p>
+
+                <h3>After formatted:</h3>
+                <hr>
+                <p class="news_content">{% autoescape off %}{{ news_data.news_content_web_format }}{% endautoescape %}</p>
+            </div>
+        </div>
+
+    {% else %}
+        <p>No data found!</p>
+    {% endif %}
+
+{% endblock %}

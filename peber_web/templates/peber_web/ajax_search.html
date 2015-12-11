@@ -1,0 +1,13 @@
+{% if news_res %}
+
+    {% for news in news_res %}
+        <li><a href="{% url 'peber_web:user_detail' news.object.get_absolute_url %}">
+            {{ news.object.news_title }}
+        </a></li>
+    {% endfor %}
+
+{% else %}
+    <li>No data found! Default</li>
+    <li>{{ news_res|length }}</li>
+{% endif %}
+

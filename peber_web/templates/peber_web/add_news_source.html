@@ -1,0 +1,16 @@
+{% extends 'peber_web/base.html' %}
+
+{% block title %}Add news source{% endblock %}
+
+{% block content %}
+
+    <h1>Add news source</h1>
+    <form method='post' action="{% url 'peber_web:add_news_source' %}">
+        {% csrf_token %}
+        <table>
+            {{form.as_table}}
+        </table>
+        <input type="submit" name="submit" value="Add">
+    </form>
+
+{% endblock %}

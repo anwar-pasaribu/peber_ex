@@ -1,0 +1,19 @@
+{% extends 'peber_web/base.html' %}
+{% load staticfiles %}
+
+{% block title %}Detail {{user_dict.full_name}}{% endblock %}
+
+{% block content %}
+
+<h1>User detail</h1>
+
+{% if user_dict.profile_pict %}
+    <p align="center"><img src="{{ user_dict.profile_pict.url }}" width="200px" /></p>
+{% endif %}
+	<p>{{ user_dict.profile_pict }}</p>
+    <p>Username: {{user_dict.user.get_username}}</p>
+    <p>Name: {{user_dict.user.get_full_name}}</p>
+    <p>Email: {{user_dict.user.email}}</p>
+
+
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends 'peber_web/base.html' %}
+
+{% block title %}Add peber user{% endblock %}
+
+{% block content %}
+
+    <h1>Add user</h1>
+    <form method='post' enctype="multipart/form-data" action="{% url 'peber_web:add_peber_web_user' %}">
+        {% csrf_token %}
+        <table>
+            {{form.as_table}}
+        </table>
+        <input type="submit" name="submit" value="Add">
+    </form>
+
+{% endblock %}

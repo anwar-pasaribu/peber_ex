@@ -1,0 +1,24 @@
+{% extends "peber_web/base.html" %}
+{% block title %}Peringkas Berita | All News{% endblock %}
+
+{% block content %}
+    {% if news_data %}
+
+        {% for news in news_data %}
+            <div class="media">
+                <a class="pull-left" href="{{ news.news_image_hero }}">
+                    <img class="media-object" src="{{ news.news_image_hero }}" alt="{{ news.id }}" width="100">
+                </a>
+                <div class="media-body">
+                    <h4 class="media-heading">{{ news.news_title|truncatewords:50 }}</h4>
+                    {{ news.news_pub_date }}<br>{{ news.news_content|truncatewords:50  }}
+                </div>
+            </div>
+            <hr />
+        {% endfor %}
+
+    {% else %}
+        <p>No data found!</p>
+    {% endif %}
+
+{% endblock %}

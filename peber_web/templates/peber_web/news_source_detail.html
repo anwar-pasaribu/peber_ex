@@ -1,0 +1,5 @@
+<h1>News source detail</h1>
+<p>Publisher: {{news_source_data.source_publisher}}</p>
+<p>Category: {{news_source_data.source_category}}</p> 
+<p>URL: {{news_source_data.source_url}}</p>
+<a href="{% url 'peber_web:edit_news_source' news_source_data.id %}">Edit</a>

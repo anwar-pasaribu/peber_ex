@@ -1,0 +1,105 @@
+{% extends "peber_web/base.html" %}
+{% load staticfiles %}
+{% load humanize %}
+
+{# Judul Halaman #}
+{% block title %}
+    {% if current_ns %}
+        {{ current_ns }}
+    {% else %}
+        News Source
+    {% endif %}
+{% endblock %}
+
+{% block logged_user %}
+    {% if logged_user %}
+        Hi, {{ logged_user }} | <a href="{% url 'peber_web:logout' %}" class="navbar-link">Logout</a>
+    {% else %}
+        Hi, there! | <a href="{% url 'peber_web:login' %}" class="text-warning">Login</a>
+    {% endif %}
+{% endblock %}
+
+{% block sidebar %}
+
+    <ul class="nav nav-pills nav-stacked">
+        <li>
+            <a href="{% url 'peber_web:index' %}">
+                <span class="badge pull-right">{{ all_news_size }}</span>
+                All News
+            </a>
+        </li>
+        <li class="active">
+            <a href="{% url 'peber_web:news_source_page' %}">
+                <span class="badge pull-right">{{ news_sources|length }}</span>
+                News Source
+            </a>
+        </li>
+
+    </ul>
+
+    <ul>
+        <li><a href="{% url 'peber_web:add_news_source' %}">Add news source</a>
+        </li>
+        <li><a href="{% url 'peber_web:register_user' %}">Register Admin</a>
+        </li>
+        <li><a href="{% url 'peber_web:add_peber_web_user' %}">Add Peber User</a>
+        </li>
+        <li><a href="{% url 'peber_web:login' %}">Login</a></li>
+        <li><a href="{% url 'peber_web:logout' %}">Logout</a></li>
+    </ul>
+
+    <h2>Search</h2>
+
+    {% csrf_token %}
+    <input type="search" name="search_text" id="search_text" title="Cari data" placeholder="Cari user">
+
+    <ul id="rearch_results">
+
+    </ul>
+    <p>C: <strong>{{language}}</strong> | S: <strong>{{session_language}}</strong></p>
+
+{% endblock %}
+
+
+{% block content %}
+
+    {% if news_data %}
+
+        {% for news in news_data %}
+            <div class="media">
+                <a class="pull-left" href="{% url 'peber_web:detail' news.id %}" target="_new">
+                    <img class="media-object" src="{% comment %}{{ news.news_image_hero }}{% endcomment %}" alt="{{ news.id }}" title="{{ news.id }}" width="150">
+                </a>
+                <div class="media-body">
+                    <h3 class="media-heading">{{ news.news_title }}</h3>
+                    {{ news.news_corp }} <span class="news_pub_date">{{ news.news_pub_date }}</span>
+
+                    <a href="{{news.news_url}}" target="_blank" title="{{news.news_url}}">News URL</a>
+
+                    <p class="news_summary">{% autoescape off %}{{ news.news_summary }}{% endautoescape %}</p>
+                    <p style="font-weight: bolder;">{{ news.news_content|truncatewords:100 }}</p>
+                    <p class="news_content">{% autoescape off %}{{ news.news_content_web_format|truncatewords:100 }}{% endautoescape %}</p>
+                </div>
+            </div>
+            <hr />
+        {% endfor %}
+
+    {% else %}
+        {% if news_count %}
+
+        <div class="list-group">
+            {% for i in news_count %}
+
+                  <a href="{% url 'peber_web:news_category' i.ns_id %}" class="list-group-item" target="_new">
+                    <span class="badge">{{i.news_num}}</span>
+                    <strong>{{i.ns_id}}</strong>: {{i.source_name}} <br />
+                    {{i.source_url}}
+                  </a>
+
+            {% endfor %}
+        </div>
+        {% endif %}
+
+    {% endif %}
+
+{% endblock %}
