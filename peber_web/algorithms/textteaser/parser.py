@@ -5,7 +5,7 @@ import os
 
 
 # menentukan log ditampilkan atau tidak
-is_log = True
+is_log = False
 
 
 class Parser:
@@ -14,15 +14,23 @@ class Parser:
 		self.stopWords = self.getStopWords()  # Mendapatkan list stopword
 
 	def getKeywords(self, text):
-		text = self.removePunctations(text)
+		"""
+		Menentukan keyword pada teks yang diberikan.
+		"""
+		text = self.removePunctations(text) # Menghapus pungtuasi pada teks.
 		words = self.splitWords(text)
 		words = self.removeStopWords(words)
 
 		# Untuk membersihkan kata yang muncul beberapa kali.
 		uniqueWords = list(set(words))
 
+		print ("Total words: %d" % len(words))
+		print("Unique word count: %d" % len(uniqueWords) ) 
+
 		# Keywords merupakan dict yg berisi kata dan jumlah berapa kali muncul.
 		keywords = [{'word': word, 'count': words.count(word)} for word in uniqueWords]
+
+		# Keyword diurutkan decara Descending (Z-A)
 		keywords = sorted(keywords, key=lambda x: -x['count'])
 
 		return (keywords, len(words))
@@ -73,21 +81,21 @@ class Parser:
 		# Mengambil kata-kata dalam kalimat yang sama dengan judul
 		matchedWords = [word for word in sentenceWords if word in titleWords]
 
-		if is_log: print "Get Title Score:\nTitle words: %s" % titleWords
+		if is_log: print "Title words: %s" % titleWords
 		if is_log: print "Sentence words: %s" % sentenceWords
 		if is_log: print "Matched words: %s" % matchedWords
 
 		# Kembalikan (jumlah kata yg sama dengan judul) / (jumlah judul * 1)
-		if is_log: print "Get title score: %d / %d * 1.0 = %f " % (len(matchedWords), len(title), (len(matchedWords) / (len(title) * 1.0)))
+		if is_log: print "Get title score: %d / %d * 1.0 = %f " % (len(matchedWords), len(titleWords), (len(matchedWords) / (len(titleWords) * 1.0)))
 		
-		return len(matchedWords) / (len(title) * 1.0)
+		return len(matchedWords) / (len(titleWords) * 1.0)
 
 	# Memisahkan kalimat dengan NTL Tokenizer.
 	def splitSentences(self, text):
 		tokenizer = nltk.data.load('nltk:tokenizers/punkt/english.pickle')  # Edited, mengambil dari d:nltk_daa
 		return tokenizer.tokenize(text)
 
-	# Pecahkan judul berita dan buat lower case
+	# Pecahkan kalimat berita dan buat lower case
 	def splitWords(self, sentence):
 		return sentence.lower().split()
 

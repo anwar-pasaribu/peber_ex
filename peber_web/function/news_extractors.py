@@ -13,6 +13,7 @@ from unidecode import unidecode
 
 # Special case for detik tekno news
 from BeautifulSoup import BeautifulSoup
+from peber_web.function.paginating_news import get_paged_news_text
 
 
 class NewsExtractor(object):
@@ -42,6 +43,17 @@ class NewsExtractor(object):
 		"""
 		text_length = len(self.article.cleaned_text)
 		min_news_content = 500  # Peraturan teks berita harus besar minimum 500 huruf.
+
+		# Special case for detik.com
+		detik_ids = [35, 34, 33, 32, 31, 30, 20]
+		if self.news_corp_id in detik_ids:
+			print("{detik} Data (%d of %d) get content, URL: %s" % (self.extracted_feed, self.feed_data_length, self.url))
+			detik_soup = BeautifulSoup(self.article.raw_html)
+			next_soup = detik_soup.find("div", class_="multipage multipage2")
+
+			if next_soup is not None:
+				news_contents = get_paged_news_text(self.url)
+				return format_news_content_texts(self.news_corp_id, news_contents['news_content'])
 
 		# Ambil data secara manual dengan BeautifulSoup utk detik tekno.
 		# DS - Detik Spesial
@@ -91,7 +103,7 @@ class NewsExtractor(object):
 			return self.news_top_image  # Hasil parsing Newspaper
 
 
-def format_news_content_texts(news_corp_id, texts, delimiter='\n'):
+def format_news_content_texts(news_corp_id, texts, delimiter='\n\n'):  # Add two delimiters (Des, 18th) 
 	"""
 	Format text berita supaya lebih bersih, tanpa banyak karakter '\n'
 	:param texts: String teks berita yang akan dibersihkan
@@ -99,11 +111,11 @@ def format_news_content_texts(news_corp_id, texts, delimiter='\n'):
 	:param delimiter: Pembatas setiap "paragraf"
 	:return: Teks berita dalam format unicode.
 	"""
+	detik_ids = [35, 34, 33, 32, 31, 30, 20]  # 33: Detik Health
 	tempo_co_ids = [7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]  # ID sumber berita tempo
 	antara_news_ids = [43, 44, 45, 46, 47, 48, 49, 50]  # ID ANTARA News
 	okezone_ids = [42, 41, 40, 39, 38, 37, 36, 19]
 	tribun_ids = [22]  # Tribun Mixed (All Category)
-	detik_ids = [35, 34, 33, 32, 31, 30, 20]
 	repulika_ids = [77]
 	metrotvnews_ids = [65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76]
 	jpnn_ids = [78, 79, 80, 81, 82, 83, 84]
@@ -123,7 +135,7 @@ def format_news_content_texts(news_corp_id, texts, delimiter='\n'):
 	# Pecahkan string isi berita menjadi array
 	sentences = my_texts.split("\n")
 
-	# hapus array yang bukan sebuah kalimat, lebih kecil dari 60 huruf
+	# Hapus array yang bukan sebuah kalimat, lebih kecil dari 60 huruf
 	# JPNN filter: 'BACA:' not in s and 'Foto:' not in s
 	data = [s for s in sentences if len(s) > 60 and 'BACA:' not in s and 'Foto:' not in s and 'FOTO' not in s]
 	my_texts = ""  # Buat lagi my_texts versi lebih bersih
@@ -139,11 +151,14 @@ def format_news_content_texts(news_corp_id, texts, delimiter='\n'):
 			if len(texts_cut_2) == 2:
 				my_texts = texts_cut_2[1].split(r'-', 1)[1].strip()
 				my_texts = my_texts.rsplit("Baca juga:", 1)[0]  # Pecah lagi jika ada
-		else:
-			my_texts = texts_cut_1[1].split(r'-', 1)[1].strip()
-			if len(my_texts) == 2:
-				my_texts = my_texts[1].strip()
+		elif len(texts_cut_1) == 2:
+			# Jika pemotongan pertama berhasil
+			texts_cut_2 = texts_cut_1[1].split(r'-', 1)
+			if len(texts_cut_2) == 2:
+				my_texts = texts_cut_2[1].strip()
 				my_texts = my_texts.rsplit("Baca juga:", 1)[0]  # Pecah lagi jika ada, index 0 akan selalu ada
+			else:
+				my_texts = texts_cut_1[0]
 
 	# Antara News
 	elif news_corp_id in antara_news_ids:
@@ -167,9 +182,10 @@ def format_news_content_texts(news_corp_id, texts, delimiter='\n'):
 			else:
 				my_texts = texts_cut_1[1].strip()
 
-	# Detik.com
+	# Detik.com  ##################IMPORTANT
 	elif news_corp_id in detik_ids:
-		texts_cut_1 = re.split(r'-', my_texts, 1)  # Belum tahu pola beritanya!
+		# TODO Pola pemotongan berita
+		texts_cut_1 = re.split(r'@@@', my_texts, 1)  # Belum tahu pola beritanya!
 		if len(texts_cut_1) == 2:
 			my_texts = texts_cut_1[1].strip()
 

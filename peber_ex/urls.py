@@ -29,7 +29,7 @@ router = DefaultRouter()
 router.register(r'update_user_desc', views.UpdateUserDescViewSet)
 router.register(r'news', views.NewsViewSet, 'News')
 router.register(r'news_source', views.NewsSourceViewSet, 'News_Source')
-router.register(r'user', views.UserViewSet)
+router.register(r'user', views.UserViewSet, 'User')
 router.register(r'user_desc', views.UserDescViewSet)
 router.register(r'periodic_task', views.PeriodicTaskViewSet, 'PeriodicTask')
 

@@ -99,3 +99,6 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+peber_web/migrations/0010_auto_20151226_0854.py
+peber_web/migrations/0009_auto_20151226_0846.py
+peber_web/migrations/0011_auto_20151226_0855.py

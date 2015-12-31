@@ -14,6 +14,7 @@ from peber_ex import celery_app
 from time import sleep
 
 # Peber Web Model
+from peber_web.function.paginating_news import get_paged_news_text
 from peber_web.models import News_Source, News
 from peber_web.models import UserDesc
 
@@ -26,6 +27,9 @@ from pushbots import Pushbots
 
 # Module for news extraction
 import feedparser
+import newspaper
+
+from urlparse import urlparse
 
 # Generate summary to all news in db
 from peber_web.algorithms.peber_summarizer import PeberSummarizer
@@ -130,6 +134,41 @@ def rss_feed_parser(rss_url):
 		return 0
 
 
+def fetch_news_url(ns_id, ns_source_url):
+	"""
+	Fungsi untuk mengambil URL dalam halaman Kompas.com atau Liputan6.com
+	Kemudian URL akan diperiksa apakah sudah ada dalam database.
+	:param ns_id: ID Sumber Berita
+	:param ns_source_url: URL Sumber Berita
+	:return:
+	"""
+	# TODO Perhatikan memoize
+	print("Fetch news URL started. URL: %s" % ns_source_url)
+	news_paper = newspaper.build(ns_source_url, language='id', memoize_articles=False)
+	for article in news_paper.articles:
+		o = urlparse(ns_source_url)
+		news_url = article.url
+
+		# Memastikan url berkaitan dengan ns_source_url
+		if news_url.find(o.netloc) != -1:
+			is_data_available = News.objects.filter(news_url=news_url).exists()
+
+			if not is_data_available:
+				# News Content berisi:
+				# - news_title
+				# - news_content
+				# - news_image_hero
+				news_content = get_paged_news_text(news_url)
+				news_content['news_corp'] = ns_id
+				news_content['news_url'] = news_url
+				last_news_id = dbs_task.insert_news_to_db(news_content)
+
+				if last_news_id == 0:
+					print("Berita GAGA disimpan! :D")
+			else:
+				print("Data already available.")
+
+
 @shared_task()
 def parse_certain_ns_task(ns_id, ns_publisher, ns_category, ns_url):
 	"""
@@ -145,6 +184,11 @@ def parse_certain_ns_task(ns_id, ns_publisher, ns_category, ns_url):
 	ns_source_url = ns_url
 
 	print("%s - Mulai Parsing %s-%s" % (tag, ns_source_publisher, ns_source_category))
+
+	# Jika NS Publisher adalah Kompas atau Liputan 6
+	# Karena kedua sumber tersebut tidak ada RSS Feed.
+	if ns_source_publisher == "Kompas.com" or ns_source_publisher == "Liputan6.com":
+		fetch_news_url(ns_id, ns_source_url)
 
 	# Panggil fungsi parsing RSS feed url. (2 Des)
 	parsed_feed = rss_feed_parser(ns_source_url)
@@ -178,6 +222,7 @@ def execute_parser_by_category(ns_category):
 	else:
 		ns_data_category = News_Source.objects.filter(source_category=ns_category)
 
+	print("Total NS to Parse: %s" % ns_data_category.count())
 	# Masukkan semua worker dalam sebuah list.
 	jobs = []
 	for news_source in ns_data_category:
@@ -295,6 +340,9 @@ def generate_news_summary():
 # Pushbots untuk push notif di Android
 def push_new_news_by_category(user_id):
 	""" Push notif untuk Android. (1 Des, 2015)
+		Berita yang diberikan pada user adalah 
+		berita index berita pertama pada daftar 
+		berdasarkan Category.
 	"""
 
 	current_user_desc = UserDesc.objects.get(pk=user_id)
@@ -303,7 +351,7 @@ def push_new_news_by_category(user_id):
 	push_platform = Pushbots.PLATFORM_ANDROID
 	push_msg = "Test Notif - Dimas Ekky dan Andi Gilang Perbaiki Catatan..."
 	push_news_id = "3482"
-	push_next_activity = "com.peber_android.NewsDetails"
+	push_next_activity = "com.unware.peber_android.NewsDetails"
 
 	# Define app_id and secret
 	my_app_id = '562f91ef1779594f6f8b4568'

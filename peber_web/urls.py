@@ -35,6 +35,9 @@ urlpatterns = [
 	# ex: peber_web/language/en-gb
 	url(r'^language/(?P<language>[a-z\-]+)/$', views.language, name='language'),
 
+	# Hasil evaluasi intrinsic
+	url(r'^summary_eval/$', views.summary_eval, name='summary_eval'),
+
 	# Untuk autentikasi peber_ex (parent project)
 	url(r'^account/login/$', views.login, name='login'),
 	url(r'^account/auth/$', views.auth_view, name='auth_view'),

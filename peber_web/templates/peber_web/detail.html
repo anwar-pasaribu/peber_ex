@@ -12,8 +12,30 @@
             <div class="media-body">
                 <h3 class="media-heading">{{ news_data.news_title|truncatewords:200 }}</h3>
                 {{ news_data.news_corp }} <span class="news_pub_date">{{ news_data.news_pub_date }}</span>
+                <hr>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th>F-Score</th><th>Precision</th><th>Recall</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>{{ news_data.f_score }}</td><td>{{ news_data.precision }}</td><td>{{ news_data.recall }}</td>
+                    </tr>
+                    </tbody>
+                </table>
 
+                <hr>
+                <h4 class="text-muted">Summary Text Teaser</h4>
                 <p class="news_summary">{% autoescape off %}{{ news_data.news_summary }}{% endautoescape %}</p>
+
+                <hr>
+                <h4 class="text-muted">Summary Text Rank</h4>
+                <p class="news_summary">{% autoescape off %}{{ news_data.news_text_rank_summary }}{% endautoescape %}</p>
+
+                <hr>
+                <h4 class="text-muted">Original</h4>
                 <p class="news_content"><pre>{% autoescape off %}{{ news_data.news_content }}{% endautoescape %}</pre></p>
 
                 <h3>After formatted:</h3>

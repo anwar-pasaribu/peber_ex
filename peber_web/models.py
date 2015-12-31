@@ -1,7 +1,10 @@
-from django.db import models
+# coding=utf-8
 from time import time
 
+from django.db import models
 from django.contrib.auth.models import User
+
+from peber_web.function.news_extractors import format_news_content_texts
 
 
 # Method utk upload
@@ -21,15 +24,13 @@ class News_Source(models.Model):
 
 	def __str__(self):  # diperlukan utk debugging
 		return "{0}-{1}".format(
-			self.source_publisher, 
+			self.source_publisher,
 			self.source_category)
 
 	def __unicode__(self):  # Dari Mike Hibbert Pyhon 2
 		return "{0}-{1}".format(
-			self.source_publisher, 
+			self.source_publisher,
 			self.source_category)
-
-from peber_web.function.news_extractors import format_news_content_texts
 
 
 class News(models.Model):
@@ -38,6 +39,10 @@ class News(models.Model):
 	news_content = models.TextField()
 	news_corp = models.ForeignKey(News_Source, related_name='news_sources')  # ID sumber (Foreign key dari News_Source)
 	news_summary = models.TextField()
+	news_text_rank_summary = models.TextField(blank=True)
+	f_score = models.DecimalField(max_digits=7, decimal_places=6, default=0)
+	precision = models.DecimalField(max_digits=7, decimal_places=6, default=0)
+	recall = models.DecimalField(max_digits=7, decimal_places=6, default=0)
 	news_pub_date = models.DateTimeField()
 	news_image_hero = models.TextField()
 
@@ -59,13 +64,13 @@ class News(models.Model):
 
 class UserDesc(models.Model):
 	user = models.ForeignKey(User, related_name='userdescs')  # DRF Suggest
-	news_choices = models.ManyToManyField(News_Source)
+	news_choices = models.ManyToManyField(News_Source, blank=True)
 	bio = models.TextField(blank=True)
 	# Upload file by Mike Hibbert
 	profile_pict = models.ImageField(upload_to=get_upload_file_name, blank=True)
 
 	# Berita yang sudah dibaca (1 Des, 2015)
-	read_news = models.ManyToManyField(News)
+	read_news = models.ManyToManyField(News, blank=True)
 
 	def __unicode__(self):
 		return self.user.get_username()

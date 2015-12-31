@@ -23,11 +23,11 @@ class PeriodicTaskSerializer(serializers.ModelSerializer):
 # Testing utk DRF
 # Serializers define the API representation.
 class UserSerializer(serializers.ModelSerializer):
-	# userdescs = serializers.HyperlinkedRelatedField(queryset=UserDesc.objects.all(), view_name='userdesc-detail', many=True)
+	userdescs = serializers.PrimaryKeyRelatedField(queryset=UserDesc.objects.all(), many=True)
 
 	class Meta:
 		model = User
-		fields = ('id', 'username', 'email', 'first_name', 'last_name')
+		fields = ('id', 'username', 'password', 'email', 'first_name', 'last_name', 'userdescs')
 
 
 class NewsSourceSerializer(serializers.ModelSerializer):

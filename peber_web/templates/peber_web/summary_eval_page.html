@@ -1,14 +1,11 @@
 {% extends "peber_web/base.html" %}
 {% load staticfiles %}
 {% load humanize %}
+{% load l10n %}
 
 {# Judul Halaman #}
 {% block title %}
-    {% if current_ns %}
-        {{ current_ns }}
-    {% else %}
-        News Source
-    {% endif %}
+    News Evaluation Summary
 {% endblock %}
 
 {% block logged_user %}
@@ -28,13 +25,14 @@
                 All News
             </a>
         </li>
-        <li class="active">
+        <li >
             <a href="{% url 'peber_web:news_source_page' %}">
-                <span class="badge pull-right">{{ news_sources|length }}</span>
+                <span class="badge pull-right">{{ news_sources_size }}</span>
                 News Source
             </a>
         </li>
-        <li class="">
+
+        <li class="active">
             <a href="{% url 'peber_web:summary_eval' %}">
                 <span class="badge pull-right">000</span>
                 Evaluations
@@ -101,52 +99,20 @@
         </tbody>
         </table>
 
-        {% for news in news_data %}
-
-            <div class="media">
-                <a class="pull-left" href="{% url 'peber_web:detail' news.id %}" target="_new">
-                    <img class="media-object" src="{% comment %}{{ news.news_image_hero }}{% endcomment %}" alt="{{ news.id }}" title="{{ news.id }}" width="150">
-                </a>
-                <div class="media-body">
-                    <h3 class="media-heading">{{ news.news_title }}</h3>
-                    {{ news.news_corp }} <span class="news_pub_date">{{ news.news_pub_date }}</span>
-                     <table class="table">
-                        <thead>
-                        <tr>
-                            <th>F-Score</th><th>Precision</th><th>Recall</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td>{{ news.f_score }}</td><td>{{ news.precision }}</td><td>{{ news.recall }}</td>
-                        </tr>
-                        </tbody>
-                    </table>
-                    <a href="{{news.news_url}}" target="_blank" title="{{news.news_url}}">News URL</a>
-
-                    <p class="news_summary">Summary:<br />{% autoescape off %}{{ news.news_summary }}{% endautoescape %}</p>
-                    <p style="font-weight: bolder;">Original:<br />{{ news.news_content|truncatewords:100 }}</p>
-                    <p class="news_content">{% autoescape off %}{{ news.news_content_web_format|truncatewords:100 }}{% endautoescape %}</p>
-                </div>
-            </div>
-            <hr />
+        <table class="table table-bordered table-condensed table-hover">
+        <thead>
+        <tr>
+            <th>F-Score</th><th>Frekuensi</th><th>Persen</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for f_score in f_score_freqs %}
+            <tr>
+                <td>{{ f_score.f_score }}</td><td>{{ f_score.count }} berita</td><td>{{ f_score.percent|unlocalize  }}</td>
+            </tr>
         {% endfor %}
-
-    {% else %}
-        {% if news_count %}
-
-        <div class="list-group">
-            {% for i in news_count %}
-
-                  <a href="{% url 'peber_web:news_category' i.ns_id %}" class="list-group-item" target="_new">
-                    <span class="badge">{{i.news_num}}</span>
-                    <strong>{{i.ns_id}}</strong>: {{i.source_name}} <br />
-                  </a>
-                Feed: <a href="{{i.source_url}}" title="{{i.source_name}}">{{ i.source_url }}</a>
-
-            {% endfor %}
-        </div>
-        {% endif %}
+        </tbody>
+        </table>
 
     {% endif %}
 

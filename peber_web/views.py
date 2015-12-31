@@ -14,6 +14,9 @@ from django.shortcuts import render_to_response
 from django.contrib import auth
 from django.core.context_processors import csrf
 
+# Cek password plain dengan yg sudah di encode
+from django.contrib.auth.hashers import check_password
+
 # Modul untuk keperluan merging querysets
 from django.db.models import Q
 from functools import reduce
@@ -173,6 +176,35 @@ def news_source_page(request):
 
 	return render(request, 'peber_web/news_source_page.html', context)
 
+
+from django.db.models import Count
+# Halaman evaluasi
+def summary_eval(request):
+	# Total News Source
+	news_sources_size = News_Source.objects.all().count()
+	# Total found news
+	total_news_number = News.objects.all().count()
+	# Freq masing-masing skor (qs: Query Set)
+	f_score_freqs_qs = News.objects.values('f_score').annotate(count=Count('f_score')).order_by('-f_score')
+
+	# Masukkan QS ke List untuk bisa edit
+	f_score_freqs_list = []
+	for item in f_score_freqs_qs:
+		f_score_freqs_list.append(item)
+
+	for item in f_score_freqs_list:
+		item['percent'] = '%.2f' % (( item['count'] / float(total_news_number) ) * 100)
+
+
+	news_eval_data = News.objects.order_by('-f_score').distinct('f_score')
+
+	context = {
+		'news_sources_size': news_sources_size,
+		'all_news_size': total_news_number,
+		'news_data': news_eval_data,
+		'f_score_freqs': f_score_freqs_list
+	}
+	return render(request, 'peber_web/summary_eval_page.html', context)
 
 # Register user
 def login(request):
@@ -464,12 +496,38 @@ class NewsViewSet(viewsets.ModelViewSet):
 
 
 # Admin User
-class UserViewSet(viewsets.ReadOnlyModelViewSet):
+class UserViewSet(viewsets.ModelViewSet):
 	"""
 	API untuk Django Model User
 	"""
-	queryset = User.objects.all()
+	# queryset = User.objects.all()
 	serializer_class = UserSerializer
+
+	def get_queryset(self):
+		queryset = User.objects.filter(username='null')
+
+		data = self.request.query_params
+		username = data.get('username', None)
+		password = data.get('password', None)
+
+		# Dapatkan data berdasarkan username
+		if username is not None and password is not None:			
+			if User.objects.filter(username=username).exists():  # Jika data ada
+				usr = User.objects.get(username=username)  # Ambil data user
+
+				# Check plain text with encoded similarity
+				if check_password(password, usr.password):
+					# Kembailkan data User Desc jika berhasil
+					queryset = User.objects.filter(username=username)
+					return queryset
+				else:
+					queryset = User.objects.filter(username='null', password='null')
+					
+			else:
+				# Kembalikan dumb data tanda tidak ada user
+				queryset = User.objects.filter(username='null', password='null')
+
+		return queryset
 
 
 # User Desc

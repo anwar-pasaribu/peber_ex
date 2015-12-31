@@ -3,18 +3,23 @@
 from dateutil.parser import parse
 
 # Model
+from sumy.nlp.tokenizers import Tokenizer
+from sumy.parsers.plaintext import PlaintextParser
 from ..models import News, News_Source
 
 # Ekstrak info from
 from news_extractors import NewsExtractor
 
 # Import algoritma peringkas
-from peber_web.algorithms.textteaser import TextTeaser
+from peber_web.algorithms.peber_summarizer import PeberSummarizer
+from sumy.evaluation.coselection import f_score
+from sumy.evaluation.coselection import precision
+from sumy.evaluation.coselection import recall
 
 
 class DatabaseAccess(object):
 	def __init__(self):
-		pass
+		self.language = "english"
 
 	def insert_news_data(self, data):
 		"""
@@ -26,6 +31,7 @@ class DatabaseAccess(object):
 		feed_data_length = len(data.entries)
 		extracted_feed = 0
 
+		# Jika berhasil ambil dar RSS Fedd
 		for post in data.entries:
 
 			# Deklarasi var untuk data berita.
@@ -34,11 +40,12 @@ class DatabaseAccess(object):
 			news_content = ""
 			# news_corp = None
 			news_summary = "N/A"
+			news_text_rank_summary = ""
+			val_f_score = 0
+			val_precision = 0
+			val_recall = 0
 			news_pub_date = parse(post.published)
 			news_image_hero = ""
-
-			# Hapus JPNN.com 
-			news_title = news_title.replace('-JPNN.com', '')
 
 			# Cek jika URL merupakan link untuk foto galeri.
 			# Kasus untuk URL Foto Galeri Detik.com. (2 Des)
@@ -54,18 +61,28 @@ class DatabaseAccess(object):
 				news_content = g.get_news_content()
 				news_image_hero = g.get_news_image_hero()
 
-				# News Summary dengan Text Teaser 
+				# News Summary dengan Text Teaser dan Text Rank
 				# Jika konten berita tidak None
 				if news_content is not None:
-					text_teaser = TextTeaser()
-					sentences = text_teaser.summarize(news_title, news_content)
+					peber_summ = PeberSummarizer(news_content)
+					news_summary = peber_summ.text_teaser_summarizer(news_title)
+					news_text_rank_summary = peber_summ.text_rank_summarizer()
 
-					# Kalimat hasil ringkasan dipisahkan \n
-					summarized = ""
-					for text in sentences:
-						summarized += '{0}\n'.format(text)
+					# Mulai Menghitung F/P/R
+					reference_summary = news_text_rank_summary
+					evaluated_summ = news_summary
 
-					news_summary = summarized
+					# Menghitung score
+					reference_document = PlaintextParser.from_string(reference_summary, Tokenizer(self.language))
+					reference_sentences = reference_document.document.sentences
+
+					evaluated_doc = PlaintextParser.from_string(evaluated_summ, Tokenizer(self.language))
+					evaluated_sent = evaluated_doc.document.sentences
+
+					val_f_score = f_score(evaluated_sent, reference_sentences)
+					val_precision = precision(evaluated_sent, reference_sentences)
+					val_recall = recall(evaluated_sent, reference_sentences)
+
 					print("Meringkas: %s selesai." % news_title)
 
 			# Periksa apakah data sudah ada, jika ada tidak jadi simpan data lagi.
@@ -77,6 +94,10 @@ class DatabaseAccess(object):
 					news_title=news_title,
 					news_content=news_content,
 					news_summary=news_summary,
+					news_text_rank_summary=news_text_rank_summary,
+					f_score=val_f_score,
+					precision=val_precision,
+					recall=val_recall,
 					news_pub_date=news_pub_date,
 					news_image_hero=news_image_hero
 				)
@@ -96,6 +117,58 @@ class DatabaseAccess(object):
 				print("Berita sudah ada atau teks (None). Judul: %s" % news_title)
 
 		return new_data_count
+
+	def insert_news_to_db(self, news_data):
+
+		# Deklarasi var untuk data berita.
+		news_url = news_data['news_url']
+		news_title = news_data['news_title']
+		news_content = news_data['news_content']
+		news_corp = news_data['news_corp']
+		news_pub_date = news_data['news_pub_date']
+		news_image_hero = news_data['news_image_hero']
+
+		peber_summ = PeberSummarizer(news_content)
+		news_summary = peber_summ.text_teaser_summarizer(news_title)
+		news_text_rank_summary = peber_summ.text_rank_summarizer()
+
+		# Mulai Menghitung F/P/R
+		reference_summary = news_text_rank_summary
+		evaluated_summ = news_summary
+
+		# Menghitung score
+		reference_document = PlaintextParser.from_string(reference_summary, Tokenizer(self.language))
+		reference_sentences = reference_document.document.sentences
+
+		evaluated_doc = PlaintextParser.from_string(evaluated_summ, Tokenizer(self.language))
+		evaluated_sent = evaluated_doc.document.sentences
+
+		val_f_score = f_score(evaluated_sent, reference_sentences)
+		val_precision = precision(evaluated_sent, reference_sentences)
+		val_recall = recall(evaluated_sent, reference_sentences)
+
+		new_news = News(
+			news_url=news_url,
+			news_title=news_title,
+			news_content=news_content,
+			news_summary=news_summary,
+			news_text_rank_summary=news_text_rank_summary,
+			f_score=val_f_score,
+			precision=val_precision,
+			recall=val_recall,
+			news_pub_date=news_pub_date,
+			news_image_hero=news_image_hero
+		)
+
+		new_news.news_corp_id = news_corp  # Menentukan publisher
+		new_news.save()  # Menyimpan data berita
+
+		# Jika id yg dikembalikan tidak 0
+		# berarti penyimpanan berhasil
+		if new_news.id is not 0:
+			return new_news.id
+		else:
+			return 0
 
 	def get_all_news_source(self):
 		return News_Source.objects.all()

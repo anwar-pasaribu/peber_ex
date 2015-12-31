@@ -4,6 +4,150 @@
 		"selected_items":
 		[
 			[
+				"lipu",
+				"liputan6_data〔variable〕"
+			],
+			[
+				"liputan",
+				"liputan6_content_soup〔variable〕"
+			],
+			[
+				"url",
+				"url〔variable〕"
+			],
+			[
+				"ur",
+				"url〔variable〕"
+			],
+			[
+				"fin",
+				"find_all('a"
+			],
+			[
+				"pagi",
+				"pagination_list_soup"
+			],
+			[
+				"liputa",
+				"liputan6"
+			],
+			[
+				"kom",
+				"kompas_data〔variable〕"
+			],
+			[
+				"kompas",
+				"kompas_text_soup〔variable〕"
+			],
+			[
+				"url_",
+				"url_href〔variable〕"
+			],
+			[
+				"get",
+				"get_text"
+			],
+			[
+				"komp",
+				"kompas_text"
+			],
+			[
+				"F",
+				"False"
+			],
+			[
+				"artcl",
+				"article_soup〔variable〕"
+			],
+			[
+				"to",
+				"total_news_number"
+			],
+			[
+				"f_sco",
+				"f_score_freqs_qs"
+			],
+			[
+				"un",
+				"unwrap"
+			],
+			[
+				"tag",
+				"tag_to_del〔variable〕"
+			],
+			[
+				"pr",
+				"prettify"
+			],
+			[
+				"ne",
+				"next_url〔variable〕"
+			],
+			[
+				"art",
+				"article_soup"
+			],
+			[
+				"page",
+				"paged"
+			],
+			[
+				"url_news",
+				"url_news_id〔variable〕"
+			],
+			[
+				"next",
+				"next_soup〔variable〕"
+			],
+			[
+				"str",
+				"strong"
+			],
+			[
+				"find",
+				"find_all(\"span"
+			],
+			[
+				"test",
+				"test_soup〔variable〕"
+			],
+			[
+				"detik",
+				"detik_soup_texts〔variable〕"
+			],
+			[
+				"user",
+				"username〔variable〕"
+			],
+			[
+				"query",
+				"queryset"
+			],
+			[
+				"ch",
+				"check_password〔module〕"
+			],
+			[
+				"cont",
+				"contrib〔module〕"
+			],
+			[
+				"keyword",
+				"keywordList"
+			],
+			[
+				"wor",
+				"words"
+			],
+			[
+				"secne",
+				"sentences"
+			],
+			[
+				"sente",
+				"sentences"
+			],
+			[
 				"f",
 				"extracted_feed〔variable〕"
 			],
@@ -50,10 +194,6 @@
 			[
 				"ca",
 				"categories〔variable〕"
-			],
-			[
-				"query",
-				"queryset〔variable〕"
 			],
 			[
 				"qu",
@@ -114,10 +254,6 @@
 			[
 				"te",
 				"texts〔argument〕"
-			],
-			[
-				"detik",
-				"detik_soup_texts〔variable〕"
 			],
 			[
 				"deti",
@@ -188,10 +324,6 @@
 				"UserAdmin"
 			],
 			[
-				"ne",
-				"news_pub_date"
-			],
-			[
 				"fo",
 				"format"
 			],
@@ -213,10 +345,6 @@
 			],
 			[
 				"use",
-				"username"
-			],
-			[
-				"user",
 				"username"
 			],
 			[
@@ -324,10 +452,6 @@
 				"multiprocessing"
 			],
 			[
-				"test",
-				"test_without_barrier"
-			],
-			[
 				"test_",
 				"test_with_barrier"
 			],
@@ -356,20 +480,8 @@
 				"process_with_name"
 			],
 			[
-				"ur",
-				"url_sources"
-			],
-			[
-				"get",
-				"get_feed1"
-			],
-			[
 				"re",
 				"request_data"
-			],
-			[
-				"url",
-				"url_source"
 			],
 			[
 				"pat",
@@ -402,87 +514,32 @@
 			[
 				"ng-cl",
 				"ng-click	AngularJS"
-			],
-			[
-				"p",
-				"put	AngularJS"
-			],
-			[
-				"g",
-				"get	AngularJS"
-			],
-			[
-				"tota",
-				"totalCart"
-			],
-			[
-				"le",
-				"length"
-			],
-			[
-				"for",
-				"for	for (…) {…}"
-			],
-			[
-				"li",
-				"li	Tag"
-			],
-			[
-				"u",
-				"ul	Tag"
-			],
-			[
-				"song",
-				"Song"
-			],
-			[
-				"pr",
-				"price"
-			],
-			[
-				"item",
-				"items"
-			],
-			[
-				"bac",
-				"background-image"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "peber_web/algorithms/textteaser/summarizer.py",
+			"file": "peber_web/function/database_access.py",
 			"settings":
 			{
-				"buffer_size": 4491,
+				"buffer_size": 5620,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "peber_web/algorithms/textteaser/parser.py",
+			"file": "peber_web/function/paginating_news.py",
 			"settings":
 			{
-				"buffer_size": 3628,
+				"buffer_size": 9118,
 				"line_ending": "Windows"
-			}
-		},
-		{
-			"contents": "Package Control Messages\n========================\n\nAnaconda\n--------\n\n  # Anaconda\n  Anaconda turns your Sublime Text 3 into a full featured Python IDE. Read the plugin documentation on [http://damnwidget.github.io/anaconda](http://damnwidget.github.io/anaconda).\n  \n  [![Book Status](https://www.gitbook.io/button/status/book/damnwidget/anacondast3-developers-documentation)](https://www.gitbook.io/book/damnwidget/anacondast3-developers-documentation/activity)\n  \n  ## Getting Started\n  Anaconda works out of the box but there are multitude of options and features that you can tune and adapt to your own style or needs.\n  \n  * [Autocompletion on dot](http://damnwidget.github.io/anaconda/IDE/#toc_3)\n  * [Powerful IDE](http://damnwidget.github.io/anaconda/IDE/)\n  * [Advanced Configuration](http://damnwidget.github.io/anaconda/anaconda_settings/)\n  * [Run Tests using Anaconda](http://damnwidget.github.io/anaconda/tests_runner/)\n  * [Linting theme customization](http://damnwidget.github.io/anaconda/IDE/#toc_50)\n  * [Using Vagrant Environments](http://damnwidget.github.io/anaconda/vagrant/)\n  \n  ## License\n  This program is distributed under the terms of the GNU GPL v3. See the [LICENSE][license] file for more details.\n  \n  ## Tooltips\n  anaconda officially supports user themeable tooltips and displaying advanced signatures. This is how it looks in a dark theme:\n  \n  ![Tooltips Image][tooltips-dark-image]\n  \n  **Note**: This feature is enabled for users of Sublime Text 3 build 3070 or superior only.\n  \n  ## Troubleshooting\n  This section lists some common issues faced by users, along with workarounds.\n  \n  #### Anaconda does not appear in the Available Packages list on Package Control.\n  \n  **Work-around**: You have to update your Package Control version to the version 2.0 or better.\n  \n  #### Errors in the console about \"the file can't be open\" in worker.py file.\n  Your Sublime Text can't find the interpreter that you set in your configuration, by default, anaconda sets this as `python` so it will get your configured Python interpreter in your PATH (if any).\n  \n  **Work-around**: Add a Python interpreter (named `python`) to your PATH or set a right full path to your python interpreter as parameter of `python_interpreter` settings option, for example `/usr/local/bin/python3.4`.\n  \n  #### Auto-complete for import behaves badly.\n  Sublime Text 3's default Python package cancels the auto-completion when some words are detected (for example `def` or `class`). This list of words includes `import`.\n  \n  **Work-around**: Create a new Python directory in your Packages directory and copy the contents of the file [Completion Rules.tmPreferences][Completion-Rules] there with the same name.\n  Delete your Sublime Text Cache file `Cache/Python/Completion Rules.tmPreferences.cache`.\n  \n  **NOTE**: The cache path can be optained from the Sublime TExt 3 console using the code `sublime.cache_path()`\n  \n  #### Auto-complete drop-down shows up incorrectly.\n  SublimeCodeIntel interferes with anaconda's auto-completion.\n  \n  **Work-around**: Consider disabling SublimeCodeIntel for Python views or disabling/removing it completely when using anaconda.\n  \n  ## Contributing to Anaconda\n  There are several ways to contribute with anaconda.\n  \n  > Note: A [Developers Documentation book][dev-docs] is maintained up to date with the latest information about anaconda's internals and useful information about how to contribute to the project.\n  \n  ### Feedback\n  Giving feedback about the plugin and how it works in your platform, helps make the plugin better.\n  \n  ### Bug Hunting\n  Did you found a bug and you know how to fix it? First of all, Thank you very much. You just have to report the bug as a new issue, fork the repository, make your changes and send a new pull request.\n  \n  ### Suggesting and Implementing Features\n  So you thought of a new killer feature to implement in Anaconda? Great! Open an issue for it and and we will discuss it with you.\n  \n  ### Donations\n  Please donate to help keep this project alive.\n  \n  [![PayPal][paypal-donate-image]][paypal-donate-link]\n  [![Flatter][flatter-image]][flatter-link]\n  \n  [license]: https://raw.githubusercontent.com/DamnWidget/anaconda/master/LICENSE\n  [Completion-Rules]: https://raw.githubusercontent.com/DamnWidget/anaconda/master/Completion%20Rules.tmPreferences\n  [dev-docs]: http://damnwidget.gitbooks.io/anacondast3-developers-documentation/\n  [paypal-donate-image]: https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif\n  [paypal-donate-link]: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=KP7PAHR962UGG&lc=US&currency_code=EUR&bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHosted\n  [flatter-image]: https://api.flattr.com/button/flattr-badge-large.png\n  [flatter-link]: http://flattr.com/thing/1765332/DamnWidgetanaconda-on-GitHub\n  [tooltips-dark-image]: http://damnwidget.github.io/anaconda/img/tooltips.png\n",
-			"settings":
-			{
-				"buffer_size": 4927,
-				"line_ending": "Windows",
-				"name": "Package Control Messages",
-				"read_only": true,
-				"scratch": true
 			}
 		},
 		{
 			"file": "peber_web/function/news_extractors.py",
 			"settings":
 			{
-				"buffer_size": 8101,
+				"buffer_size": 8900,
 				"line_ending": "Windows"
 			}
 		}
@@ -550,27 +607,35 @@
 	},
 	"file_history":
 	[
+		"/D/python-project/django/peber_ex/peber_web/function/text_paged_news.py",
+		"/D/python-project/django/peber_ex/peber_web/templates/peber_web/summary_eval_page.html",
+		"/D/python-project/django/peber_ex/peber_web/serializers.py",
+		"/D/python-project/django/peber_ex/peber_web/views.py",
+		"/D/python-project/django/peber_ex/peber_ex/urls.py",
+		"/D/python-project/django/peber_ex/peber_ex/settings.py",
+		"/D/python-project/django/peber_ex/peber_web/models.py",
+		"/D/python-project/django/peber_ex/peber_web/function/news_extractors.py",
+		"/D/python-project/django/peber_ex/peber_web/tasks.py",
+		"/D/python-project/django/peber_ex/peber_web/function/database_access.py",
+		"/D/python-project/django/peber_ex/peber_web/algorithms/peber_summarizer.py",
+		"/D/python-project/django/peber_ex/peber_web/algorithms/textteaser/__init__.py",
+		"/D/python-project/django/peber_ex/peber_web/algorithms/textteaser/summarizer.py",
+		"/D/python-project/django/peber_ex/peber_web/algorithms/textteaser/parser.py",
+		"/D/python-project/django/peber_ex/peber_web/algorithms/test_text_teaser.py",
+		"/D/python-project/django/peber_ex/peber_web/static/peber_web/css/style.css",
+		"/D/python-project/django/peber_ex/peber_web/function/test.html",
+		"/D/python-project/django/peber_ex/peber_web/function/timing.py",
+		"/D/python-project/django/peber_ex/peber_web/pebahasa/summary.py",
 		"/C/Users/Anwar Pasaribu/AppData/Roaming/Sublime Text 3/Packages/Anaconda/Anaconda.sublime-settings",
 		"/C/Users/Anwar Pasaribu/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 		"/C/Users/Anwar Pasaribu/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
 		"/C/Users/Anwar Pasaribu/AppData/Roaming/Sublime Text 3/Packages/User/Package Control.sublime-settings",
-		"/D/python-project/django/peber_ex/peber_web/models.py",
-		"/D/python-project/django/peber_ex/peber_web/serializers.py",
-		"/D/python-project/django/peber_ex/peber_web/views.py",
-		"/D/python-project/django/peber_ex/peber_ex/urls.py",
-		"/D/python-project/django/peber_ex/peber_web/function/news_extractors.py",
-		"/D/python-project/django/peber_ex/peber_web/function/database_access.py",
 		"/D/python-project/django/peber_ex/peber_web/function/test_text_teaser.py",
 		"/D/Data Center/Desktop/Test Text Teaser Sebelum Indentation di SBS.txt",
-		"/D/python-project/django/peber_ex/peber_web/tasks.py",
-		"/D/python-project/django/peber_ex/peber_ex/settings.py",
 		"/D/python-project/django/peber_ex/peber_web/urls.py",
 		"/D/Data Center/Desktop/Error KeyError Exception.txt",
-		"/D/python-project/django/peber_ex/peber_web/algorithms/textteaser/parser.py",
 		"/D/Learn/Python/latihan/lat_nltk/indonesia-nlp-dataset/indonesian-nlp-datasets/utils/tokenizer.py",
 		"/D/python-project/django/peber_ex/peber_web/templates/peber_web/index.html",
-		"/D/python-project/django/peber_ex/peber_web/static/peber_web/css/style.css",
-		"/D/python-project/django/peber_ex/peber_web/algorithms/peber_summarizer.py",
 		"/D/Data Center/Desktop/Django Pytest/conftest.py",
 		"/D/python-project/django/peber_ex/27Nop - Copy.json",
 		"/D/Learn/Python/Python Library/REST Framework/rest-framework-tutorial-master/tutorial/urls.py",
@@ -669,19 +734,11 @@
 		"/D/Learn/Angular JS/Exercise/lat5_list-tables-repeat.html",
 		"/D/Learn/Angular JS/Exercise/lat6_show-hide.html",
 		"/D/Learn/Angular JS/Exercise/lat2_shopcart.html",
-		"/D/Learn/Angular JS/Exercise/lat7_watch-model-changes.html",
-		"/D/Learn/Angular JS/Exercise/lat4_ng-submit.html",
-		"/D/Learn/Angular JS/Exercise/lat4_list-tables-repeat.html",
-		"/D/Learn/Angular JS/Exercise/lat3_ng-appName.html",
-		"/D/Learn/Angular JS/Exercise/cotroller.js",
-		"/D/Learn/Ionic/exercises/lat_kombur_medan/www/index.html",
-		"/D/Learn/Ionic/exercises/lat_kombur_medan/scss/ionic.app.scss",
-		"/D/Learn/Ionic/exercises/lat_kombur_medan/www/css/style.css",
-		"/D/Learn/Ionic/exercises/lat_kombur_medan/www/js/controllers.js"
+		"/D/Learn/Angular JS/Exercise/lat7_watch-model-changes.html"
 	],
 	"find":
 	{
-		"height": 38.0
+		"height": 21.0
 	},
 	"find_in_files":
 	{
@@ -695,6 +752,16 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"detik_soup",
+			"goose_instance",
+			"test_soup",
+			"else:\n		print \"index: %d is %s.\" % (i, tag.name)",
+			"class",
+			"unwrap",
+			"strong",
+			"urlparse",
+			"s",
+			"categories",
 			"			:",
 			"from",
 			")\n",
@@ -734,24 +801,24 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "peber_web/algorithms/textteaser/summarizer.py",
+					"file": "peber_web/function/database_access.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4491,
+						"buffer_size": 5620,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1718,
-								1718
+								1995,
+								1995
 							]
 						],
 						"settings":
@@ -761,26 +828,26 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 728.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "peber_web/algorithms/textteaser/parser.py",
+					"file": "peber_web/function/paginating_news.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3628,
+						"buffer_size": 9118,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1901,
-								1901
+								7298,
+								7318
 							]
 						],
 						"settings":
@@ -789,69 +856,42 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 337.0,
+						"translation.y": 3304.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
-				},
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
 				{
 					"buffer": 2,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4927,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1489,
-								1489
-							]
-						],
-						"settings":
-						{
-							"auto_indent": false,
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"tab_width": 2,
-							"word_wrap": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 135.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
 					"file": "peber_web/function/news_extractors.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 8101,
+						"buffer_size": 8900,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								212,
-								212
+								1244,
+								1244
 							]
 						],
 						"settings":
 						{
 							"auto_complete": false,
-							"rulers":
-							[
-								70
-							],
 							"syntax": "Packages/Python/Python.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 2.0,
+						"translation.y": 168.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -861,7 +901,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 30.0
+		"height": 21.0
 	},
 	"input":
 	{
@@ -876,11 +916,18 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.841874084919,
 			1.0
 		],
 		"rows":
@@ -897,7 +944,7 @@
 	"project": "Peber Sublime Project.sublime-project",
 	"replace":
 	{
-		"height": 56.0
+		"height": 38.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -906,24 +953,92 @@
 		"selected_items":
 		[
 			[
+				"pag",
+				"peber_web\\function\\paginating_news.py"
+			],
+			[
+				"data",
+				"peber_web\\function\\database_access.py"
+			],
+			[
+				"news_ex",
+				"peber_web\\function\\news_extractors.py"
+			],
+			[
+				"pa",
+				"peber_web\\function\\text_paged_news.py"
+			],
+			[
+				"summary_eval_page",
+				"peber_web\\templates\\peber_web\\summary_eval_page.html"
+			],
+			[
+				"views",
+				"peber_web\\views.py"
+			],
+			[
+				"model",
+				"peber_web\\models.py"
+			],
+			[
 				"news",
 				"peber_web\\function\\news_extractors.py"
 			],
 			[
-				"task",
+				"style",
+				"peber_web\\static\\peber_web\\css\\style.css"
+			],
+			[
+				"test_te",
+				"peber_web\\algorithms\\test_text_teaser.py"
+			],
+			[
+				"su",
+				"peber_web\\algorithms\\peber_summarizer.py"
+			],
+			[
+				"tasks",
 				"peber_web\\tasks.py"
+			],
+			[
+				"models",
+				"peber_web\\models.py"
 			],
 			[
 				"sett",
 				"peber_ex\\settings.py"
 			],
 			[
-				"test",
-				"peber_web\\function\\test_text_teaser.py"
+				"urls",
+				"peber_ex\\urls.py"
+			],
+			[
+				"view",
+				"peber_web\\views.py"
+			],
+			[
+				"seria",
+				"peber_web\\serializers.py"
 			],
 			[
 				"summa",
-				"D:\\python-project\\django\\peber_ex\\peber_web\\algorithms\\textteaser\\summarizer.py"
+				"peber_web\\pebahasa\\summary.py"
+			],
+			[
+				"test_text",
+				"peber_web\\algorithms\\test_text_teaser.py"
+			],
+			[
+				"database",
+				"peber_web\\function\\database_access.py"
+			],
+			[
+				"task",
+				"peber_web\\tasks.py"
+			],
+			[
+				"test",
+				"peber_web\\function\\test_text_teaser.py"
 			],
 			[
 				"test_",
@@ -932,22 +1047,6 @@
 			[
 				"parser",
 				"peber_web\\algorithms\\textteaser\\parser.py"
-			],
-			[
-				"view",
-				"peber_web\\views.py"
-			],
-			[
-				"urls",
-				"peber_web\\urls.py"
-			],
-			[
-				"tasks",
-				"peber_web\\tasks.py"
-			],
-			[
-				"news_ex",
-				"peber_web\\function\\news_extractors.py"
 			],
 			[
 				"sty",
@@ -966,28 +1065,12 @@
 				"peber_web\\algorithms\\peber_summarizer.py"
 			],
 			[
-				"data",
-				"peber_web\\function\\database_access.py"
-			],
-			[
 				"vie",
-				"peber_web\\views.py"
-			],
-			[
-				"model",
-				"peber_web\\models.py"
-			],
-			[
-				"views",
 				"peber_web\\views.py"
 			],
 			[
 				"seri",
 				"peber_web\\serializers.py"
-			],
-			[
-				"models",
-				"peber_web\\models.py"
 			],
 			[
 				"inde",
@@ -1050,19 +1133,19 @@
 	},
 	"select_symbol":
 	{
-		"height": 0.0,
+		"height": 392.0,
 		"selected_items":
 		[
 		],
-		"width": 0.0
+		"width": 392.0
 	},
 	"settings":
 	{
 	},
-	"show_minimap": true,
+	"show_minimap": false,
 	"show_open_files": false,
 	"show_tabs": true,
-	"side_bar_visible": true,
+	"side_bar_visible": false,
 	"side_bar_width": 208.0,
 	"status_bar_visible": true,
 	"template_settings":
