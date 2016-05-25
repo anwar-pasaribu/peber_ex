@@ -41,13 +41,12 @@ SECRET_KEY = '&(+2vh#86s43xvr9n+#$h^*&#b!*e40$(46)nd$s(8h@&2g@a1'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost', '192.168.56.1', '192.168.1.102', '192.168.1.101']
-
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
 
 # Application definition
 
 INSTALLED_APPS = (
-	'flat',
+	'flat',  # Tema halaman admin
 	'django.contrib.admin',  # Keperluan peber_web/admin.py
 	'django.contrib.auth',
 	'django.contrib.contenttypes',
@@ -115,16 +114,16 @@ REST_FRAMEWORK = {
 # https://docs.djangoproject.com/en/1.8/ref/settings/#databases
 
 # MySQL Database Setting
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.mysql',
-#         'NAME': 'peber',
-#         'USER': 'root',
-#         'PASSWORD': 'root',
-#         'HOST': 'localhost',
-#         'PORT': '3306',
-#     }
-# }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'peber',
+        'USER': 'root',
+        'PASSWORD': 'root',
+        'HOST': 'localhost',
+        'PORT': '3306',
+    }
+}
 
 # Database sementara pada SQLite
 # DATABASES = {
@@ -135,23 +134,23 @@ REST_FRAMEWORK = {
 # }
 
 # PostgreSQL database setting
-DATABASES = {
-	'default': {
-		'ENGINE': 'django.db.backends.postgresql_psycopg2',
-		# Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-		'NAME': 'peber',  # Or path to database file if using sqlite3.
-		# The following settings are not used with sqlite3:
-		'USER': 'root',
-		'PASSWORD': 'root',
-		'HOST': 'localhost',  # Empty for localhost through domain sockets or '127.0.0.1' for localhost through TCP.
-		'PORT': '5432',  # Set to empty string for default.
-	}
-}
+# DATABASES = {
+# 	'default': {
+# 		'ENGINE': 'django.db.backends.postgresql_psycopg2',
+# 		# Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
+# 		'NAME': 'peber',  # Or path to database file if using sqlite3.
+# 		# The following settings are not used with sqlite3:
+# 		'USER': 'root',
+# 		'PASSWORD': 'root',
+# 		'HOST': 'localhost',  # Empty for localhost through domain sockets or '127.0.0.1' for localhost through TCP.
+# 		'PORT': '5432',  # Set to empty string for default.
+# 	}
+# }
 
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.8/topics/i18n/
-
+# LANGUAGES = 'en'
 LANGUAGE_CODE = 'en-us'
 
 TIME_ZONE = 'UTC'

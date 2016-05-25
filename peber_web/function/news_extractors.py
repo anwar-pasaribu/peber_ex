@@ -33,18 +33,28 @@ class NewsExtractor(object):
 		# Special case (Detik Tekno)
 		self.detik_tekno_id = 20
 
-		goose_instance = Goose()
-		self.article = goose_instance.extract(url=url)
+		# Inisialisasi Python Goose dengan exception (Feb 9)
+		try:
+			goose_instance = Goose()
+			self.article = goose_instance.extract(url=url)
+		except IndexError as ie:
+			self.article = None
+			print("ERROR! URL tidak bisa diproses. URL:%s\nMessage:%s" % (url, ie))
 
 	def get_news_content(self):
 		"""
 		Memperoleh teks berita yang sudah di ekstrak
 		:return: String teks berita
 		"""
+		# Kasus URL tidak bisa diparse
+		if self.article is None:
+			return None
+
 		text_length = len(self.article.cleaned_text)
 		min_news_content = 500  # Peraturan teks berita harus besar minimum 500 huruf.
 
-		# Special case for detik.com
+		# Special case for detik.com, jika halaman berita bersambung
+		# akan di proses menggunakan fungsi get_paged_news_text()
 		detik_ids = [35, 34, 33, 32, 31, 30, 20]
 		if self.news_corp_id in detik_ids:
 			print("{detik} Data (%d of %d) get content, URL: %s" % (self.extracted_feed, self.feed_data_length, self.url))
@@ -55,29 +65,13 @@ class NewsExtractor(object):
 				news_contents = get_paged_news_text(self.url)
 				return format_news_content_texts(self.news_corp_id, news_contents['news_content'])
 
-		# Ambil data secara manual dengan BeautifulSoup utk detik tekno.
-		# DS - Detik Spesial
-		if self.news_corp_id is self.detik_tekno_id:
-			print("[|DS|] Data (%d of %d) get content, URL: %s" % (self.extracted_feed, self.feed_data_length, self.url))
-
-			detik_soup = BeautifulSoup(self.article.raw_html)
-			detik_soup_texts = detik_soup.find("div", {"class": "text_detail"})
-
-			if detik_soup_texts is not None:
-				# Tes banyak karakter dalam teks berita.
-				if len(detik_soup_texts.text) > min_news_content:
-					# Ambil teks dari soup dan hilangkan S:AUTHOR (paling bawah)
-					detik_soup_texts = detik_soup_texts.text.split('S:AUTHOR', 1)[0]
-					return format_news_content_texts(self.news_corp_id, detik_soup_texts)
-
 		# Teks dari Goose
 		if self.article.cleaned_text is not '' and text_length > min_news_content:
 			print('Data (%d of %d) Using Goose. URL: %s' % (self.extracted_feed, self.feed_data_length, self.url))
 			return format_news_content_texts(self.news_corp_id, self.article.cleaned_text)
-
 		# Teks dari Newspaper
 		else:
-			article = Article(url=self.url, language="id")  # CNN Edition diabaikan.
+			article = Article(url=self.url, language="id")
 			article.download()
 			article.parse()
 			self.news_top_image = article.top_image  # Simpan gambar berita jika parsing goose gagal
@@ -85,7 +79,7 @@ class NewsExtractor(object):
 			print('Data (%d of %d) Using Newspaper. URL: %s' % (self.extracted_feed, self.feed_data_length, self.url))
 
 			# Teks artikel harus > 500 karakter
-			if len(article.text) > min_news_content:
+			if article.text is not None and len(article.text) > min_news_content:
 				return format_news_content_texts(self.news_corp_id, article.text)
 			else:
 				# Kondisi terakhir, kembalikan None jika tidak ada kontent berita.
@@ -112,13 +106,6 @@ def format_news_content_texts(news_corp_id, texts, delimiter='\n\n'):  # Add two
 	:return: Teks berita dalam format unicode.
 	"""
 	detik_ids = [35, 34, 33, 32, 31, 30, 20]  # 33: Detik Health
-	tempo_co_ids = [7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]  # ID sumber berita tempo
-	antara_news_ids = [43, 44, 45, 46, 47, 48, 49, 50]  # ID ANTARA News
-	okezone_ids = [42, 41, 40, 39, 38, 37, 36, 19]
-	tribun_ids = [22]  # Tribun Mixed (All Category)
-	repulika_ids = [77]
-	metrotvnews_ids = [65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76]
-	jpnn_ids = [78, 79, 80, 81, 82, 83, 84]
 
 	# Hilangkan karakter non-ASCII (Stackoverflow)
 	# Teks yg sudah di encode("utf-8")
@@ -128,99 +115,22 @@ def format_news_content_texts(news_corp_id, texts, delimiter='\n\n'):  # Add two
 	# Ubah karakter hypen (em dan en) ke normal
 	my_texts = my_texts.replace(u'--', '-')
 
-	# Ubah setiap karakter titik setelahnya spasi.
-	my_texts = my_texts.replace(u'.', '. ')
-
 	# Proses awal untuk hilangkan caption foto atau "Baca Juga"
 	# Pecahkan string isi berita menjadi array
 	sentences = my_texts.split("\n")
 
-	# Hapus array yang bukan sebuah kalimat, lebih kecil dari 60 huruf
+	# Hapus array yang bukan sebuah kalimat, lebih kecil dari 10 huruf
 	# JPNN filter: 'BACA:' not in s and 'Foto:' not in s
-	data = [s for s in sentences if len(s) > 60 and 'BACA:' not in s and 'Foto:' not in s and 'FOTO' not in s]
+	data = [s for s in sentences if len(s) > 10 and 'BACA:' not in s and 'Foto:' not in s and 'FOTO' not in s]
 	my_texts = ""  # Buat lagi my_texts versi lebih bersih
 	for s in data:
 		my_texts = '%s%s\n' % (my_texts, s.strip())
 
-	# Tempo; dua kriteria pemotongan
-	if news_corp_id in tempo_co_ids:
-		texts_cut_1 = re.split(r'TEMPO.[A-Z, ]+-?', my_texts, 1)
-
-		if len(texts_cut_1) != 2:
-			texts_cut_2 = my_texts.split('KOMUNIKA', 1)
-			if len(texts_cut_2) == 2:
-				my_texts = texts_cut_2[1].split(r'-', 1)[1].strip()
-				my_texts = my_texts.rsplit("Baca juga:", 1)[0]  # Pecah lagi jika ada
-		elif len(texts_cut_1) == 2:
-			# Jika pemotongan pertama berhasil
-			texts_cut_2 = texts_cut_1[1].split(r'-', 1)
-			if len(texts_cut_2) == 2:
-				my_texts = texts_cut_2[1].strip()
-				my_texts = my_texts.rsplit("Baca juga:", 1)[0]  # Pecah lagi jika ada, index 0 akan selalu ada
-			else:
-				my_texts = texts_cut_1[0]
-
-	# Antara News
-	elif news_corp_id in antara_news_ids:
-		texts_cut_1 = re.split(r'ANTARA New[a-z]+\)? - ', my_texts, 1)  # re.split(" +", str1)
-		if len(texts_cut_1) == 2:
-			my_texts = texts_cut_1[1].rsplit('Editor:', 1)[0].strip()
-
-	# Tribun News (Mixed)
-	elif news_corp_id in tribun_ids:
-		texts_cut_1 = re.split(r'-', my_texts, 1)
-		if len(texts_cut_1) == 2:
-			my_texts = texts_cut_1[1].strip()
-
-	# Okezone
-	elif news_corp_id in okezone_ids:
-		texts_cut_1 = re.split(r'^[A-Z]{3,25} ?-? ?', my_texts, 1)  # Pisahkan dari "KOTA - " chars
-		if len(texts_cut_1) == 2:
-			texts_cut_2 = re.split(r'^[A-Z]{4,25} ?-? ?', texts_cut_1[1], 1)  # kasus NEW MEXICO
-			if len(texts_cut_2) == 2:
-				my_texts = texts_cut_2[1].strip()
-			else:
-				my_texts = texts_cut_1[1].strip()
-
-	# Detik.com  ##################IMPORTANT
-	elif news_corp_id in detik_ids:
-		# TODO Pola pemotongan berita
+	# TODO Pemotongan berita Detik.com
+	if news_corp_id in detik_ids:
 		texts_cut_1 = re.split(r'@@@', my_texts, 1)  # Belum tahu pola beritanya!
 		if len(texts_cut_1) == 2:
 			my_texts = texts_cut_1[1].strip()
-
-	# Republika.co.id
-	elif news_corp_id in repulika_ids:
-		texts_cut_1 = re.split(r'REPUBLIKA. ?CO. ?ID, ?[A-Z ]+ ?-? ?', my_texts, 1)  # Pisahkan REPUBLIKA.CO.ID, PARIS -
-		if len(texts_cut_1) == 2:
-			my_texts = texts_cut_1[1].strip()
-
-	# MetroTVNews.com
-	elif news_corp_id in metrotvnews_ids:
-		# Keriteria pemotongan pertama
-		texts_cut_1 = re.split(r'[0-9]+ ?wib?', my_texts, 1)  # 19:08 wib : <Teks mulai>
-		if len(texts_cut_1) == 2:
-			texts_cut_2 = re.split(r'^:', texts_cut_1[1].strip(), 1)  # Hilangkan :
-			if len(texts_cut_2) == 2:
-				my_texts = texts_cut_2[1].strip()
-			else:
-				my_texts = texts_cut_1[1].strip()
-		else:
-			# Keriteria pemotongan kedua
-			# Kata yang dimulai dengan "Metrotvnews..:"
-			texts_cut_3 = re.split(r'Metrotvnews[a-zA-Z., ]+:?', my_texts, 1)
-			if len(texts_cut_3) == 2:
-				my_texts = texts_cut_3[1].strip()
-
-	# JPNN News
-	elif news_corp_id in jpnn_ids:
-		texts_cut_1 = re.split(r'^[A-Za-z. ]{3,25} ?- ?', my_texts, 1)  # Pisahkan dari "KOTA - " chars
-		if len(texts_cut_1) == 2:
-			texts_cut_2 = texts_cut_1[1].rsplit('(', 1)  # Potong lagi dengan inisial penulis.
-			if len(texts_cut_2) == 2:
-				my_texts = texts_cut_2[0].strip()
-			else:
-				my_texts = texts_cut_1[1].strip()
 
 	# Post Proses format teks
 	# Pecahkan string isi berita menjadi array
@@ -237,5 +147,5 @@ def format_news_content_texts(news_corp_id, texts, delimiter='\n\n'):  # Add two
 			# tambah string delimiter pada setiap akhir string
 			teks = '{0}{1}{2}'.format(teks, data[i].strip(), delimiter)
 
-	print("Selesai ekstrak teks id: %d" % news_corp_id)
+	# print("Selesai ekstrak teks id: %d" % news_corp_id)
 	return u'{0}'.format(teks)

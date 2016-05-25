@@ -4,7 +4,140 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc67a636-e38d-4430-b314-d2c1203c9fc8" name="Default" comment="" />
+    <list default="true" id="cc67a636-e38d-4430-b314-d2c1203c9fc8" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/peber_web/static/peber_web/favicon.ico" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/anwar.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vagrant.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/peber_web/algorithms/sumy/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/peber_web/algorithms/sumy/__main__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/peber_web/algorithms/sumy/_compat.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/peber_web/algorithms/sumy/data/stopwords/czech.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/peber_web/algorithms/sumy/data/stopwords/english.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/peber_web/algorithms/sumy/data/stopwords/french.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/peber_web/algorithms/sumy/data/stopwords/german.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/peber_web/algorithms/sumy/data/stopwords/indonesia.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/peber_web/algorithms/sumy/data/stopwords/slovak.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/peber_web/algorithms/sumy/evaluation/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/peber_web/algorithms/sumy/evaluation/__main__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/peber_web/algorithms/sumy/evaluation/content_based.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/peber_web/algorithms/sumy/evaluation/coselection.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/peber_web/algorithms/sumy/models/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/peber_web/algorithms/sumy/models/dom/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/peber_web/algorithms/sumy/models/dom/_document.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/peber_web/algorithms/sumy/models/dom/_paragraph.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/peber_web/algorithms/sumy/models/dom/_sentence.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/peber_web/algorithms/sumy/models/tf.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/peber_web/algorithms/sumy/nlp/stemmers/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/peber_web/algorithms/sumy/nlp/stemmers/czech.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/peber_web/algorithms/sumy/nlp/tokenizers.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/peber_web/algorithms/sumy/parsers/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/peber_web/algorithms/sumy/parsers/html.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/peber_web/algorithms/sumy/parsers/parser.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/peber_web/algorithms/sumy/parsers/plaintext.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/peber_web/algorithms/sumy/parsers/summec.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/peber_web/algorithms/sumy/summarizers/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/peber_web/algorithms/sumy/summarizers/_summarizer.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/peber_web/algorithms/sumy/summarizers/edmundson.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/peber_web/algorithms/sumy/summarizers/edmundson_cue.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/peber_web/algorithms/sumy/summarizers/edmundson_key.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/peber_web/algorithms/sumy/summarizers/edmundson_location.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/peber_web/algorithms/sumy/summarizers/edmundson_title.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/peber_web/algorithms/sumy/summarizers/lex_rank.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/peber_web/algorithms/sumy/summarizers/lsa.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/peber_web/algorithms/sumy/summarizers/luhn.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/peber_web/algorithms/sumy/summarizers/random.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/peber_web/algorithms/sumy/summarizers/text_rank.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/peber_web/algorithms/sumy/utils.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/erl_crash.dump" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/gensim/corpus_memory_friendly.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/gensim/deerwester.dict" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/gensim/deerwester.index" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/gensim/deerwester.mm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/gensim/deerwester.mm.index" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/gensim/my_text.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/gensim/mycorpus.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/gensim/similarity_interface.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/gensim/stopword_list_tala.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/gensim/string_to_vector.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/gensim/sumarization_english_only.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/gensim/transformations_interface.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/peber_web/code_backup.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/peber_web/function/custom_corpora.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/peber_web/function/flexy_date_parser.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/peber_web/function/image_download.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/peber_web/function/main.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/peber_web/function/pool_thread.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/peber_web/function/rss_feed_parser.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/peber_web/function/rss_url_collection.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/peber_web/function/sumy_eval_ex1.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/peber_web/function/test.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/peber_web/function/timing.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/peber_web/function/web_crawler_paralel.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/peber_web/lat_/machine_learning/svm_sklearn.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/peber_web/lat_/ntlk/stopword.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/peber_web/lat_/ntlk/tokenizers.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/peber_web/lat_/ntlk/using_wordnet.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/peber_web/media/images/user_pp/1446306692_92_roni.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/peber_web/media/peber_web/images/user_pp/1447946934_87_0273.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/peber_web/media/peber_web/images/user_pp/1447951488_04_0360.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/peber_web/media/peber_web/images/user_pp/1448594634_08_Nov_MIxed_055_(2).JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/peber_web/media/peber_web/images/user_pp/1448967409_42_0360.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/peber_web/media/peber_web/images/user_pp/1450412580_25_TRXYE.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/peber_web/search_indexes.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/peber_web/search_sites.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/peber_web/tastypie_api.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/peber_web/templates/search/indexes/peber_web/news_text.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/peber_web/templates/search/search.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/userprofile/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/userprofile/admin.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/userprofile/forms.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/userprofile/migrations/0001_initial.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/userprofile/models.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/userprofile/templates/userprofile/loggedin.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/userprofile/templates/userprofile/profile.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/userprofile/tests.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/userprofile/urls.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/userprofile/views.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/whoosh/MAIN_WRITELOCK" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/whoosh/MAIN_q3dyxt5rzx1i2u26.seg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/whoosh/MAIN_r7o08sykeb8kgc72.seg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/whoosh/_MAIN_2.toc" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/My_Inspections.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/My_Inspections.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Peber Sublime Project.sublime-workspace" afterPath="$PROJECT_DIR$/Peber Sublime Project.sublime-workspace" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/peber_ex/celery.py" afterPath="$PROJECT_DIR$/peber_ex/celery.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/peber_ex/settings.py" afterPath="$PROJECT_DIR$/peber_ex/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/peber_ex/urls.py" afterPath="$PROJECT_DIR$/peber_ex/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/peber_web/admin.py" afterPath="$PROJECT_DIR$/peber_web/admin.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/peber_web/algorithms/peber_summarizer.py" afterPath="$PROJECT_DIR$/peber_web/algorithms/peber_summarizer.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/peber_web/algorithms/test_text_teaser.py" afterPath="$PROJECT_DIR$/peber_web/algorithms/test_text_teaser.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/peber_web/algorithms/textteaser/parser.py" afterPath="$PROJECT_DIR$/peber_web/algorithms/textteaser/parser.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/peber_web/algorithms/textteaser/summarizer.py" afterPath="$PROJECT_DIR$/peber_web/algorithms/textteaser/summarizer.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/peber_web/function/database_access.py" afterPath="$PROJECT_DIR$/peber_web/function/database_access.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/peber_web/function/news_extractors.py" afterPath="$PROJECT_DIR$/peber_web/function/news_extractors.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/peber_web/function/paginating_news.py" afterPath="$PROJECT_DIR$/peber_web/function/paginating_news.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/peber_web/function/test_text_teaser.py" afterPath="$PROJECT_DIR$/peber_web/function/test_text_teaser.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/peber_web/models.py" afterPath="$PROJECT_DIR$/peber_web/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/peber_web/permissions.py" afterPath="$PROJECT_DIR$/peber_web/permissions.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/peber_web/static/peber_web/css/style.css" afterPath="$PROJECT_DIR$/peber_web/static/peber_web/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/peber_web/static/peber_web/js/aplikasi.js" afterPath="$PROJECT_DIR$/peber_web/static/peber_web/js/aplikasi.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/peber_web/static/peber_web/js/cari.js" afterPath="$PROJECT_DIR$/peber_web/static/peber_web/js/cari.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/peber_web/tasks.py" afterPath="$PROJECT_DIR$/peber_web/tasks.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/peber_web/templates/peber_web/ajax_search.html" afterPath="$PROJECT_DIR$/peber_web/templates/peber_web/ajax_search.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/peber_web/templates/peber_web/base.html" afterPath="$PROJECT_DIR$/peber_web/templates/peber_web/base.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/peber_web/templates/peber_web/index.html" afterPath="$PROJECT_DIR$/peber_web/templates/peber_web/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/peber_web/templates/peber_web/news_source_page.html" afterPath="$PROJECT_DIR$/peber_web/templates/peber_web/news_source_page.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/peber_web/templates/peber_web/summary_eval_page.html" afterPath="$PROJECT_DIR$/peber_web/templates/peber_web/summary_eval_page.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/peber_web/urls.py" afterPath="$PROJECT_DIR$/peber_web/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/peber_web/views.py" afterPath="$PROJECT_DIR$/peber_web/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/admin/base_site.html" afterPath="$PROJECT_DIR$/templates/admin/base_site.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/peber_ex.iml" afterPath="$PROJECT_DIR$/.idea/peber_v2.iml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/userprofile/migrations/__init__.py" afterPath="$PROJECT_DIR$/peber_web/algorithms/sumy/nlp/__init__.py" />
+    </list>
     <ignored path="peber_ex.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -17,19 +150,19 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/peber_ex$test_array.coverage" NAME="test_array Coverage Results" MODIFIED="1448813064499" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/peber_web/algorithms" />
-    <SUITE FILE_PATH="coverage/peber_ex$flexy_date_parser.coverage" NAME="flexy_date_parser Coverage Results" MODIFIED="1448766390885" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/peber_web/function" />
-    <SUITE FILE_PATH="coverage/peber_ex$test_text_teaser.coverage" NAME="test_text_teaser Coverage Results" MODIFIED="1449243615816" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/peber_web/algorithms" />
-    <SUITE FILE_PATH="coverage/peber_ex$stopword.coverage" NAME="stopword Coverage Results" MODIFIED="1445575979317" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/peber_web/lat_/ntlk" />
-    <SUITE FILE_PATH="coverage/peber_ex$using_wordnet.coverage" NAME="using_wordnet Coverage Results" MODIFIED="1445594354617" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/peber_web/lat_/ntlk" />
-    <SUITE FILE_PATH="coverage/peber_ex$pool_thread.coverage" NAME="pool_thread Coverage Results" MODIFIED="1445002770095" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/peber_web/function" />
-    <SUITE FILE_PATH="coverage/peber_ex$sumy_eval_ex1.coverage" NAME="sumy_eval_ex1 Coverage Results" MODIFIED="1451098827838" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/peber_web/function" />
     <SUITE FILE_PATH="coverage/peber_ex$main.coverage" NAME="main Coverage Results" MODIFIED="1445162619364" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/peber_web/function" />
+    <SUITE FILE_PATH="coverage/peber_ex$tokenizers.coverage" NAME="tokenizers Coverage Results" MODIFIED="1445574186397" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/peber_web/function" />
+    <SUITE FILE_PATH="coverage/peber_ex$test_array.coverage" NAME="test_array Coverage Results" MODIFIED="1448813064499" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/peber_web/algorithms" />
+    <SUITE FILE_PATH="coverage/peber_ex$rss_feed_parser.coverage" NAME="rss_feed_parser Coverage Results" MODIFIED="1445004810805" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/peber_web/function" />
+    <SUITE FILE_PATH="coverage/peber_ex$test_text_teaser.coverage" NAME="test_text_teaser Coverage Results" MODIFIED="1452404238575" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/peber_web/algorithms" />
+    <SUITE FILE_PATH="coverage/peber_ex$gooose_extractor.coverage" NAME="gooose_extractor Coverage Results" MODIFIED="1445421496069" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/peber_web/function" />
+    <SUITE FILE_PATH="coverage/peber_ex$using_wordnet.coverage" NAME="using_wordnet Coverage Results" MODIFIED="1445594354617" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/peber_web/lat_/ntlk" />
+    <SUITE FILE_PATH="coverage/peber_ex$flexy_date_parser.coverage" NAME="flexy_date_parser Coverage Results" MODIFIED="1448766390885" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/peber_web/function" />
+    <SUITE FILE_PATH="coverage/peber_ex$sumy_eval_ex1.coverage" NAME="sumy_eval_ex1 Coverage Results" MODIFIED="1451098827838" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/peber_web/function" />
     <SUITE FILE_PATH="coverage/peber_ex$svm_sklearn.coverage" NAME="svm_sklearn Coverage Results" MODIFIED="1445573201203" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/peber_web/lat_/machine_learning" />
     <SUITE FILE_PATH="coverage/peber_ex$peber_summarizer.coverage" NAME="peber_summarizer Coverage Results" MODIFIED="1448806954372" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/peber_web/algorithms" />
-    <SUITE FILE_PATH="coverage/peber_ex$gooose_extractor.coverage" NAME="gooose_extractor Coverage Results" MODIFIED="1445421496069" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/peber_web/function" />
-    <SUITE FILE_PATH="coverage/peber_ex$rss_feed_parser.coverage" NAME="rss_feed_parser Coverage Results" MODIFIED="1445004810805" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/peber_web/function" />
-    <SUITE FILE_PATH="coverage/peber_ex$tokenizers.coverage" NAME="tokenizers Coverage Results" MODIFIED="1445574186397" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/peber_web/function" />
+    <SUITE FILE_PATH="coverage/peber_ex$stopword.coverage" NAME="stopword Coverage Results" MODIFIED="1445575979317" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/peber_web/lat_/ntlk" />
+    <SUITE FILE_PATH="coverage/peber_ex$pool_thread.coverage" NAME="pool_thread Coverage Results" MODIFIED="1445002770095" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/peber_web/function" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -40,42 +173,11 @@
     </disable_hints>
   </component>
   <component name="DatabaseView">
-    <option name="FLATTEN" value="false" />
-    <option name="GROUP_BY_TYPE" value="true" />
-    <option name="SORT_CHILDREN" value="false" />
-    <option name="SHOW_TABLE_CONSTRAINTS" value="true" />
-    <PATH>
-      <PATH_ELEMENT>
-        <option name="myItemId" />
-        <option name="myItemType" value="com.intellij.database.view.DbRootNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="Django default" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="peber" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="peber_web_user" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-    </PATH>
-    <PATH>
-      <PATH_ELEMENT>
-        <option name="myItemId" />
-        <option name="myItemType" value="com.intellij.database.view.DbRootNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="Django default" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="peber" />
-        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
-      </PATH_ELEMENT>
-    </PATH>
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
   </component>
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" module-name="peber_ex" is-module-sdk="true">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
@@ -90,90 +192,111 @@
     <favorites_list name="peber_ex" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.51735216">
-      <split-first>
-        <leaf>
-          <file leaf-file-name="tasks.py" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/peber_web/tasks.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-0.97527474">
-                  <caret line="147" column="39" selection-start-line="147" selection-start-column="39" selection-end-line="147" selection-end-column="39" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="news_extractors.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/peber_web/function/news_extractors.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="186" column="37" selection-start-line="186" selection-start-column="37" selection-end-line="186" selection-end-column="37" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/peber_web/models.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="46" column="19" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="19" />
-                  <folding>
-                    <element signature="e#15#36#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="database_access.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/peber_web/function/database_access.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="159" column="43" selection-start-line="159" selection-start-column="43" selection-end-line="159" selection-end-column="43" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="sumy_eval_ex1.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/peber_web/function/sumy_eval_ex1.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="6" selection-end-column="46" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="peber_summarizer.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/peber_web/algorithms/peber_summarizer.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="76" column="11" selection-start-line="76" selection-start-column="11" selection-end-line="76" selection-end-column="11" />
-                  <folding>
-                    <element signature="e#151#191#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="paginating_news.py" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/peber_web/function/paginating_news.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.5563187">
-                  <caret line="259" column="34" selection-start-line="259" selection-start-column="34" selection-end-line="259" selection-end-column="34" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/peber_web/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="680">
+              <caret line="45" column="14" selection-start-line="45" selection-start-column="14" selection-end-line="45" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="database_access.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/peber_web/function/database_access.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" column="65" selection-start-line="13" selection-start-column="50" selection-end-line="13" selection-end-column="65" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="coselection.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../venv/Lib/site-packages/sumy/evaluation/coselection.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="peber_summarizer.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/peber_web/algorithms/peber_summarizer.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1496">
+              <caret line="117" column="24" selection-start-line="117" selection-start-column="24" selection-end-line="117" selection-end-column="24" />
+              <folding>
+                <element signature="e#15#49#0" expanded="true" />
+                <element signature="e#1575#2736#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/peber_ex/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="612">
+              <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lex_rank.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../venv/Lib/site-packages/sumy/summarizers/lex_rank.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_summarizer.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../venv/Lib/site-packages/sumy/summarizers/_summarizer.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="17" column="43" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="celery.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/peber_ex/celery.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="25" column="53" selection-start-line="25" selection-start-column="53" selection-end-line="25" selection-end-column="53" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tasks.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/peber_web/tasks.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="291">
+              <caret line="152" column="15" selection-start-line="152" selection-start-column="15" selection-end-line="152" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="news_extractors.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/peber_web/function/news_extractors.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2159">
+              <caret line="128" column="6" selection-start-line="128" selection-start-column="6" selection-end-line="128" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -183,17 +306,17 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/peber_web/views.py" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/peber_ex/urls.py" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/peber_web/serializers.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/peber_ex/urls.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/peber_web/views.py" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/peber_web/lat_/ntlk/stopword.py" />
-        <option value="$PROJECT_DIR$/peber_web/lat_/ntlk/using_wordnet.py" />
-        <option value="$PROJECT_DIR$/userprofile/templates/userprofile/loggedin.html" />
         <option value="$PROJECT_DIR$/userprofile/templates/userprofile/profile.html" />
         <option value="$PROJECT_DIR$/userprofile/urls.py" />
         <option value="$PROJECT_DIR$/userprofile/views.py" />
@@ -213,50 +336,51 @@
         <option value="$PROJECT_DIR$/peber_web/function/gooose_extractor.py" />
         <option value="$PROJECT_DIR$/peber_web/admin.py" />
         <option value="$PROJECT_DIR$/peber_web/drf_serializers.py" />
-        <option value="$PROJECT_DIR$/peber_web/permissions.py" />
         <option value="$PROJECT_DIR$/peber_web/code_backup.txt" />
         <option value="$PROJECT_DIR$/peber_web/algorithms/textteaser/__init__.py" />
         <option value="$PROJECT_DIR$/peber_web/algorithms/test_array.py" />
-        <option value="$PROJECT_DIR$/peber_web/algorithms/test_text_teaser.py" />
-        <option value="$PROJECT_DIR$/peber_ex/settings.py" />
-        <option value="$PROJECT_DIR$/peber_ex/celery.py" />
-        <option value="$PROJECT_DIR$/peber_ex/urls.py" />
-        <option value="$PROJECT_DIR$/peber_web/templates/peber_web/base.html" />
-        <option value="$PROJECT_DIR$/peber_web/static/peber_web/css/style.css" />
         <option value="$PROJECT_DIR$/peber_web/serializers.py" />
-        <option value="$PROJECT_DIR$/peber_web/algorithms/textteaser/parser.py" />
-        <option value="$PROJECT_DIR$/peber_web/algorithms/textteaser/summarizer.py" />
         <option value="$PROJECT_DIR$/peber_web/function/timing.py" />
         <option value="$PROJECT_DIR$/peber_web/templates/peber_web/detail.html" />
         <option value="$PROJECT_DIR$/peber_web/function/sumy_eval_ex1.py" />
         <option value="$PROJECT_DIR$/peber_web/urls.py" />
         <option value="$PROJECT_DIR$/peber_web/templates/peber_web/news_eval_page.html" />
-        <option value="$PROJECT_DIR$/peber_web/views.py" />
-        <option value="$PROJECT_DIR$/peber_web/templates/peber_web/summary_eval_page.html" />
-        <option value="$PROJECT_DIR$/peber_web/templates/peber_web/index.html" />
-        <option value="$PROJECT_DIR$/peber_web/templates/peber_web/news_source_page.html" />
         <option value="$PROJECT_DIR$/peber_web/function/text_paged_news.py" />
-        <option value="$PROJECT_DIR$/peber_web/algorithms/peber_summarizer.py" />
-        <option value="$PROJECT_DIR$/peber_web/models.py" />
-        <option value="$PROJECT_DIR$/peber_web/function/database_access.py" />
+        <option value="$PROJECT_DIR$/peber_web/permissions.py" />
+        <option value="$PROJECT_DIR$/templates/admin/base_site.html" />
+        <option value="$PROJECT_DIR$/peber_web/static/peber_web/css/style.css" />
+        <option value="$PROJECT_DIR$/peber_web/templates/peber_web/index.html" />
+        <option value="$PROJECT_DIR$/peber_web/templates/peber_web/summary_eval_page.html" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch" />
+        <option value="$PROJECT_DIR$/peber_web/algorithms/textteaser/summarizer.py" />
+        <option value="$PROJECT_DIR$/peber_web/function/test_text_teaser.py" />
+        <option value="$PROJECT_DIR$/peber_web/algorithms/test_text_teaser.py" />
+        <option value="$PROJECT_DIR$/peber_web/algorithms/textteaser/parser.py" />
+        <option value="$PROJECT_DIR$/peber_web/views.py" />
+        <option value="$PROJECT_DIR$/peber_web/templates/peber_web/news_source_page.html" />
         <option value="$PROJECT_DIR$/peber_web/function/paginating_news.py" />
-        <option value="$PROJECT_DIR$/peber_web/tasks.py" />
+        <option value="$PROJECT_DIR$/peber_ex/settings.py" />
+        <option value="$PROJECT_DIR$/peber_ex/urls.py" />
+        <option value="$PROJECT_DIR$/peber_web/templates/peber_web/base.html" />
+        <option value="$PROJECT_DIR$/peber_web/models.py" />
         <option value="$PROJECT_DIR$/peber_web/function/news_extractors.py" />
+        <option value="$PROJECT_DIR$/peber_ex/celery.py" />
+        <option value="$PROJECT_DIR$/peber_web/function/database_access.py" />
+        <option value="$PROJECT_DIR$/peber_web/algorithms/peber_summarizer.py" />
+        <option value="$PROJECT_DIR$/peber_web/tasks.py" />
       </list>
     </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsBuildToolPackageJson" detection-done="true" />
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
-  </component>
-  <component name="NamedScopeManager">
-    <order />
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1616" />
-    <option name="height" value="886" />
+    <option name="width" value="1382" />
+    <option name="height" value="754" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="My Inspections">
@@ -304,10 +428,13 @@
           <State>
             <id>Sass/SCSS</id>
           </State>
+          <State>
+            <id>Spelling</id>
+          </State>
         </expanded-state>
         <selected-state>
           <State>
-            <id>Buildout</id>
+            <id>SpellCheckingInspection</id>
           </State>
         </selected-state>
       </profile-state>
@@ -334,11 +461,11 @@
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="2" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
+    <navigator proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -348,94 +475,24 @@
       <autoscrollToSource />
       <autoscrollFromSource />
       <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="peber_ex" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="peber_ex" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="peber_ex" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="peber_ex" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="peber_ex" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="peber_web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="peber_ex" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="peber_ex" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="peber_web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="function" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="peber_ex" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="peber_ex" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="peber_web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="algorithms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.customizations" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="D:/Learn/Text Summarizer/Bahasa Indonesias' Related/pebahasa-master" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="dynamic.classpath" value="false" />
     <property name="restartRequiresConfirmation" value="true" />
-    <property name="FullScreen" value="false" />
     <property name="full.screen.before.presentation.mode" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="SearchEverywhereHistoryKey" value="news_&#9;FILE&#9;file://D:/python-project/django/peber_ex/peber_web/function/news_extractors.py&#10;models&#9;FILE&#9;file://D:/python-project/django/peber_ex/peber_web/models.py&#10;text&#9;FILE&#9;file://D:/python-project/django/peber_ex/peber_web/function/text_paged_news.py&#10;tas&#9;FILE&#9;file://D:/python-project/django/peber_ex/peber_web/tasks.py&#10;data&#9;FILE&#9;file://D:/python-project/django/peber_ex/peber_web/function/database_access.py&#10;urls&#9;FILE&#9;file://D:/python-project/django/peber_ex/peber_web/urls.py&#10;index.ht&#9;FILE&#9;file://D:/python-project/django/peber_ex/peber_web/templates/peber_web/index.html&#10;base&#9;FILE&#9;file://D:/python-project/django/peber_ex/peber_web/templates/peber_web/base.html&#10;sett&#9;FILE&#9;file://D:/python-project/django/peber_ex/peber_ex/settings.py&#10;timing&#9;FILE&#9;file://D:/python-project/django/peber_ex/peber_web/function/timing.py&#10;news&#9;null&#9;null&#10;view&#9;FILE&#9;file://D:/python-project/django/peber_ex/peber_web/views.py&#10;news_s&#9;FILE&#9;file://D:/python-project/django/peber_ex/peber_web/templates/peber_web/news_source_page.html&#10;timin&#9;FILE&#9;file://D:/python-project/django/peber_ex/peber_web/function/timing.py&#10;model&#9;FILE&#9;file://D:/python-project/django/peber_ex/peber_web/models.py&#10;text_pa&#9;null&#9;null&#10;tasks&#9;FILE&#9;file://D:/python-project/django/peber_ex/peber_web/tasks.py&#10;seria&#9;FILE&#9;file://D:/python-project/django/peber_ex/peber_web/serializers.py&#10;database&#9;FILE&#9;file://D:/python-project/django/peber_ex/peber_web/function/database_access.py&#10;peber_su&#9;FILE&#9;file://D:/python-project/django/peber_ex/peber_web/algorithms/peber_summarizer.py&#10;task&#9;FILE&#9;file://D:/python-project/django/peber_ex/peber_web/tasks.py&#10;deta&#9;FILE&#9;file://D:/python-project/django/peber_ex/peber_web/templates/peber_web/detail.html&#10;bas&#9;FILE&#9;file://D:/python-project/django/peber_ex/peber_web/templates/peber_web/base.html&#10;inde&#9;FILE&#9;file://D:/python-project/django/peber_ex/peber_web/templates/peber_web/index.html&#10;style&#9;FILE&#9;file://D:/python-project/django/peber_ex/peber_web/static/peber_web/css/style.css&#10;views&#9;FILE&#9;file://D:/python-project/django/peber_ex/peber_web/views.py&#10;seri&#9;FILE&#9;file://D:/python-project/django/peber_ex/peber_web/serializers.py&#10;celery&#9;FILE&#9;file://D:/python-project/django/peber_ex/peber_ex/celery.py&#10;ser&#9;FILE&#9;file://D:/python-project/django/peber_ex/peber_web/serializers.py&#10;settings&#9;FILE&#9;file://D:/python-project/django/peber_ex/peber_ex/settings.py&#10;pebe&#9;FILE&#9;file://D:/python-project/django/peber_ex/peber_web/algorithms/peber_summarizer.py&#10;index&#9;FILE&#9;file://D:/python-project/django/peber_ex/peber_web/templates/peber_web/index.html&#10;pe&#9;FILE&#9;file://D:/python-project/django/peber_ex/peber_web/algorithms/peber_summarizer.py&#10;summ&#9;FILE&#9;file://D:/python-project/django/peber_ex/peber_web/algorithms/textteaser/summarizer.py&#10;mode&#9;FILE&#9;file://D:/python-project/django/peber_ex/peber_web/models.py&#10;admin&#9;FILE&#9;file://D:/python-project/django/peber_ex/peber_web/admin.py&#10;vi&#9;FILE&#9;file://D:/python-project/django/peber_ex/peber_web/views.py&#10;acc&#9;FILE&#9;file://D:/python-project/django/peber_ex/peber_web/function/database_access.py&#10;sty&#9;FILE&#9;file://D:/python-project/django/peber_ex/peber_web/static/peber_web/css/style.css&#10;api&#9;FILE&#9;file://D:/python-project/django/peber_ex/peber_web/api.py&#10;goose&#9;null&#9;null&#10;ca&#9;FILE&#9;file://D:/python-project/django/peber_ex/peber_web/static/peber_web/js/cari.js&#10;cari&#9;FILE&#9;file://D:/python-project/django/peber_ex/peber_web/static/peber_web/js/cari.js&#10;ind&#9;FILE&#9;file://D:/python-project/django/peber_ex/peber_web/templates/peber_web/index.html&#10;user&#9;FILE&#9;file://D:/python-project/django/peber_ex/peber_web/templates/peber_web/user_detail.html&#10;index.h&#9;FILE&#9;file://D:/python-project/django/peber_ex/peber_web/templates/peber_web/index.html&#10;setti&#9;FILE&#9;file://D:/python-project/django/peber_ex/peber_ex/settings.py&#10;url&#9;FILE&#9;file://D:/python-project/django/peber_ex/peber_web/urls.py&#10;ajax&#9;FILE&#9;file://D:/python-project/django/peber_ex/peber_web/templates/peber_web/ajax_search.html&#10;mod&#9;FILE&#9;file://D:/python-project/django/peber_ex/peber_web/models.py" />
+    <property name="SearchEverywhereHistoryKey" value="peber&#9;FILE&#9;file://D:/python-project/django/peber_v2/peber_web/algorithms/peber_summarizer.py&#10;celery&#9;FILE&#9;file://D:/python-project/django/peber_v2/peber_ex/celery.py&#10;tasks&#9;FILE&#9;file://D:/python-project/django/peber_v2/peber_web/tasks.py&#10;data&#9;FILE&#9;file://D:/python-project/django/peber_v2/peber_web/function/database_access.py&#10;models&#9;FILE&#9;file://D:/python-project/django/peber_v2/peber_web/models.py&#10;sett&#9;FILE&#9;file://D:/python-project/django/peber_ex/peber_ex/settings.py&#10;news_e&#9;FILE&#9;file://D:/python-project/django/peber_ex/peber_web/function/news_extractors.py&#10;news&#9;FILE&#9;file://D:/python-project/django/peber_ex/peber_web/templates/peber_web/news_source_page.html&#10;view&#9;FILE&#9;file://D:/python-project/django/peber_ex/peber_web/views.py&#10;news_extr&#9;FILE&#9;file://D:/python-project/django/peber_ex/peber_web/function/news_extractors.py&#10;test_tex&#9;null&#9;null&#10;test_te&#9;null&#9;null&#10;test&#9;FILE&#9;file://D:/python-project/django/peber_ex/peber_web/algorithms/test_text_teaser.py&#10;timi&#9;null&#9;null&#10;sty&#9;FILE&#9;file://D:/python-project/django/peber_ex/peber_web/static/peber_web/css/style.css&#10;eva&#9;FILE&#9;file://D:/python-project/django/peber_ex/peber_web/templates/peber_web/summary_eval_page.html&#10;index.h&#9;FILE&#9;file://D:/python-project/django/peber_ex/peber_web/templates/peber_web/index.html&#10;base&#9;FILE&#9;file://D:/python-project/django/peber_ex/peber_web/templates/peber_web/base.html&#10;news_&#9;FILE&#9;file://D:/python-project/django/peber_ex/peber_web/function/news_extractors.py&#10;text&#9;FILE&#9;file://D:/python-project/django/peber_ex/peber_web/function/text_paged_news.py&#10;tas&#9;FILE&#9;file://D:/python-project/django/peber_ex/peber_web/tasks.py&#10;urls&#9;FILE&#9;file://D:/python-project/django/peber_ex/peber_web/urls.py&#10;index.ht&#9;FILE&#9;file://D:/python-project/django/peber_ex/peber_web/templates/peber_web/index.html&#10;timing&#9;FILE&#9;file://D:/python-project/django/peber_ex/peber_web/function/timing.py&#10;news_s&#9;FILE&#9;file://D:/python-project/django/peber_ex/peber_web/templates/peber_web/news_source_page.html&#10;timin&#9;FILE&#9;file://D:/python-project/django/peber_ex/peber_web/function/timing.py&#10;model&#9;FILE&#9;file://D:/python-project/django/peber_ex/peber_web/models.py&#10;text_pa&#9;null&#9;null&#10;seria&#9;FILE&#9;file://D:/python-project/django/peber_ex/peber_web/serializers.py&#10;database&#9;FILE&#9;file://D:/python-project/django/peber_ex/peber_web/function/database_access.py&#10;peber_su&#9;FILE&#9;file://D:/python-project/django/peber_ex/peber_web/algorithms/peber_summarizer.py&#10;task&#9;FILE&#9;file://D:/python-project/django/peber_ex/peber_web/tasks.py&#10;deta&#9;FILE&#9;file://D:/python-project/django/peber_ex/peber_web/templates/peber_web/detail.html&#10;bas&#9;FILE&#9;file://D:/python-project/django/peber_ex/peber_web/templates/peber_web/base.html&#10;inde&#9;FILE&#9;file://D:/python-project/django/peber_ex/peber_web/templates/peber_web/index.html&#10;style&#9;FILE&#9;file://D:/python-project/django/peber_ex/peber_web/static/peber_web/css/style.css&#10;views&#9;FILE&#9;file://D:/python-project/django/peber_ex/peber_web/views.py&#10;seri&#9;FILE&#9;file://D:/python-project/django/peber_ex/peber_web/serializers.py&#10;ser&#9;FILE&#9;file://D:/python-project/django/peber_ex/peber_web/serializers.py&#10;settings&#9;FILE&#9;file://D:/python-project/django/peber_ex/peber_ex/settings.py&#10;pebe&#9;FILE&#9;file://D:/python-project/django/peber_ex/peber_web/algorithms/peber_summarizer.py&#10;index&#9;FILE&#9;file://D:/python-project/django/peber_ex/peber_web/templates/peber_web/index.html&#10;pe&#9;FILE&#9;file://D:/python-project/django/peber_ex/peber_web/algorithms/peber_summarizer.py&#10;summ&#9;FILE&#9;file://D:/python-project/django/peber_ex/peber_web/algorithms/textteaser/summarizer.py&#10;mode&#9;FILE&#9;file://D:/python-project/django/peber_ex/peber_web/models.py&#10;admin&#9;FILE&#9;file://D:/python-project/django/peber_ex/peber_web/admin.py&#10;vi&#9;FILE&#9;file://D:/python-project/django/peber_ex/peber_web/views.py&#10;acc&#9;FILE&#9;file://D:/python-project/django/peber_ex/peber_web/function/database_access.py&#10;api&#9;FILE&#9;file://D:/python-project/django/peber_ex/peber_web/api.py&#10;goose&#9;null&#9;null" />
+    <property name="com.intellij.ide.scratch.NewScratchFileAction" value="Python" />
+    <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -447,20 +504,21 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\python-project\django\peber_ex\peber_web\templates\peber_web" />
+      <recent name="D:\python-project\django\peber_v2\peber_web\algorithms" />
+      <recent name="D:\python-project\django\peber_v2\peber_web\templates\peber_web" />
       <recent name="D:\python-project\django\peber_ex\peber_web\function" />
+      <recent name="D:\python-project\django\peber_ex\peber_web\templates\peber_web" />
       <recent name="D:\python-project\django\peber_ex\peber_web\pebahasa" />
-      <recent name="D:\python-project\django\peber_ex\peber_web\templates\search" />
-      <recent name="D:\python-project\django\peber_ex\userprofile\templates\userprofile" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\python-project\django\peber_v2\peber_web\static\peber_web" />
+      <recent name="D:\python-project\django\peber_ex\peber_web\lat_" />
       <recent name="D:\python-project\django\peber_ex\peber_web\templates" />
       <recent name="D:\python-project\django\peber_ex\peber_web\lat_\ntlk" />
       <recent name="D:\python-project\django\peber_ex\peber_web" />
-      <recent name="D:\python-project\django\peber_ex\peber_ex" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.sumy_eval_ex1">
+  <component name="RunManager" selected="Django server.peber_ex">
     <configuration default="false" name="test_array" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -492,7 +550,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="peber_ex" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/peber_web/function/flexy_date_parser.py" />
+      <option name="SCRIPT_NAME" value="D:\python-project\django\peber_ex\peber_web\lat_\flexy_date_parser.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -546,7 +604,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="peber_ex" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/peber_web/function/sumy_eval_ex1.py" />
+      <option name="SCRIPT_NAME" value="D:\python-project\django\peber_ex\peber_web\lat_\sumy_eval_ex1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -569,6 +627,9 @@
       <option name="CUSTOM_SETTINGS" value="false" />
       <option name="USE_OPTIONS" value="false" />
       <option name="OPTIONS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
       <method />
     </configuration>
     <configuration default="true" type="PyBehaveRunConfigurationType" factoryName="Behave">
@@ -640,12 +701,33 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <module name="peber_ex" />
+      <method />
+    </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
       <node-options />
       <gulpfile />
       <tasks />
       <arguments />
       <pass-parent-envs>true</pass-parent-envs>
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <node-interpreter value="project" />
       <envs />
       <method />
     </configuration>
@@ -793,15 +875,17 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.sumy_eval_ex1" />
-        <item index="1" class="java.lang.String" itemvalue="Python.test_text_teaser" />
+        <item index="0" class="java.lang.String" itemvalue="Python.test_text_teaser" />
+        <item index="1" class="java.lang.String" itemvalue="Python.sumy_eval_ex1" />
         <item index="2" class="java.lang.String" itemvalue="Python.test_array" />
         <item index="3" class="java.lang.String" itemvalue="Python.peber_summarizer" />
         <item index="4" class="java.lang.String" itemvalue="Python.flexy_date_parser" />
       </list>
     </recent_temporary>
   </component>
-  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
   <component name="SpellCheckerSettings" BundledDictionaries="0" Folders="1" Folder0="D:/Learn/Text Summarizer/Bahasa Indonesias' Related/ID Word List/IndoWordList" Dictionaries="0" />
   <component name="SvnConfiguration">
     <configuration>C:\Users\Anwar Pasaribu\AppData\Roaming\Subversion</configuration>
@@ -811,11 +895,12 @@
       <changelist id="cc67a636-e38d-4430-b314-d2c1203c9fc8" name="Default" comment="" />
       <created>1444528750326</created>
       <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
       <updated>1444528750326</updated>
     </task>
     <servers />
   </component>
-  <component name="TodoView">
+  <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
     </todo-panel>
@@ -825,51 +910,51 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="886" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15938303" sideWeight="0.4821192" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32864675" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32864675" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32671958" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3245033" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.155308" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6666667" sideWeight="0.5" order="9" side_tool="false" content_ui="combo" x="-1642" y="197" width="1556" height="370" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21079692" sideWeight="0.5178808" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38675496" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32947233" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3068783" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="46" y="2" width="1484" height="802" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26096824" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.397878" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19440243" sideWeight="0.4821192" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31169665" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32864675" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26092544" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3245033" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32948717" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19591528" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6662252" sideWeight="0.5" order="9" side_tool="false" content_ui="combo" x="-1642" y="197" width="1556" height="370" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21079692" sideWeight="0.5178808" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38675496" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32947233" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30555555" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="46" y="2" width="1484" height="802" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32564104" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.397878" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891247" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980132" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38675496" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32947233" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3245033" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4021164" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.66754967" sideWeight="0.5" order="9" side_tool="false" content_ui="combo" x="-1642" y="197" width="1556" height="370" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18701799" sideWeight="0.4821192" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26096824" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32671958" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.155308" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21079692" sideWeight="0.5178808" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.397878" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32864675" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32864675" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38675496" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32947233" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3245033" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3068783" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="46" y="2" width="1484" height="802" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6666667" sideWeight="0.5" order="9" side_tool="false" content_ui="combo" x="-1642" y="197" width="1556" height="370" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16131106" sideWeight="0.4821192" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32671958" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26096824" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15488432" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21079692" sideWeight="0.5178808" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.397878" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -890,369 +975,359 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="5" />
+      <option name="time" value="6" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/peber_web/__init__.py">
+    <entry file="file://$PROJECT_DIR$/peber_web/templates/peber_web/summary_eval_page.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/peber_web/pebahasa/termextract.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="124" column="81" selection-start-line="124" selection-start-column="62" selection-end-line="124" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/peber_web/pebahasa/summary.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="89" selection-start-line="9" selection-start-column="89" selection-end-line="9" selection-end-column="89" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/peber_web/tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../../venv/Lib/site-packages/django/views/generic/base.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33267716">
+        <state relative-caret-position="0">
           <caret line="49" column="8" selection-start-line="49" selection-start-column="8" selection-end-line="49" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/peber_web/templates/peber_web/user_detail.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.39473686">
+        <state relative-caret-position="0">
           <caret line="10" column="67" selection-start-line="10" selection-start-column="67" selection-end-line="10" selection-end-column="67" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../../venv/Lib/site-packages/feedparser.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/peber_web/templates/peber_web/news.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.6923077">
+        <state relative-caret-position="0">
           <caret line="9" column="94" selection-start-line="9" selection-start-column="94" selection-end-line="9" selection-end-column="94" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/peber_web/static/peber_web/js/cari.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3939394">
+        <state relative-caret-position="0">
           <caret line="26" column="21" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/peber_web/admin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state relative-caret-position="0">
           <caret line="22" column="32" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/userprofile/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.057142857">
-          <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/userprofile/urls.py" />
     <entry file="file://$PROJECT_DIR$/../../venv/Lib/site-packages/rest_framework/permissions.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/peber_web/permissions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/peber_web/code_backup.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.63049453">
-          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/peber_web/search_sites.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.046703298">
-          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/peber_web/function/image_download.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/peber_web/function/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/peber_web/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.19093406">
-          <caret line="1" column="41" selection-start-line="1" selection-start-column="41" selection-end-line="1" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/peber_web/search_indexes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/peber_web/tastypie_api.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.20604396">
-          <caret line="31" column="12" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/peber_web/function/flexy_date_parser.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.76648355">
-          <caret line="46" column="20" selection-start-line="46" selection-start-column="20" selection-end-line="46" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../../venv/Lib/site-packages/gensim/summarization/summarizer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.12264151">
+        <state relative-caret-position="0">
           <caret line="188" column="22" selection-start-line="188" selection-start-column="22" selection-end-line="188" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../../venv/Lib/site-packages/gensim/summarization/textcleaner.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.0023584">
+        <state relative-caret-position="0">
           <caret line="32" column="4" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/peber_ex/celery.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23351648">
-          <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/peber_web/static/peber_web/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14993122">
-          <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/peber_web/pebahasa/bottle.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334">
-          <caret line="1809" column="27" selection-start-line="1809" selection-start-column="27" selection-end-line="1809" selection-end-column="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/peber_web/algorithms/textteaser/trainer/stopword_list_tala.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33215547">
+        <state relative-caret-position="0">
           <caret line="139" column="3" selection-start-line="139" selection-start-column="0" selection-end-line="139" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/peber_web/algorithms/test_text_teaser.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5704698">
-          <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/peber_web/algorithms/textteaser/parser.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2852349">
-          <caret line="34" column="109" selection-start-line="34" selection-start-column="54" selection-end-line="34" selection-end-column="109" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/peber_web/serializers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.27510315">
-          <caret line="46" column="79" selection-start-line="46" selection-start-column="67" selection-end-line="46" selection-end-column="79" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/peber_ex/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.81292987">
-          <caret line="41" column="21" selection-start-line="40" selection-start-column="11" selection-end-line="40" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/peber_web/algorithms/textteaser/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="37" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/peber_web/algorithms/textteaser/summarizer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.1691885">
-          <caret line="143" column="0" selection-start-line="143" selection-start-column="0" selection-end-line="143" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/peber_web/templates/peber_web/detail.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-23.12">
+        <state relative-caret-position="0">
           <caret line="34" column="95" selection-start-line="34" selection-start-column="73" selection-end-line="34" selection-end-column="95" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/peber_web/function/timing.py">
+    <entry file="file://$PROJECT_DIR$/peber_web/tests.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23351648">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../venv/Lib/site-packages/sumy/evaluation/coselection.py">
+    <entry file="file://$PROJECT_DIR$/templates/admin/base_site.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.46291208">
-          <caret line="72" column="71" selection-start-line="72" selection-start-column="71" selection-end-line="72" selection-end-column="71" />
+        <state relative-caret-position="0">
+          <caret line="5" column="64" selection-start-line="5" selection-start-column="64" selection-end-line="5" selection-end-column="64" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/peber_ex/settings.py">
+    <entry file="file://$PROJECT_DIR$/peber_web/static/peber_web/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.22802198">
-          <caret line="102" column="39" selection-start-line="102" selection-start-column="39" selection-end-line="102" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/peber_web/templates/peber_web/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.06258891">
-          <caret line="41" column="52" selection-start-line="41" selection-start-column="52" selection-end-line="41" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/peber_web/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="185" column="55" selection-start-line="185" selection-start-column="38" selection-end-line="185" selection-end-column="55" />
+        <state relative-caret-position="0">
+          <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/peber_web/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.64972526">
-          <caret line="38" column="66" selection-start-line="38" selection-start-column="54" selection-end-line="38" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/peber_web/templates/peber_web/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6045519">
-          <caret line="28" column="51" selection-start-line="28" selection-start-column="51" selection-end-line="28" selection-end-column="51" />
+        <state relative-caret-position="0">
+          <caret line="13" column="78" selection-start-line="13" selection-start-column="78" selection-end-line="13" selection-end-column="78" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/peber_web/templates/peber_web/summary_eval_page.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.463727">
-          <caret line="102" column="14" selection-start-line="102" selection-start-column="14" selection-end-line="102" selection-end-column="14" />
+        <state relative-caret-position="0">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch" />
+    <entry file="file://$PROJECT_DIR$/../../venv/Lib/site-packages/IPython/utils/timing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/peber_web/function/test_text_teaser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/peber_web/algorithms/test_text_teaser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/peber_web/algorithms/textteaser/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/peber_web/algorithms/textteaser/summarizer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/peber_web/algorithms/textteaser/parser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="15" column="19" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/peber_web/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="371" column="9" selection-start-line="371" selection-start-column="9" selection-end-line="371" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm40/system/python_stubs/-827026511/__builtin__.py" />
+    <entry file="file://$PROJECT_DIR$/peber_web/function/paginating_news.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="329" column="19" selection-start-line="323" selection-start-column="4" selection-end-line="329" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/peber_web/templates/peber_web/news_source_page.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8549075">
-          <caret line="37" column="51" selection-start-line="37" selection-start-column="51" selection-end-line="37" selection-end-column="51" />
+        <state relative-caret-position="0">
+          <caret line="161" column="74" selection-start-line="161" selection-start-column="74" selection-end-line="161" selection-end-column="74" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/peber_web/function/sumy_eval_ex1.py">
+    <entry file="file://$PROJECT_DIR$/peber_web/function/news_extractors_all.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="6" selection-end-column="46" />
+        <state relative-caret-position="272">
+          <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/peber_web/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="46" column="79" selection-start-line="46" selection-start-column="67" selection-end-line="46" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/peber_web/permissions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/peber_ex/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="592">
+          <caret line="38" column="27" selection-start-line="38" selection-start-column="27" selection-end-line="38" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/peber_web/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/peber_web/templates/peber_web/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="23" column="54" selection-start-line="23" selection-start-column="51" selection-end-line="23" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/peber_web/templates/peber_web/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8">
+          <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/peber_web/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="1" column="41" selection-start-line="1" selection-start-column="41" selection-end-line="1" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/peber_web/function/news_extractors.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2159">
+          <caret line="128" column="6" selection-start-line="128" selection-start-column="6" selection-end-line="128" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/peber_ex/celery.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="25" column="53" selection-start-line="25" selection-start-column="53" selection-end-line="25" selection-end-column="53" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/peber_web/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="46" column="19" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="19" />
-          <folding>
-            <element signature="e#15#36#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="680">
+          <caret line="45" column="14" selection-start-line="45" selection-start-column="14" selection-end-line="45" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../venv/Lib/site-packages/sumy/summarizers/text_rank.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../venv/Lib/site-packages/sumy/summarizers/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../venv/Lib/site-packages/sumy/summarizers/lex_rank.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/peber_ex/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/peber_web/algorithms/peber_summarizer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="76" column="11" selection-start-line="76" selection-start-column="11" selection-end-line="76" selection-end-column="11" />
+        <state relative-caret-position="1496">
+          <caret line="117" column="24" selection-start-line="117" selection-start-column="24" selection-end-line="117" selection-end-column="24" />
           <folding>
-            <element signature="e#151#191#0" expanded="true" />
+            <element signature="e#15#49#0" expanded="true" />
+            <element signature="e#1575#2736#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../venv/Lib/site-packages/sumy/evaluation/coselection.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/peber_web/function/database_access.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="159" column="43" selection-start-line="159" selection-start-column="43" selection-end-line="159" selection-end-column="43" />
+        <state relative-caret-position="221">
+          <caret line="13" column="65" selection-start-line="13" selection-start-column="50" selection-end-line="13" selection-end-column="65" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/peber_web/function/paginating_news.py">
+    <entry file="file://$PROJECT_DIR$/peber_web/algorithms/sumy/nlp/stemmers/czech.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5563187">
-          <caret line="259" column="34" selection-start-line="259" selection-start-column="34" selection-end-line="259" selection-end-column="34" />
-          <folding />
+        <state relative-caret-position="187">
+          <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/peber_web/function/news_extractors.py">
+    <entry file="file://$PROJECT_DIR$/../../venv/Lib/site-packages/sumy/summarizers/_summarizer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="186" column="37" selection-start-line="186" selection-start-column="37" selection-end-line="186" selection-end-column="37" />
+        <state relative-caret-position="153">
+          <caret line="17" column="43" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="43" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/peber_web/tasks.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.97527474">
-          <caret line="147" column="39" selection-start-line="147" selection-start-column="39" selection-end-line="147" selection-end-column="39" />
+        <state relative-caret-position="291">
+          <caret line="152" column="15" selection-start-line="152" selection-start-column="15" selection-end-line="152" selection-end-column="15" />
           <folding />
         </state>
       </provider>

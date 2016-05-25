@@ -36,7 +36,6 @@ router.register(r'periodic_task', views.PeriodicTaskViewSet, 'PeriodicTask')
 
 urlpatterns = [
     url(r'^peber_web/', include('peber_web.urls', namespace="peber_web")),  # Langsung dari root, 127.0.0.1/
-    url(r'^accounts/', include('userprofile.urls', namespace="userprofile")),
     url(r'^admin/', include(admin.site.urls)),
     url(r'^peber_api/', include(router.urls)),
 	url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework'))

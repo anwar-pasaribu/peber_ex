@@ -42,6 +42,11 @@ class Config(object):
 			'schedule': crontab(),  # Run every minute
 			'args': ("Anwar",),  # Argumen harus berupa list atau tuple
 		},
+		'all-ns-harvesting': {
+			'task': 'peber_web.tasks.execute_parser_by_category',
+			'schedule': crontab(minute='*/30'),  # Berjalan setiap 30 menit
+			'args': ("ALL",),  # ALL: Semua sumber berita, news_category: b'dasarkan kategory, dan pub:news_category
+		},
 	}
 
 

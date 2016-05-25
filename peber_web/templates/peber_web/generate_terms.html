@@ -1,0 +1,10 @@
+{% if news_terms %}
+
+    {% for freq_term in news_terms %}
+        <span class="label label-primary">{{ freq_term }}</span>
+    {% endfor %}
+
+{% else %}    
+	<span class="label label-error">No data found! Default</span>
+{% endif %}
+

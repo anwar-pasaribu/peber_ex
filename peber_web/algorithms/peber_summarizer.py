@@ -1,24 +1,26 @@
 # coding=utf-8
-"""
-Kelas algoritma peringkasan. Algoritma yg digunakan:
-1. Berasal dari repo github (pebahasa)
-2. TextTeaser oleh Mojo Jolo Balbin
-"""
-from peber_web.pebahasa.summary import *
 from .textteaser import TextTeaser
-from gensim.summarization import summarize as gensim_summarize
-from sumy.parsers.html import HtmlParser
-from sumy.parsers.plaintext import PlaintextParser
-from sumy.nlp.tokenizers import Tokenizer
-# from sumy.summarizers.lsa import LsaSummarizer as Summarizer
-# from sumy.summarizers.lex_rank import LexRankSummarizer as Summarizer
-from sumy.summarizers.text_rank import TextRankSummarizer as Summarizer
-from sumy.nlp.stemmers import Stemmer
-from sumy.utils import get_stop_words
+from .sumy.parsers.plaintext import PlaintextParser
+from .sumy.nlp.tokenizers import Tokenizer
+from .sumy.summarizers.lex_rank import LexRankSummarizer as LexRankSummarizer
+from .sumy.summarizers.lsa import LsaSummarizer as LSASummarizer
+from .sumy.summarizers.text_rank import TextRankSummarizer as TextRankSummarizer
+from .sumy.nlp.stemmers import Stemmer
+from .sumy.utils import get_stop_words
+
+import re
 
 
 LANGUAGE = "english"
 SENTENCES_COUNT = 5
+
+
+"""
+Kelas algoritma peringkasan. Algoritma yg digunakan:
+1. A1 - LexRank Algorithm
+2. A2 - LSA Algorithm
+3. A3 - TexRank Algorithm
+"""
 
 
 class PeberSummarizer(object):
@@ -28,25 +30,46 @@ class PeberSummarizer(object):
 	def __init__(self, text):
 		self.text = text
 
-	def pebahasa_summarizer(self):
+	def clean_texts(self):
 		"""
-		Algoritma dari repositor pebahasa.
-		:return: String teks berita yang sudah diringkas
+		Membersihkan teks berita atau memperbaiki format
 		"""
-		try:
-			return make_summary(self.text.replace('.', '. '))  # Masalah setelah titik harus spasi.
-		except UnicodeTranslateError as e:
-			return u'Unicode Error: {a}'.format(a=e, )
+		# Masalah setelah titik harus spasi.
+		# Hal ini berguna untuk memastikan tidak ada yang menyatu dengan titik,
+		# seperti kalimat1.kalimat2 (kedua kalimat bersatu). Kemudian begitu juga
+		# untuk tanda tanya (?).
+		c_text = self.text.replace('.', '. ')
+		c_text = c_text.replace(' ?', '? ')
+
+		# Updated Jan 7th.
+		# Kemudian pada kasus 999. 999. Nomor harus tetap disatukan dengan titik
+		# menjadi 999.999. Kemudian untuk kasus "kalimat 999. New_kalimat" akan dibiarkan.
+		matched_regex = re.findall("[-+]?\d+[\.] \d+", c_text)
+		if len(matched_regex) != 0:
+			for found in matched_regex:
+				c_text = c_text.replace(found, found.replace(' ', ''))
+		return c_text
 
 	def text_teaser_summarizer(self, news_title):
 		"""
-		Algoritma TextTeaser
+		Algoritma TextTeaser (Balbino, 2011)
 		:param news_title: Judul berita yang akan disingkat
-		:return: teks ringkasan dengan delimiter '\n'
+		:return: Teks ringkasan dengan delimiter '\n'
 		"""
-
 		# Masalah setelah titik harus spasi.
+		# Hal ini berguna untuk memastikan tidak ada yang menyatu dengan titik,
+		# seperti kalimat1.kalimat2 (kedua kalimat bersatu). Kemudian begitu juga
+		# untuk tanda tanya (?).
 		text_to_summarize = self.text.replace('.', '. ')
+		text_to_summarize = text_to_summarize.replace(' ?', '? ')
+
+		# Updated Jan 7th.
+		# Kemudian pada kasus 999. 999. Nomor harus tetap disatukan dengan titik 
+		# menjadi 999.999. Kemudian untuk kasus "kalimat 999. New_kalimat" akan dibiarkan.
+		matched_regex = re.findall("[-+]?\d+[\.] \d+", text_to_summarize)
+		if len(matched_regex) != 0:
+			for found in matched_regex:
+				text_to_summarize = text_to_summarize.replace(found, found.replace(' ', ''))
 
 		text_teaser = TextTeaser()
 		sentences = text_teaser.summarize(news_title, text_to_summarize)
@@ -58,10 +81,54 @@ class PeberSummarizer(object):
 
 		return u'{0}'.format(summarized)
 
-	def text_rank_summarizer(self):
-		parser = PlaintextParser.from_string(self.text, Tokenizer(LANGUAGE))
+	def lex_rank_summarizer(self):
+		"""
+		Algoritma pertama:
+		LexRank
+		"""
+		text_to_summarize = self.clean_texts()
+
+		parser = PlaintextParser.from_string(text_to_summarize, Tokenizer(LANGUAGE))
 		stemmer = Stemmer(LANGUAGE)
-		summarizer = Summarizer(stemmer)
+		summarizer = LexRankSummarizer(stemmer)
+		summarizer.stop_words = get_stop_words('indonesia')
+		sentences = ""
+		for sentence in summarizer(parser.document, SENTENCES_COUNT):
+			sentences = "%s\n\n%s" % (sentences, sentence)
+		# print(sentence)
+
+		return sentences
+
+	def lsa_summarizer(self):
+		"""
+		Algoritma pertama:
+		LSA
+		"""
+		text_to_summarize = self.clean_texts()
+
+		parser = PlaintextParser.from_string(text_to_summarize, Tokenizer(LANGUAGE))
+		stemmer = Stemmer(LANGUAGE)
+		summarizer = LSASummarizer(stemmer)
+		summarizer.stop_words = get_stop_words('indonesia')
+		sentences = ""
+		for sentence in summarizer(parser.document, SENTENCES_COUNT):
+			sentences = "%s\n\n%s" % (sentences, sentence)
+		# print(sentence)
+
+		return sentences
+
+	def text_rank_summarizer(self):
+		"""
+		Algoritma yang akan menjadi referensi untuk evaluasi hasil ringkasan
+		TextTeaser.
+		:return: Teks hasil ringkasan.
+		"""
+		# Format teks sehingga pemisah antar kalimat lebih rapih.
+		text_to_summarize = self.clean_texts()
+
+		parser = PlaintextParser.from_string(text_to_summarize, Tokenizer(LANGUAGE))
+		stemmer = Stemmer(LANGUAGE)
+		summarizer = TextRankSummarizer(stemmer)
 		summarizer.stop_words = get_stop_words('indonesia')
 		sentences = ""
 		for sentence in summarizer(parser.document, SENTENCES_COUNT):
@@ -69,15 +136,3 @@ class PeberSummarizer(object):
 			# print(sentence)
 
 		return sentences
-
-	def gensim_bm25_summarizer(self):
-		"""
-		Algoritma BM25 Ranking Function.
-		:return: Summarized Text.
-		"""
-
-		# Masalah setelah titik harus spasi.
-		text_to_summarize = self.text.replace('.', '. ')
-		
-		return u'{0}'.format(gensim_summarize(text_to_summarize))
-

@@ -4,6 +4,7 @@ from rest_framework import permissions
 
 class IsOwnerOrReadOnly(permissions.BasePermission):
     """
+    Permission untuk DRF.
     Untuk membatasi editing user desc hanya oleh user yg login.
     """
     def has_object_permission(self, request, view, obj):

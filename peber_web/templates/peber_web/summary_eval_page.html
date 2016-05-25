@@ -8,6 +8,11 @@
     News Evaluation Summary
 {% endblock %}
 
+{% block navbarku %}
+    <li><a href="{% url 'peber_web:news_source_page' %}">News Sources</a></li>
+    <li class="active"><a href="{% url 'peber_web:summary_eval' %}">Evaluations</a></li>
+{% endblock %}
+
 {% block logged_user %}
     {% if logged_user %}
         Hi, {{ logged_user }} | <a href="{% url 'peber_web:logout' %}" class="navbar-link">Logout</a>
@@ -34,33 +39,12 @@
 
         <li class="active">
             <a href="{% url 'peber_web:summary_eval' %}">
-                <span class="badge pull-right">000</span>
+{#                <span class="badge pull-right">000</span>#}
                 Evaluations
             </a>
         </li>
 
     </ul>
-
-    <ul>
-        <li><a href="{% url 'peber_web:add_news_source' %}">Add news source</a>
-        </li>
-        <li><a href="{% url 'peber_web:register_user' %}">Register Admin</a>
-        </li>
-        <li><a href="{% url 'peber_web:add_peber_web_user' %}">Add Peber User</a>
-        </li>
-        <li><a href="{% url 'peber_web:login' %}">Login</a></li>
-        <li><a href="{% url 'peber_web:logout' %}">Logout</a></li>
-    </ul>
-
-    <h2>Search</h2>
-
-    {% csrf_token %}
-    <input type="search" name="search_text" id="search_text" title="Cari data" placeholder="Cari user">
-
-    <ul id="rearch_results">
-
-    </ul>
-    <p>C: <strong>{{language}}</strong> | S: <strong>{{session_language}}</strong></p>
 
 {% endblock %}
 
@@ -68,6 +52,9 @@
 {% block content %}
 
     {% if news_data %}
+
+    <h3> Unique Whole Data Evaluations</h3>
+    <p>Unique value based on F-Score for whole system data</p>
 
         <table class="table table-bordered table-condensed table-hover">
         <thead>
@@ -99,6 +86,8 @@
         </tbody>
         </table>
 
+        <h3> Whole Data Evaluation</h3>
+        <p>Data evaluation for whole {{ all_news_size }} datas on system.</p>
         <table class="table table-bordered table-condensed table-hover">
         <thead>
         <tr>
@@ -108,7 +97,60 @@
         <tbody>
         {% for f_score in f_score_freqs %}
             <tr>
-                <td>{{ f_score.f_score }}</td><td>{{ f_score.count }} berita</td><td>{{ f_score.percent|unlocalize  }}</td>
+                <td>{{ f_score.f_score }}</td><td>{{ f_score.count }}</td><td>{{ f_score.percent|unlocalize  }}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+        </table>
+
+
+        <h3> Kompas Evaluation</h3>
+        <p> Kompas News Data Evaluation based from {{ kompas_data_size }} datas.</p>
+        <table class="table table-bordered table-condensed table-hover">
+        <thead>
+        <tr>
+            <th>F-Score</th><th>Frekuensi</th><th>Persen</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for f_score in f_score_freqs_kom %}
+            <tr>
+                <td>{{ f_score.f_score }}</td><td>{{ f_score.count }}</td><td>{{ f_score.percent|unlocalize  }}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+        </table>
+
+
+        <h3> Detik Evaluation</h3>
+        <p> Detik News Data Evaluation based from {{ detik_data_size }} datas.</p>
+        <table class="table table-bordered table-condensed table-hover">
+        <thead>
+        <tr>
+            <th>F-Score</th><th>Frekuensi</th><th>Persen</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for f_score in f_score_freqs_det %}
+            <tr>
+                <td>{{ f_score.f_score }}</td><td>{{ f_score.count }}</td><td>{{ f_score.percent|unlocalize  }}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+        </table>
+
+        <h3> Liputan 6 Evaluation</h3>
+        <p> Liputan 6 Data Evaluation based from {{ liputan6_data_size }} datas.</p>
+        <table class="table table-bordered table-condensed table-hover">
+        <thead>
+        <tr>
+            <th>F-Score</th><th>Frekuensi</th><th>Persen</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for f_score in f_score_freqs_lip %}
+            <tr>
+                <td>{{ f_score.f_score }}</td><td>{{ f_score.count }}</td><td>{{ f_score.percent|unlocalize  }}</td>
             </tr>
         {% endfor %}
         </tbody>

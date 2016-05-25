@@ -29,10 +29,10 @@ if __name__ == '__main__':
 	news_title = "Kapolri Bela Anak Buah di Kerusuhan Banyuwangi"
 	news_title2 = "Google Doodle Hari Ini Rayakan Hidup dan Karya Ludwig van Beethoven"
 	# Masalah setelah titik harus spasi.
-	text_to_summarize = texts2.replace('.', '.')
+	text_to_summarize = texts.replace('.', '.')
 
 	text_teaser = TextTeaser()
-	sentences = text_teaser.summarize(news_title2, text_to_summarize)
+	sentences = text_teaser.summarize(news_title, text_to_summarize)
 
 	# Kalimat hasil ringkasan dipisahkan \n
 	summarized = ""

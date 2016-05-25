@@ -6,8 +6,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0" />
-    <meta name="description" content="Peringkas Berita Berbasis Web, TI USU">
-    <meta name="author" content="Anwar Pasaribu">
+
+    <!-- Utk icon browser -->
+    <link rel="shortcut icon" href="../../static/peber_web/favicon.ico">
+    <link rel="icon" href="favicon.png">
 
     <title>{% block title %} Base Template {% endblock %}</title>
 
@@ -52,10 +54,12 @@
 
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li><a href="{% url 'peber_web:register_user' %}" title="Register User">Register user</a> </li>
-                <li><a href="{% url 'peber_web:rss_feed_parser' %}" title="RSS Feed Parser">Parse RSS</a> </li>
-                <li><a href="">Contact</a></li>
-                <li><a href="#">About</a></li>
+
+                {% block navbarku %}
+                    <li><a href="{% url 'peber_web:news_source_page' %}">News Sources</a></li>
+                    <li><a href="{% url 'peber_web:summary_eval' %}">Evaluations</a></li>
+                    <li><a href="#" title="I think you know that! :)">About</a></li>
+                {% endblock %}
 
             </ul>
 
@@ -107,7 +111,7 @@
     <footer style="margin-top:50px;">
         <p class="pull-right"><a href="#">Back to top</a></p>
         <p>
-            &copy; 2015 Peber<br>
+            &copy; 2016 Peber<br>
         </p>
     </footer>
 

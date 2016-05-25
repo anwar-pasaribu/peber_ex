@@ -38,11 +38,21 @@ class News(models.Model):
 	news_title = models.TextField()
 	news_content = models.TextField()
 	news_corp = models.ForeignKey(News_Source, related_name='news_sources')  # ID sumber (Foreign key dari News_Source)
-	news_summary = models.TextField()
-	news_text_rank_summary = models.TextField(blank=True)
-	f_score = models.DecimalField(max_digits=7, decimal_places=6, default=0)
-	precision = models.DecimalField(max_digits=7, decimal_places=6, default=0)
-	recall = models.DecimalField(max_digits=7, decimal_places=6, default=0)
+
+	news_summary_lex_rank = models.TextField(blank=True)  # A1 Summarization
+	news_summary_lsa = models.TextField(blank=True)  # A2 Summarization
+	news_summary_text_rank = models.TextField(blank=True)  # A3 Summarization
+
+	# Lex Rank
+	a1_f_score = models.DecimalField(max_digits=7, decimal_places=6, default=0)
+	a1_precision = models.DecimalField(max_digits=7, decimal_places=6, default=0)
+	a1_recall = models.DecimalField(max_digits=7, decimal_places=6, default=0)
+
+	# LSA Algorithm evaluation
+	a2_f_score = models.DecimalField(max_digits=7, decimal_places=6, default=0)
+	a2_precision = models.DecimalField(max_digits=7, decimal_places=6, default=0)
+	a2_recall = models.DecimalField(max_digits=7, decimal_places=6, default=0)
+
 	news_pub_date = models.DateTimeField()
 	news_image_hero = models.TextField()
 

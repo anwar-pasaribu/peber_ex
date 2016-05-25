@@ -42,7 +42,14 @@ class NewsSourceAdmin(admin.ModelAdmin):
 	list_display = ('id', 'source_publisher', 'source_category', 'source_url', 'news_count')
 
 	def news_count(self, obj):
-		return '{0} Berita'.format(len(News.objects.filter(news_corp__id=obj.id)))
+		news_len = len(News.objects.filter(news_corp__id=obj.id))
+		return_str = None
+		if news_len == 0:
+			return_str = '<span style="color:orange;">Kosong</span>'
+		else:
+			return_str = '{0} Berita'.format(news_len)
+
+		return return_str
 	news_count.allow_tags = True
 
 

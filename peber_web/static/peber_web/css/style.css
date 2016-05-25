@@ -8,6 +8,10 @@ body {
 div.navbar-default {
     background-color: #E4E4E4;
 }
+ul.navbar-nav li.active {
+    font-weight: bolder;
+    border-bottom: 2px solid #47a447;
+}
 hr {
     border-color: #CBCBCB;
 }
@@ -40,4 +44,73 @@ span.un-read {
     font-size: 12px;
     border: 1px solid #FFFFFF;
 }
+
+a.active_cat {
+    background: #428bca;
+    box-shadow: 2px 2px 10px #999;
+}
+
+/* Animasi loading data */
+@keyframes flash_default {
+    from  {
+        background: #428bca;
+    }
+    to {
+        background: #CCC;
+    }
+}
+
+span.dot_default {
+    background: #CCC;
+    height: 4px;
+    width: 4px;
+    border-radius: 8px;
+    margin-right: 5px;
+    display: inline-block;
+    animation-name: flash_default;
+    animation-iteration-count: infinite;
+    animation-duration: 1500ms;
+}
+span.dot_default:first-child {
+    background: #428bca;
+}
+span.dot_default:nth-child(2) {
+    animation-delay: 500ms;
+}
+span.dot_default:nth-child(3) {
+    animation-delay: 1000ms;
+}
+
+/* Animasi loading data */
+@keyframes flash_error {
+    from  {
+        background: #fb787e;
+    }
+    to {
+        background: #CCC;
+    }
+}
+
+span.dot_error {
+    background: #CCC;
+    height: 4px;
+    width: 4px;
+    border-radius: 8px;
+    margin-right: 5px;
+    display: inline-block;
+    animation-name: flash_error;
+    animation-iteration-count: infinite;
+    animation-duration: 1500ms;
+}
+span.dot_error:first-child {
+    background: #fb787e;
+}
+span.dot_error:nth-child(2) {
+    animation-delay: 500ms;
+}
+span.dot_error:nth-child(3) {
+    animation-delay: 1000ms;
+}
+
+
 

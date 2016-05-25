@@ -37,25 +37,28 @@ class DatabaseAccess(object):
 			# Deklarasi var untuk data berita.
 			news_url = post.guid
 			news_title = post.title
-			news_content = ""
+			news_content = None
 			# news_corp = None
-			news_summary = "N/A"
-			news_text_rank_summary = ""
+			news_summary = None
+			news_text_rank_summary = None
 			val_f_score = 0
 			val_precision = 0
 			val_recall = 0
 			news_pub_date = parse(post.published)
-			news_image_hero = ""
+			news_image_hero = None
 
 			# Cek jika URL merupakan link untuk foto galeri.
 			# Kasus untuk URL Foto Galeri Detik.com. (2 Des)
 			gallery_url = 'readfoto' in news_url.split('/')
+			if gallery_url:
+				print("URL berita galeri (readfoto), proses dilewatkan.")
+				continue
 
 			# Status keberadaan data dalam database.
-			is_data_available = News.objects.filter(news_url=news_url, news_title=news_title).exists()
+			is_data_available = News.objects.filter(news_url=news_url).exists()
 
-			# Jika bukan url foto galeri dan belum ada di database
-			if not gallery_url and not is_data_available:
+			# Periksa apakah data sudah ada dalam database
+			if not is_data_available:
 				# Tambah Info total berita dan berapa yang selesai diekstrak.
 				g = NewsExtractor(feed_data_length, extracted_feed, data.news_corp_id, news_url)
 				news_content = g.get_news_content()
@@ -66,7 +69,7 @@ class DatabaseAccess(object):
 				if news_content is not None:
 					peber_summ = PeberSummarizer(news_content)
 					news_summary = peber_summ.text_teaser_summarizer(news_title)
-					news_text_rank_summary = peber_summ.text_rank_summarizer()
+					news_text_rank_summary = peber_summ.lex_rank_summarizer()
 
 					# Mulai Menghitung F/P/R
 					reference_summary = news_text_rank_summary
@@ -83,11 +86,10 @@ class DatabaseAccess(object):
 					val_precision = precision(evaluated_sent, reference_sentences)
 					val_recall = recall(evaluated_sent, reference_sentences)
 
-					print("Meringkas: %s selesai." % news_title)
+					print("Meringkas: %s selesai." % news_title)				
 
-			# Periksa apakah data sudah ada, jika ada tidak jadi simpan data lagi.
-			# Kemudian konten berita tidak None.
-			if not is_data_available and news_content is not None:
+			# Periksa apakah konten berita hasil ekstraksi dan hasil ringkasan ada
+			if news_content and news_summary is not None:
 
 				new_news = News(
 					news_url=news_url,
@@ -119,18 +121,25 @@ class DatabaseAccess(object):
 		return new_data_count
 
 	def insert_news_to_db(self, news_data):
+		"""
+		Memasukkan data berita ke dalam database.
+		:param news_data: Dictionary berisi konten berita.
+		:return: ID berita yang berhasil dimasukkan ke dalam database.
+		"""
 
 		# Deklarasi var untuk data berita.
 		news_url = news_data['news_url']
-		news_title = news_data['news_title']
-		news_content = news_data['news_content']
 		news_corp = news_data['news_corp']
 		news_pub_date = news_data['news_pub_date']
+
+		news_title = news_data['news_title']
+		news_content = news_data['news_content']
 		news_image_hero = news_data['news_image_hero']
 
+		# Inisialisasi kelas untuk
 		peber_summ = PeberSummarizer(news_content)
 		news_summary = peber_summ.text_teaser_summarizer(news_title)
-		news_text_rank_summary = peber_summ.text_rank_summarizer()
+		news_text_rank_summary = peber_summ.lex_rank_summarizer()
 
 		# Mulai Menghitung F/P/R
 		reference_summary = news_text_rank_summary
@@ -171,7 +180,9 @@ class DatabaseAccess(object):
 			return 0
 
 	def get_all_news_source(self):
+		self.__init__()
 		return News_Source.objects.all()
 
 	def get_all_news(self):
+		self.__init__()
 		return News.objects.all()

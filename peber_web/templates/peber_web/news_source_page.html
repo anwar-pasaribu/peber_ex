@@ -11,6 +11,11 @@
     {% endif %}
 {% endblock %}
 
+{% block navbarku %}
+    <li class="active"><a href="{% url 'peber_web:news_source_page' %}">News Sources</a></li>
+    <li><a href="{% url 'peber_web:summary_eval' %}">Evaluations</a></li>
+{% endblock %}
+
 {% block logged_user %}
     {% if logged_user %}
         Hi, {{ logged_user }} | <a href="{% url 'peber_web:logout' %}" class="navbar-link">Logout</a>
@@ -36,33 +41,12 @@
         </li>
         <li class="">
             <a href="{% url 'peber_web:summary_eval' %}">
-                <span class="badge pull-right">000</span>
+                {% comment %}<span class="badge pull-right">000</span>{% endcomment %}
                 Evaluations
             </a>
         </li>
 
     </ul>
-
-    <ul>
-        <li><a href="{% url 'peber_web:add_news_source' %}">Add news source</a>
-        </li>
-        <li><a href="{% url 'peber_web:register_user' %}">Register Admin</a>
-        </li>
-        <li><a href="{% url 'peber_web:add_peber_web_user' %}">Add Peber User</a>
-        </li>
-        <li><a href="{% url 'peber_web:login' %}">Login</a></li>
-        <li><a href="{% url 'peber_web:logout' %}">Logout</a></li>
-    </ul>
-
-    <h2>Search</h2>
-
-    {% csrf_token %}
-    <input type="search" name="search_text" id="search_text" title="Cari data" placeholder="Cari user">
-
-    <ul id="rearch_results">
-
-    </ul>
-    <p>C: <strong>{{language}}</strong> | S: <strong>{{session_language}}</strong></p>
 
 {% endblock %}
 
@@ -71,42 +55,89 @@
 
     {% if news_data %}
 
-        <table class="table table-bordered table-condensed table-hover">
-        <thead>
-        <tr>
-            <th rowspan="2">News id</th>
-            <th class="text-center" colspan="3">Word count</th>
-            <th rowspan="2">F-Score</th>
-            <th rowspan="2">Precision</th>
-            <th rowspan="2">Recall</th>
-        </tr>
-        <tr>
-            {% comment %}<th>News id</th>{% endcomment %}
-            <th>Original</th><th>Text Teaser</th><th>Text Rank</th>
-            {% comment %}<th>F-Score</th>
-            <th>Precision</th>
-            <th>Recall</th>{% endcomment %}
-        </tr>
-        </thead>
-        <tbody>
-        {% for news in news_data %}
-            <tr>
-                <td>
-                    <a class="pull-left" href="{% url 'peber_web:detail' news.id %}" target="_new">{{ news.id }}</a>
-                </td>
-                <td>{{ news.news_content|wordcount }}</td><td>{{ news.news_summary|wordcount }}</td><td>{{ news.news_text_rank_summary|wordcount }}</td>
-                <td>{{ news.f_score }}</td><td>{{ news.precision }}</td><td>{{ news.recall }}</td>
-            </tr>
-        {% endfor %}
-        </tbody>
-        </table>
+    <div class="panel-group" id="accordion">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a class="accordion-toggle" style="font-weight: bolder;" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+              <span id="collapsableBtn" class="glyphicon glyphicon-chevron-down pull-left" style="margin-right:10px;"></span> Evaluation for "{{ current_ns }}" News
+            </a>
+          </h4>
+        </div>
+        <div id="collapseOne" class="panel-collapse collapse">
+          <div class="panel-body">
 
-        {% for news in news_data %}
+          <table class="table table-bordered table-condensed table-hover">
+            <thead>
+            <tr>
+                <th rowspan="2">News id</th>
+                <th class="text-center" colspan="3">Word count</th>
+                <th rowspan="2">F-Score</th>
+                <th rowspan="2">Precision</th>
+                <th rowspan="2">Recall</th>
+            </tr>
+            <tr>
+                {% comment %}<th>News id</th>{% endcomment %}
+                <th>Original</th><th>Text Teaser</th><th>Text Rank</th>
+                {% comment %}<th>F-Score</th>
+                <th>Precision</th>
+                <th>Recall</th>{% endcomment %}
+            </tr>
+            </thead>
+            <tbody>
+            {% for news in news_data %}
+                <tr>
+                    <td>
+                        <a class="pull-left" href="{% url 'peber_web:detail' news.id %}" target="_new">{{ news.id }}</a>
+                    </td>
+                    <td>{{ news.news_content|wordcount }}</td><td>{{ news.news_summary|wordcount }}</td><td>{{ news.news_text_rank_summary|wordcount }}</td>
+                    <td>{{ news.f_score }}</td><td>{{ news.precision }}</td><td>{{ news.recall }}</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+            </table>
+
+             <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" title="Collapse evaluations">
+                <span id="collapsableBtn" class="glyphicon glyphicon-chevron-up pull-right"></span>
+             </a>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Judul saja untuk kebutuhan belajar (Feb 3) -->
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a class="accordion-toggle" style="font-weight: bolder;" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+              <span id="collapsableBtn" class="glyphicon glyphicon-chevron-down pull-left" style="margin-right:10px;"></span> Title only
+            </a>
+          </h4>
+        </div>
+        <div id="collapseTwo" class="panel-collapse collapse">
+          <div class="panel-body">
+
+            {% for news in news_data %}
+                <span>{{ news.news_title }}</span><br />
+            {% endfor %}
+
+             <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" title="Collapse evaluations">
+                <span id="collapsableBtn" class="glyphicon glyphicon-chevron-up pull-right"></span>
+             </a>
+
+          </div>
+        </div>
+      </div>
+
+      </div>
+
+      <hr>
+
+         {% for news in news_data %}
+
 
             <div class="media">
-                <a class="pull-left" href="{% url 'peber_web:detail' news.id %}" target="_new">
-                    <img class="media-object" src="{% comment %}{{ news.news_image_hero }}{% endcomment %}" alt="{{ news.id }}" title="{{ news.id }}" width="150">
-                </a>
+                
                 <div class="media-body">
                     <h3 class="media-heading">{{ news.news_title }}</h3>
                     {{ news.news_corp }} <span class="news_pub_date">{{ news.news_pub_date }}</span>
@@ -122,7 +153,9 @@
                         </tr>
                         </tbody>
                     </table>
-                    <a href="{{news.news_url}}" target="_blank" title="{{news.news_url}}">News URL</a>
+                    <a href="{{news.news_url}}" target="_blank" title="{{news.news_url}}">Original article</a> | 
+                    <a href="{% url 'peber_web:detail' news.id %}" target="_blank">Read more</a>
+
 
                     <p class="news_summary">Summary:<br />{% autoescape off %}{{ news.news_summary }}{% endautoescape %}</p>
                     <p style="font-weight: bolder;">Original:<br />{{ news.news_content|truncatewords:100 }}</p>
@@ -140,9 +173,9 @@
 
                   <a href="{% url 'peber_web:news_category' i.ns_id %}" class="list-group-item" target="_new">
                     <span class="badge">{{i.news_num}}</span>
-                    <strong>{{i.ns_id}}</strong>: {{i.source_name}} <br />
+                      <strong>{{i.source_name}}</strong><br>
+                    ID {{i.ns_id}} &centerdot; {{ i.source_url }}
                   </a>
-                Feed: <a href="{{i.source_url}}" title="{{i.source_name}}">{{ i.source_url }}</a>
 
             {% endfor %}
         </div>

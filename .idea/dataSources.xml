@@ -5,7 +5,10 @@
       <driver-ref>mysql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql://127.0.0.1:5432/peber</jdbc-url>
+      <jdbc-url>jdbc:mysql://127.0.0.1:3306/peber</jdbc-url>
+      <explain-plan-config>
+        <provider>com.intellij.database.plan.postgres.PostgresExplainPlanProvider</provider>
+      </explain-plan-config>
       <driver-properties>
         <property name="zeroDateTimeBehavior" value="convertToNull" />
         <property name="tinyInt1isBit" value="false" />
@@ -13,7 +16,6 @@
         <property name="characterSetResults" value="utf8" />
         <property name="yearIsDateType" value="false" />
       </driver-properties>
-      <libraries />
     </data-source>
   </component>
 </project>

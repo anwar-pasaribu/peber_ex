@@ -1,23 +1,25 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 from .parser import Parser
-
 from pprint import pprint
 
 # menentukan log ditampilkan atau tidak
-is_log = False
+is_log = True
 
-class Summarizer:
 
+class Summarizer(object):
 	def __init__(self):
 		self.parser = Parser()
 
 	def summarize(self, text, title, source, category):
 
 		# Preprocessing
-		sentences = self.parser.splitSentences(text)  # Memotong menjadi kalimat
-		titleWords = self.parser.removePunctations(title)  # Menghapus tanda baca
-		titleWords = self.parser.splitWords(title)  # Memisahkan menjadi kata
+		# 1. Memisahkan teks berita menjadi kalimat menggunakan NLTK Sentence Tokenizer.
+		sentences = self.parser.splitSentences(text)
+		# 2. Menghapus tanda baca pada judul
+		titleWords = self.parser.removePunctations(title)
+		# 3. Memisahkan judul berita menjadi kata-kata berdasarkan tanda sapasi.
+		titleWords = self.parser.splitWords(titleWords)
 
 		# Bagian untuk hapus stopword
 		# Params:
@@ -30,17 +32,17 @@ class Summarizer:
 			print("Before keyworded:")
 			pprint(keywords[:10])
 		topKeywords = self.getTopKeywords(keywords[:10], wordCount, source, category)
-		if is_log: 
+		if is_log:
 			print("After Topkeywords:")
 			pprint(topKeywords)
 
 		result = self.computeScore(sentences, titleWords, topKeywords)
-		if is_log: 
+		if is_log:
 			print("Compute Score Result:")
 			pprint(result)
 
 		result = self.sortScore(result)
-		if is_log: 
+		if is_log:
 			print "Sort Score Result: "
 			pprint(result)
 
@@ -60,8 +62,23 @@ class Summarizer:
 	def sortSentences(self, dictList):
 		return sorted(dictList, key=lambda x: x['order'])
 
-	# Inti algoritma, menghitung skor masing-masing fitur yang akan diambil.
 	def computeScore(self, sentences, titleWords, topKeywords):
+		"""
+		Inti algoritma TextTeaser, menghitung skor masing-masing fitur yang akan diambil.
+		seperti:
+		1. Skor elemen judul.
+		2. Skor panjang kalimat.
+		3. Skor posisi kalimat.
+		4. Skor frekuensi keyword berdasarkan nilai summation-based selection (SBS)
+		   dan density-based selection (DBS).
+
+		Kemudian keempat elemen dihitung lagi menggunakan persamaan (8) pp. 12 (Jan, 10)
+
+		:param sentences: List kalimat dalam teks berita.
+		:param titleWords: List kata dalam judul.
+		:param topKeywords: Dictionary top keyword yang diperoleh.
+		:return: Dictionary skor masing-masing kalimat.
+		"""
 
 		# Mengambil 10 top keyword dari key "word" yang berguna
 		# untuk mendapatkan kata-kata dalam var dict.
@@ -117,28 +134,26 @@ class Summarizer:
 			# Frekuensi keyword
 			if is_log: print ("\nGet 6. keywordFrequency feature started")
 			keywordFrequency = (sbsFeature + dbsFeature) / 2.0 * 10.0
-			if is_log: print "keywordFrequency = (%f + %f) / 2.0 * 10.0 = %f" % (sbsFeature, dbsFeature, keywordFrequency)
+			if is_log: print "keywordFrequency = (%f + %f) / 2.0 * 10.0 = %f" % (
+			sbsFeature, dbsFeature, keywordFrequency)
 
-			totalScore = (titleFeature * 1.5 + keywordFrequency * 2.0 + sentenceLength * 0.5 + sentencePosition * 1.0) / 4.0
+			totalScore = (
+			             titleFeature * 1.5 + keywordFrequency * 2.0 + sentenceLength * 0.5 + sentencePosition * 1.0) / 4.0
 
 			if is_log: print "Total score %d: (%f * 1.5 + %f * 2.0 + %f * 0.5 + %f * 1.0) / 4.0 = %f" % \
-				(i, titleFeature, keywordFrequency, sentenceLength, sentencePosition, totalScore)
+			                 (i, titleFeature, keywordFrequency, sentenceLength, sentencePosition, totalScore)
 
 			summaries.append({
-				# 'titleFeature': titleFeature,
-				# 'sentenceLength': sentenceLength,
-				# 'sentencePosition': sentencePosition,
-				# 'keywordFrequency': keywordFrequency,
 				'totalScore': totalScore,
 				'sentence': sentence,
 				'order': i
 			})
 
-
 		return summaries
 
-	# Params:
-	# words: Kata-kata dalam kalimat 
+		# Params:
+		# words: Kata-kata dalam kalimat
+
 	def sbs(self, words, topKeywords, keywordList):
 		score = 0.0
 
@@ -150,7 +165,7 @@ class Summarizer:
 		for word in words:
 			word = word.lower()
 			index = -1
-		# Indentation ditambah (9 Des)	
+			# Indentation ditambah (9 Des)
 			if word in keywordList:
 				index = keywordList.index(word)
 
@@ -160,9 +175,10 @@ class Summarizer:
 		if is_log: print("Total score: %f" % (score))
 		return 1.0 / abs(len(words)) * score
 
-	# Density-based selection
-	# Params:
-	# words: Kata-kata dalam kalimat
+		# Density-based selection
+		# Params:
+		# words: Kata-kata dalam kalimat
+
 	def dbs(self, words, topKeywords, keywordList):
 
 		# Menghitung kata dalam kalimat yang ada juga dalam top keyword tambah 1
@@ -179,20 +195,20 @@ class Summarizer:
 
 				if firstWord == {}:
 					firstWord = {'i': i, 'score': topKeywords[index]['totalScore']}
-					if is_log: print("0. firstWord i: %f, score: %f" %(firstWord['i'], firstWord['score']))
+					if is_log: print("0. firstWord i: %f, score: %f" % (firstWord['i'], firstWord['score']))
 				else:
 					secondWord = firstWord
 					firstWord = {'i': i, 'score': topKeywords[index]['totalScore']}
 					distance = firstWord['i'] - secondWord['i']
 
-					if is_log: print("1. firstWord i: %d, score: %f" %(firstWord['i'], firstWord['score']))
-					if is_log: print("2. secondWord i: %d, score: %f" %(secondWord['i'], secondWord['score']))
-					if is_log: print("3. Distance, %d-%d: %d" %(firstWord['i'], secondWord['i'], distance))
-					if is_log: print("4. Summ: %f" %((firstWord['score'] * secondWord['score']) / (distance ** 2)))
+					if is_log: print("1. firstWord i: %d, score: %f" % (firstWord['i'], firstWord['score']))
+					if is_log: print("2. secondWord i: %d, score: %f" % (secondWord['i'], secondWord['score']))
+					if is_log: print("3. Distance, %d-%d: %d" % (firstWord['i'], secondWord['i'], distance))
+					if is_log: print("4. Summ: %f" % ((firstWord['score'] * secondWord['score']) / (distance ** 2)))
 
 					summ += (firstWord['score'] * secondWord['score']) / (distance ** 2)
 
-			# print "\"%s\" NOT in keyword. i: %d" % (word, i)
+				# print "\"%s\" NOT in keyword. i: %d" % (word, i)
 
 		if is_log: print("(1.0 / %d * (%d + 1.0)) * %f" % (k, k, summ))
 

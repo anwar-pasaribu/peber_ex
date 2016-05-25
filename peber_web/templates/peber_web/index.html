@@ -2,6 +2,11 @@
 {% load humanize %}
 {% block title %}Peringkas Berita{% endblock %}
 
+{% block navbarku %}
+    <li><a href="{% url 'peber_web:news_source_page' %}">News Sources</a></li>
+    <li><a href="{% url 'peber_web:summary_eval' %}">Evaluations</a></li>
+{% endblock %}
+
 {% block logged_user %}
     {% if logged_user %}
         Hi, {{ logged_user }} | <a href="{% url 'peber_web:logout' %}" class="navbar-link">Logout</a>
@@ -27,55 +32,28 @@
         </li>
         <li class="">
             <a href="{% url 'peber_web:summary_eval' %}">
-                <span class="badge pull-right">000</span>
+{#                <span class="badge pull-right">000</span>#}
                 Evaluations
             </a>
         </li>
 
     </ul>
-
-
-    <ul>
-        <li><a href="{% url 'peber_web:add_news_source' %}">Add news source</a>
-        </li>
-        <li><a href="{% url 'peber_web:register_user' %}">Register Admin</a>
-        </li>
-        <li><a href="{% url 'peber_web:add_peber_web_user' %}">Add Peber User</a>
-        </li>
-        <li><a href="{% url 'peber_web:login' %}">Login</a></li>
-        <li><a href="{% url 'peber_web:logout' %}">Logout</a></li>
-    </ul>
-
-    User list
-    <ul>
-        {% for user in user_list %}
-            <!--
-            var url mengambil nilai dari peber_web.urls, name='detail'
-            pada namespaces (file:peber_ex/urls.py) "peber_web". Hal
-            ini berguna jika dalam project terdapat beberapa app.
-            -->
-            <li> <a href="{% url 'peber_web:user_detail' user.id %}">{{user.user.username}}</a>
-            <ul>
-                {% for favo in user.news_choices.all %}
-                    <li>
-                        {{ favo.source_category }}
-                    </li>
-                {% endfor %}
-            </ul>
-            </li>
+    <hr>
+    <p>
+        <span class="glyphicon glyphicon-ok-circle"> </span>
+        <strong>&nbsp;Categories ({{ ns_category|length }})</strong>
+    </p>
+    <span>
+        {% for ns_cat in ns_category %}
+        <a class="badge {{ ns_cat.active_class }}" href="?category={{ ns_cat.name }}" title="News in {{ ns_cat.name }} category">{{ ns_cat.name }}</a>
         {% endfor %}
+    </span>
 
-    </ul>
-
-    <h2>Search</h2>
-
-    {% csrf_token %}
-    <input type="search" name="search_text" id="search_text" title="Cari data" placeholder="Cari user">
-
-    <ul id="rearch_results">
-
-    </ul>
-    <p>C: <strong>{{language}}</strong> | S: <strong>{{session_language}}</strong></p>
+    {#    Contoh penggunaan Session dan Cookies#}
+    <hr>
+    <br>
+    <br>
+    <p align="center">C: <strong>{{language}}</strong> | S: <strong>{{session_language}}</strong></p>
 
 {% endblock %}
 
@@ -84,11 +62,14 @@
 
 
     {% if all_news %}
+    {% comment %}{{ news.news_image_hero }}{% endcomment %}
+    {% csrf_token %}
+
 
         {% for news in all_news %}
             <div class="media">
-                <a class="pull-left" href="{% url 'peber_web:detail' news.id %}">
-                    <img class="media-object" src="{% comment %}{{ news.news_image_hero }}{% endcomment %}"
+                <a class="pull-right" href="{% url 'peber_web:detail' news.id %}">
+                    <img class="media-object" src="/media/peber_web/images/img_placeholder.png"
                          alt="{{ news.id }}" title="{{ news.id }}" width="150">
                 </a>
                 <div class="media-body">
@@ -96,12 +77,25 @@
 {#                    <span class="glyphicon glyphicon-asterisk un-read"></span>#}
                         {{ news.news_title }}
                     </h3>
-                    {{ news.news_corp }} <a href="{% url 'peber_web:detail' news.id %}">Read more</a>
+                    <strong>{{ news.news_corp }}</strong>
                     <span class="news_pub_date">{{ news.news_pub_date|naturalday }}</span>
 
                     <p class="news_summary">
-                        {% autoescape off %}{{ news.news_summary }}{% endautoescape %}
+                        {% autoescape off %}{{ news.news_summary|truncatewords:20 }}{% endautoescape %}
+                        <a href="{% url 'peber_web:detail' news.id %}">Read more</a>
                     </p>
+
+                    <!-- S: Term dari teks (AJAX) (Feb 13) -->
+                    <input class="n_terms" type="hidden" value="{{ news.id }}">
+                    <div id="{{ news.id }}">
+                        <!-- {% for freq_term in news.news_frequent_terms %}
+                        <span class="label label-primary">{{ freq_term }}</span>
+                        {% endfor %} -->
+                        <span class="dot_default"></span>
+                        <span class="dot_default"></span>
+                        <span class="dot_default"></span>
+                    </div>
+                    <!-- E: Term dari teks (AJAX) (Feb 13) -->
 
                     <!-- <p style="font-weight: bolder;">{{ news.news_content|truncatewords:50 }}</p>
                     <p class="news_content">{% autoescape off %}{{ news.news_content_web_format }}{% endautoescape %}</p> -->
@@ -109,6 +103,17 @@
             </div>
             <hr />
         {% endfor %}
+        <div class="media">
+            Page {{ all_news.number }} of {{ all_news.paginator.num_pages }}.
+            <ul class="pager">
+                {% if all_news.has_previous %}
+                    <li class="previous"><a href="?page={{ all_news.previous_page_number }}&amp;category={{ active_cat }}"> &laquo; Previous</a></li>
+                {% endif %}
+                {% if all_news.has_next %}
+                  <li class="next"><a href="?page={{ all_news.next_page_number }}&amp;category={{ active_cat }}">Next &raquo; </a></li>
+                {% endif %}
+            </ul>
+        </div>
 
     {% else %}
         <p>No data found!</p>

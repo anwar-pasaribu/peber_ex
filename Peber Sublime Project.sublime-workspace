@@ -4,6 +4,190 @@
 		"selected_items":
 		[
 			[
+				"add",
+				"addClass〔function〕"
+			],
+			[
+				"re",
+				"removeClass"
+			],
+			[
+				"news_",
+				"news_ids"
+			],
+			[
+				"ht",
+				"html_terms"
+			],
+			[
+				"news",
+				"news_terms"
+			],
+			[
+				"term",
+				"terms〔variable〕"
+			],
+			[
+				"fo",
+				"for	For Loop"
+			],
+			[
+				"ext",
+				"extract_terms"
+			],
+			[
+				"ter",
+				"terms"
+			],
+			[
+				"hi",
+				"hidden_ids"
+			],
+			[
+				"all_",
+				"all_news_qs"
+			],
+			[
+				"ci",
+				"circle"
+			],
+			[
+				"cate",
+				"category〔variable〕"
+			],
+			[
+				"active",
+				"active_cat"
+			],
+			[
+				"ba",
+				"background: 〔property〕"
+			],
+			[
+				"categor",
+				"category"
+			],
+			[
+				"all",
+				"all_news〔variable〕"
+			],
+			[
+				"obj",
+				"objects"
+			],
+			[
+				"cat",
+				"category〔variable〕"
+			],
+			[
+				"ns",
+				"ns_cat"
+			],
+			[
+				"mar",
+				"margin-top"
+			],
+			[
+				"back",
+				"background-position"
+			],
+			[
+				"blo",
+				"inline-block"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"retu",
+				"return_str〔variable〕"
+			],
+			[
+				"stri",
+				"strings"
+			],
+			[
+				"find_all",
+				"find_all('a"
+			],
+			[
+				"url",
+				"url_list〔variable〕"
+			],
+			[
+				"url_",
+				"url_list〔variable〕"
+			],
+			[
+				"fin",
+				"find"
+			],
+			[
+				"alexa",
+				"alexa_main_soup〔variable〕"
+			],
+			[
+				"padd",
+				"padding-top: 〔property〕"
+			],
+			[
+				"str",
+				"strip"
+			],
+			[
+				"ma",
+				"matched_regex〔variable〕"
+			],
+			[
+				"tag",
+				"tag_text"
+			],
+			[
+				"spli",
+				"split_1_dash〔variable〕"
+			],
+			[
+				"alt",
+				"alt_text〔variable〕"
+			],
+			[
+				"time",
+				"timezone"
+			],
+			[
+				"date",
+				"datetime"
+			],
+			[
+				"pub",
+				"publish_date"
+			],
+			[
+				"stron",
+				"strong_soup〔variable〕"
+			],
+			[
+				"strong",
+				"strong_soup"
+			],
+			[
+				"ns_s",
+				"ns_source_url〔argument〕"
+			],
+			[
+				"ns_sou",
+				"ns_source_url"
+			],
+			[
+				"tpe",
+				"type"
+			],
+			[
 				"lipu",
 				"liputan6_data〔variable〕"
 			],
@@ -12,16 +196,8 @@
 				"liputan6_content_soup〔variable〕"
 			],
 			[
-				"url",
-				"url〔variable〕"
-			],
-			[
 				"ur",
 				"url〔variable〕"
-			],
-			[
-				"fin",
-				"find_all('a"
 			],
 			[
 				"pagi",
@@ -38,10 +214,6 @@
 			[
 				"kompas",
 				"kompas_text_soup〔variable〕"
-			],
-			[
-				"url_",
-				"url_href〔variable〕"
 			],
 			[
 				"get",
@@ -72,10 +244,6 @@
 				"unwrap"
 			],
 			[
-				"tag",
-				"tag_to_del〔variable〕"
-			],
-			[
 				"pr",
 				"prettify"
 			],
@@ -98,10 +266,6 @@
 			[
 				"next",
 				"next_soup〔variable〕"
-			],
-			[
-				"str",
-				"strong"
 			],
 			[
 				"find",
@@ -164,10 +328,6 @@
 				"title〔variable〕"
 			],
 			[
-				"news",
-				"news_corp"
-			],
-			[
 				"peber",
 				"peber_web〔module〕"
 			],
@@ -224,20 +384,12 @@
 				"saved_count"
 			],
 			[
-				"add",
-				"added_news"
-			],
-			[
 				"ns_",
 				"ns_source_category"
 			],
 			[
 				"feed",
 				"feedparser"
-			],
-			[
-				"news_",
-				"news_content"
 			],
 			[
 				"text_det",
@@ -292,10 +444,6 @@
 				"news_source_id〔argument〕"
 			],
 			[
-				"all",
-				"all_news_source〔variable〕"
-			],
-			[
 				"margi",
 				"margin-top"
 			],
@@ -322,10 +470,6 @@
 			[
 				"Use",
 				"UserAdmin"
-			],
-			[
-				"fo",
-				"format"
 			],
 			[
 				"s",
@@ -370,160 +514,88 @@
 			[
 				"cret",
 				"created_at"
-			],
-			[
-				"create",
-				"created_at"
-			],
-			[
-				"name",
-				"collected_name"
-			],
-			[
-				"in",
-				"input"
-			],
-			[
-				"ac",
-				"action	Attr"
-			],
-			[
-				"prin",
-				"print_list"
-			],
-			[
-				"pri",
-				"print_list"
-			],
-			[
-				"logg",
-				"logger"
-			],
-			[
-				"em",
-				"email"
-			],
-			[
-				"ht",
-				"html_string"
-			],
-			[
-				"c",
-				"Compute"
-			],
-			[
-				"exe",
-				"executor"
-			],
-			[
-				"execut",
-				"executor"
-			],
-			[
-				"fut",
-				"futures"
-			],
-			[
-				"start",
-				"start_time_1"
-			],
-			[
-				"fu",
-				"futures"
-			],
-			[
-				"cl",
-				"clock"
-			],
-			[
-				"num",
-				"number_list"
-			],
-			[
-				"res",
-				"result_item"
-			],
-			[
-				"future",
-				"Futures"
-			],
-			[
-				"m",
-				"multiprocessing"
-			],
-			[
-				"test_",
-				"test_with_barrier"
-			],
-			[
-				"pros",
-				"process_consumer"
-			],
-			[
-				"pro",
-				"process_producer"
-			],
-			[
-				"prose",
-				"process_producer"
-			],
-			[
-				"back",
-				"background_process"
-			],
-			[
-				"P",
-				"Process"
-			],
-			[
-				"proce",
-				"process_with_name"
-			],
-			[
-				"re",
-				"request_data"
-			],
-			[
-				"pat",
-				"path"
-			],
-			[
-				"path",
-				"pathinfo"
-			],
-			[
-				"parse",
-				"parse_url"
-			],
-			[
-				"print",
-				"print_r"
-			],
-			[
-				"va",
-				"value"
-			],
-			[
-				"font",
-				"font-weight"
-			],
-			[
-				"al",
-				"alt	Attr"
-			],
-			[
-				"ng-cl",
-				"ng-click	AngularJS"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "peber_web/function/database_access.py",
+			"file": "peber_web/views.py",
 			"settings":
 			{
-				"buffer_size": 5620,
+				"buffer_size": 19221,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "peber_web/models.py",
+			"settings":
+			{
+				"buffer_size": 2665,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "peber_web/templates/peber_web/index.html",
+			"settings":
+			{
+				"buffer_size": 4648,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "peber_web/templates/peber_web/news_source_page.html",
+			"settings":
+			{
+				"buffer_size": 6787,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "peber_web/static/peber_web/js/aplikasi.js",
+			"settings":
+			{
+				"buffer_size": 2615,
+				"line_ending": "CR"
+			}
+		},
+		{
+			"file": "peber_web/static/peber_web/js/cari.js",
+			"settings":
+			{
+				"buffer_size": 1659,
+				"line_ending": "CR"
+			}
+		},
+		{
+			"file": "peber_web/urls.py",
+			"settings":
+			{
+				"buffer_size": 2244,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "peber_web/templates/peber_web/generate_terms.html",
+			"settings":
+			{
+				"buffer_size": 233,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "peber_web/static/peber_web/css/style.css",
+			"settings":
+			{
+				"buffer_size": 2075,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "peber_web/tasks.py",
+			"settings":
+			{
+				"buffer_size": 11529,
 				"line_ending": "Windows"
 			}
 		},
@@ -531,15 +603,39 @@
 			"file": "peber_web/function/paginating_news.py",
 			"settings":
 			{
-				"buffer_size": 9118,
+				"buffer_size": 17222,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "peber_web/function/news_extractors.py",
+			"file": "peber_web/algorithms/textteaser/parser.py",
 			"settings":
 			{
-				"buffer_size": 8900,
+				"buffer_size": 4043,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "peber_web/algorithms/textteaser/summarizer.py",
+			"settings":
+			{
+				"buffer_size": 7164,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "peber_web/pebahasa/termextract.py",
+			"settings":
+			{
+				"buffer_size": 4595,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "peber_ex/settings.py",
+			"settings":
+			{
+				"buffer_size": 5445,
 				"line_ending": "Windows"
 			}
 		}
@@ -547,7 +643,7 @@
 	"build_system": "Packages/Python/Python.sublime-build",
 	"command_palette":
 	{
-		"height": 288.0,
+		"height": 392.0,
 		"selected_items":
 		[
 			[
@@ -587,7 +683,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 528.0
+		"width": 466.0
 	},
 	"console":
 	{
@@ -607,22 +703,33 @@
 	},
 	"file_history":
 	[
+		"/D/python-project/django/peber_ex/peber_web/function/news_extractors.py",
+		"/D/python-project/django/peber_ex/peber_web/algorithms/textteaser/summarizer.py",
+		"/D/python-project/django/peber_ex/peber_web/algorithms/peber_summarizer.py",
+		"/D/python-project/django/peber_ex/peber_web/tasks.py",
+		"/D/python-project/django/peber_ex/peber_web/function/paginating_news.py",
+		"/D/python-project/django/peber_ex/peber_web/function/database_access.py",
+		"/D/python-project/django/peber_ex/peber_web/templates/peber_web/ajax_search.html",
+		"/D/python-project/django/peber_ex/peber_web/pebahasa/termextract.py",
+		"/D/python-project/django/peber_ex/peber_ex/urls.py",
+		"/D/python-project/django/peber_ex/peber_web/algorithms/textteaser/parser.py",
+		"/D/python-project/django/peber_ex/peber_web/urls.py",
+		"/D/python-project/django/peber_ex/peber_web/static/peber_web/css/style.css",
+		"/D/python-project/django/peber_ex/peber_ex/settings.py",
+		"/D/python-project/django/peber_ex/peber_web/templates/peber_web/user_detail.html",
+		"/D/python-project/django/peber_ex/peber_ex/celery.py",
+		"/D/python-project/django/peber_ex/peber_web/admin.py",
+		"/D/python-project/django/peber_ex/peber_web/templates/peber_web/base.html",
+		"/D/python-project/django/peber_ex/peber_web/templates/peber_web/index.html",
+		"/D/python-project/django/peber_ex/peber_web/templates/peber_web/news_source_page.html",
+		"/D/python-project/django/peber_ex/peber_web/static/peber_web/js/aplikasi.js",
 		"/D/python-project/django/peber_ex/peber_web/function/text_paged_news.py",
 		"/D/python-project/django/peber_ex/peber_web/templates/peber_web/summary_eval_page.html",
 		"/D/python-project/django/peber_ex/peber_web/serializers.py",
 		"/D/python-project/django/peber_ex/peber_web/views.py",
-		"/D/python-project/django/peber_ex/peber_ex/urls.py",
-		"/D/python-project/django/peber_ex/peber_ex/settings.py",
 		"/D/python-project/django/peber_ex/peber_web/models.py",
-		"/D/python-project/django/peber_ex/peber_web/function/news_extractors.py",
-		"/D/python-project/django/peber_ex/peber_web/tasks.py",
-		"/D/python-project/django/peber_ex/peber_web/function/database_access.py",
-		"/D/python-project/django/peber_ex/peber_web/algorithms/peber_summarizer.py",
 		"/D/python-project/django/peber_ex/peber_web/algorithms/textteaser/__init__.py",
-		"/D/python-project/django/peber_ex/peber_web/algorithms/textteaser/summarizer.py",
-		"/D/python-project/django/peber_ex/peber_web/algorithms/textteaser/parser.py",
 		"/D/python-project/django/peber_ex/peber_web/algorithms/test_text_teaser.py",
-		"/D/python-project/django/peber_ex/peber_web/static/peber_web/css/style.css",
 		"/D/python-project/django/peber_ex/peber_web/function/test.html",
 		"/D/python-project/django/peber_ex/peber_web/function/timing.py",
 		"/D/python-project/django/peber_ex/peber_web/pebahasa/summary.py",
@@ -632,23 +739,19 @@
 		"/C/Users/Anwar Pasaribu/AppData/Roaming/Sublime Text 3/Packages/User/Package Control.sublime-settings",
 		"/D/python-project/django/peber_ex/peber_web/function/test_text_teaser.py",
 		"/D/Data Center/Desktop/Test Text Teaser Sebelum Indentation di SBS.txt",
-		"/D/python-project/django/peber_ex/peber_web/urls.py",
 		"/D/Data Center/Desktop/Error KeyError Exception.txt",
 		"/D/Learn/Python/latihan/lat_nltk/indonesia-nlp-dataset/indonesian-nlp-datasets/utils/tokenizer.py",
-		"/D/python-project/django/peber_ex/peber_web/templates/peber_web/index.html",
 		"/D/Data Center/Desktop/Django Pytest/conftest.py",
 		"/D/python-project/django/peber_ex/27Nop - Copy.json",
 		"/D/Learn/Python/Python Library/REST Framework/rest-framework-tutorial-master/tutorial/urls.py",
 		"/D/Learn/Python/Python Library/REST Framework/rest-framework-tutorial-master/snippets/models.py",
 		"/D/Learn/Python/Python Library/REST Framework/rest-framework-tutorial-master/snippets/serializers.py",
 		"/D/Learn/Python/Python Library/REST Framework/rest-framework-tutorial-master/snippets/views.py",
-		"/D/python-project/django/peber_ex/peber_web/admin.py",
 		"/D/python-project/django/peber_ex/peber_web/function/gooose_extractor.py",
 		"/D/python-project/django/peber_ex/peber_ex/celeryconfig.py",
 		"/D/python-project/django/peber_ex/peber_web/celery.py",
 		"/D/python-project/django/peber_ex/peber_ex/__init__.py",
 		"/D/python-project/django/peber_ex/peber_web/__init__.py",
-		"/D/python-project/django/peber_ex/peber_ex/celery.py",
 		"/D/python-project/django/test_celery/test_celery/settings.py",
 		"/D/python-project/django/test_celery/demoapp/urls.py",
 		"/D/python-project/django/test_celery/demoapp/forms.py",
@@ -727,14 +830,7 @@
 		"/D/xampp/htdocs/elearning/admin/function/getData.php",
 		"/D/xampp/htdocs/rental_mobil/index.php",
 		"/D/xampp/htdocs/rental_mobil/engine/proses_login_admin.php",
-		"/D/xampp/htdocs/angular/route_exercise/list.html",
-		"/D/xampp/htdocs/elearning/function/aksi_login.php",
-		"/C/Users/Anwar Pasaribu/AppData/Roaming/Sublime Text 3/Packages/User/AngularJS-sublime-package.sublime-settings",
-		"/D/Learn/Angular JS/Exercise/lat1.html",
-		"/D/Learn/Angular JS/Exercise/lat5_list-tables-repeat.html",
-		"/D/Learn/Angular JS/Exercise/lat6_show-hide.html",
-		"/D/Learn/Angular JS/Exercise/lat2_shopcart.html",
-		"/D/Learn/Angular JS/Exercise/lat7_watch-model-changes.html"
+		"/D/xampp/htdocs/angular/route_exercise/list.html"
 	],
 	"find":
 	{
@@ -752,6 +848,20 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"black",
+			"flash",
+			"dot_default",
+			"dot",
+			"black",
+			"flash",
+			"dot",
+			"qd",
+			"search_text",
+			"news_res",
+			"all_news",
+			"contacts",
+			".join(kompas_content_soup.strings).strip()))\n		print(\"String 2: \\n%s\" % unidecode(komp",
+			"(\"",
 			"detik_soup",
 			"goose_instance",
 			"test_soup",
@@ -801,24 +911,24 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 14,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "peber_web/function/database_access.py",
+					"file": "peber_web/views.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5620,
+						"buffer_size": 19221,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1995,
-								1995
+								2755,
+								2755
 							]
 						],
 						"settings":
@@ -828,26 +938,26 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 728.0,
+						"translation.y": 897.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "peber_web/function/paginating_news.py",
+					"file": "peber_web/models.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 9118,
+						"buffer_size": 2665,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								7298,
-								7318
+								110,
+								67
 							]
 						],
 						"settings":
@@ -856,32 +966,143 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 3304.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 0,
-			"sheets":
-			[
+				},
 				{
 					"buffer": 2,
-					"file": "peber_web/function/news_extractors.py",
+					"file": "peber_web/templates/peber_web/index.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 8900,
+						"buffer_size": 4648,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1244,
-								1244
+								3418,
+								3451
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1065.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "peber_web/templates/peber_web/news_source_page.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6787,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6007,
+								6024
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1830.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "peber_web/static/peber_web/js/aplikasi.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2615,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								501,
+								501
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 424.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "peber_web/static/peber_web/js/cari.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1659,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								343,
+								408
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "peber_web/urls.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2244,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1668,
+								1668
 							]
 						],
 						"settings":
@@ -891,7 +1112,239 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 168.0,
+						"translation.y": 120.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "peber_web/templates/peber_web/generate_terms.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 233,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								32,
+								41
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "peber_web/static/peber_web/css/style.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2075,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1004,
+								1004
+							],
+							[
+								1368,
+								1368
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 742.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "peber_web/tasks.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 11529,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4411,
+								4444
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1616.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "peber_web/function/paginating_news.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 17222,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6311,
+								6311
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2858.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "peber_web/algorithms/textteaser/parser.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4043,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								265,
+								265
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 250.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "peber_web/algorithms/textteaser/summarizer.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7164,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								824,
+								824
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 263.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "peber_web/pebahasa/termextract.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4595,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								103,
+								142
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1173.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "peber_ex/settings.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5445,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3475,
+								3261
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1452.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -916,18 +1369,11 @@
 				0,
 				1,
 				1
-			],
-			[
-				1,
-				0,
-				2,
-				1
 			]
 		],
 		"cols":
 		[
 			0.0,
-			0.841874084919,
 			1.0
 		],
 		"rows":
@@ -953,6 +1399,106 @@
 		"selected_items":
 		[
 			[
+				"model",
+				"peber_web\\models.py"
+			],
+			[
+				"sett",
+				"peber_ex\\settings.py"
+			],
+			[
+				"pagi",
+				"peber_web\\function\\paginating_news.py"
+			],
+			[
+				"ter",
+				"peber_web\\pebahasa\\termextract.py"
+			],
+			[
+				"summa",
+				"peber_web\\algorithms\\textteaser\\summarizer.py"
+			],
+			[
+				"parer",
+				"peber_web\\algorithms\\textteaser\\parser.py"
+			],
+			[
+				"pagina",
+				"peber_web\\function\\paginating_news.py"
+			],
+			[
+				"tasks",
+				"peber_web\\tasks.py"
+			],
+			[
+				"styl",
+				"peber_web\\static\\peber_web\\css\\style.css"
+			],
+			[
+				"ajax_search",
+				"peber_web\\templates\\peber_web\\ajax_search.html"
+			],
+			[
+				"urls",
+				"peber_web\\urls.py"
+			],
+			[
+				"cari",
+				"peber_web\\static\\peber_web\\js\\cari.js"
+			],
+			[
+				"aplik",
+				"peber_web\\static\\peber_web\\js\\aplikasi.js"
+			],
+			[
+				"user",
+				"peber_web\\templates\\peber_web\\user_detail.html"
+			],
+			[
+				"news_s",
+				"peber_web\\templates\\peber_web\\news_source_page.html"
+			],
+			[
+				"sty",
+				"peber_web\\static\\peber_web\\css\\style.css"
+			],
+			[
+				"inde",
+				"peber_web\\templates\\peber_web\\index.html"
+			],
+			[
+				"view",
+				"peber_web\\views.py"
+			],
+			[
+				"admin",
+				"peber_web\\admin.py"
+			],
+			[
+				"js",
+				"peber_web\\static\\peber_web\\js\\aplikasi.js"
+			],
+			[
+				"base",
+				"peber_web\\templates\\peber_web\\base.html"
+			],
+			[
+				"news_sou",
+				"peber_web\\templates\\peber_web\\news_source_page.html"
+			],
+			[
+				"peber_s",
+				"peber_web\\algorithms\\peber_summarizer.py"
+			],
+			[
+				"models",
+				"peber_web\\models.py"
+			],
+			[
+				"celery",
+				"peber_ex\\celery.py"
+			],
+			[
 				"pag",
 				"peber_web\\function\\paginating_news.py"
 			],
@@ -977,10 +1523,6 @@
 				"peber_web\\views.py"
 			],
 			[
-				"model",
-				"peber_web\\models.py"
-			],
-			[
 				"news",
 				"peber_web\\function\\news_extractors.py"
 			],
@@ -997,32 +1539,8 @@
 				"peber_web\\algorithms\\peber_summarizer.py"
 			],
 			[
-				"tasks",
-				"peber_web\\tasks.py"
-			],
-			[
-				"models",
-				"peber_web\\models.py"
-			],
-			[
-				"sett",
-				"peber_ex\\settings.py"
-			],
-			[
-				"urls",
-				"peber_ex\\urls.py"
-			],
-			[
-				"view",
-				"peber_web\\views.py"
-			],
-			[
 				"seria",
 				"peber_web\\serializers.py"
-			],
-			[
-				"summa",
-				"peber_web\\pebahasa\\summary.py"
 			],
 			[
 				"test_text",
@@ -1049,10 +1567,6 @@
 				"peber_web\\algorithms\\textteaser\\parser.py"
 			],
 			[
-				"sty",
-				"peber_web\\static\\peber_web\\css\\style.css"
-			],
-			[
 				"index",
 				"peber_web\\templates\\peber_web\\index.html"
 			],
@@ -1073,14 +1587,6 @@
 				"peber_web\\serializers.py"
 			],
 			[
-				"inde",
-				"peber_web\\templates\\peber_web\\index.html"
-			],
-			[
-				"celery",
-				"peber_ex\\celery.py"
-			],
-			[
 				"news_source_page",
 				"peber_web\\templates\\peber_web\\news_source_page.html"
 			],
@@ -1091,10 +1597,6 @@
 			[
 				"",
 				"peber_web\\templates\\peber_web\\news_source_page.html"
-			],
-			[
-				"admin",
-				"peber_web\\admin.py"
 			],
 			[
 				"vi",
@@ -1142,11 +1644,11 @@
 	"settings":
 	{
 	},
-	"show_minimap": false,
+	"show_minimap": true,
 	"show_open_files": false,
 	"show_tabs": true,
-	"side_bar_visible": false,
-	"side_bar_width": 208.0,
+	"side_bar_visible": true,
+	"side_bar_width": 258.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
